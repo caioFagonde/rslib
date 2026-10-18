@@ -1,5 +1,7 @@
 # RSLIB delivery roadmap
 
+[Tracked issues](https://github.com/caioFagonde/rslib/issues) · [Release milestones](https://github.com/caioFagonde/rslib/milestones)
+
 Proposed 2026-10-17, based on the [product audit](PRODUCT_AUDIT.md), [validation record](VALIDATION.md) and [quantitative-method review](REMOTE_SENSING_RESEARCH.md). Release labels below describe proposed scope, not scheduled dates. Sequence work by acceptance evidence; estimate dates after measuring the first milestone and confirming engineering capacity.
 
 The first supported project should be concrete: select an area and interval, discover suitable observations, prepare comparable optical data, inspect quality and temporal support, run an analysis, and export a reproducible report. Browser, TUI, CLI and Python must execute the same saved recipe. A project should remain usable when data are missing, a provider fails, or a process restarts.
