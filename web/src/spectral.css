@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #eef2f4;
+  color: #21394b;
+  font:
+    14px system-ui,
+    sans-serif;
+}
+a {
+  color: #245d87;
+}
+header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #ccd6de;
+  background: #fff;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header nav {
+  display: flex;
+  gap: 20px;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 290px minmax(0, 1fr);
+  min-height: 92vh;
+}
+aside {
+  background: #fff;
+  border-right: 1px solid #ccd6de;
+  padding: 22px;
+}
+main {
+  padding: 24px;
+  min-width: 0;
+}
+h1 {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+h2 {
+  font-size: 17px;
+  margin: 0 0 12px;
+}
+h3 {
+  font-size: 14px;
+  margin: 0 0 9px;
+}
+p {
+  line-height: 1.6;
+  margin: 8px 0;
+}
+.muted {
+  color: #536b7d;
+  font-size: 12px;
+}
+.mono {
+  font:
+    12px ui-monospace,
+    monospace;
+  overflow-wrap: anywhere;
+}
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 13px;
+}
+input,
+select,
+button {
+  font: inherit;
+  padding: 9px;
+  border: 1px solid #a8b9c6;
+  border-radius: 3px;
+  background: #fff;
+  color: #243e52;
+}
+label input,
+label select {
+  width: 100%;
+  margin-top: 5px;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+.primary {
+  background: #285c7f;
+  color: #fff;
+  border-color: #285c7f;
+  width: 100%;
+}
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.panel {
+  background: #fff;
+  border: 1px solid #ccd6de;
+  padding: 18px;
+  margin-bottom: 18px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+#status {
+  padding: 12px 14px;
+  border-left: 3px solid #658497;
+  margin-bottom: 18px;
+  background: #fff;
+  line-height: 1.6;
+}
+#status[data-state="error"] {
+  border-color: #a44736;
+}
+#status[data-state="complete"] {
+  border-color: #3f7756;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.actions a {
+  padding: 8px;
+  border: 1px solid #b4c4ce;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 12px;
+}
+#journal {
+  max-height: 170px;
+  overflow: auto;
+  font:
+    12px ui-monospace,
+    monospace;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+.maps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.map-card {
+  min-width: 0;
+}
+.map-card h3 {
+  min-height: 34px;
+}
+.map {
+  position: relative;
+  background: repeating-conic-gradient(#d9e1e6 0 25%, #f4f6f8 0 50%) 50%/12px
+    12px;
+  line-height: 0;
+}
+.map img {
+  width: 100%;
+  display: block;
+  image-rendering: pixelated;
+  cursor: crosshair;
+}
+.cross {
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid white;
+  outline: 1px solid #193248;
+}
+.map-card p {
+  font-size: 11px;
+  color: #526b7b;
+  line-height: 1.5;
+}
+.scale {
+  white-space: nowrap;
+  border-bottom: 3px solid #324e61;
+  margin-top: 8px;
+  font: 10px system-ui;
+}
+.details {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 18px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+th,
+td {
+  border-bottom: 1px solid #dce4e9;
+  padding: 8px 5px;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+td button {
+  padding: 4px 6px;
+  font-size: 11px;
+}
+svg {
+  display: block;
+  width: 100%;
+  max-height: 270px;
+}
+#history button {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 7px;
+  font-size: 11px;
+}
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.warning {
+  color: #6e522a;
+}
+.downloads {
+  margin-top: 18px;
+}
+#spectral-controls {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 1200px) {
+  .maps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  aside {
+    border-right: 0;
+    border-bottom: 1px solid #ccd6de;
+  }
+  main {
+    padding: 14px;
+  }
+  .panel {
+    padding: 12px;
+  }
+  header {
+    padding: 14px;
+  }
+  header nav {
+    gap: 12px;
+    font-size: 12px;
+  }
+  .maps {
+    gap: 10px;
+  }
+  .map-card h3 {
+    min-height: 48px;
+  }
+  th,
+  td {
+    padding: 7px 3px;
+  }
+}

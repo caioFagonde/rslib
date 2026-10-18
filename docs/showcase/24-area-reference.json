@@ -1,0 +1,2231 @@
+{
+  "kind": "Numerical agreement against an external fractional-coverage implementation",
+  "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "synthetic": false,
+  "crs": "EPSG:32723",
+  "exactextract_version": "0.3.0",
+  "shapely_version": "2.2.0",
+  "mean_tolerance": 1e-06,
+  "area_tolerance_m2": 0.25,
+  "maximum_mean_error": 7.295053450206979e-12,
+  "maximum_area_error_m2": 0.0002444302663207054,
+  "statistic_evaluations": 276,
+  "numeric_evaluations": 82,
+  "comparisons": [
+    {
+      "field": "west",
+      "day": "2026-06-01",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-01",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-01",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-02",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-02",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-02",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-03",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-03",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-03",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-04",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-04",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-04",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-05",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-05",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-05",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-06",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-06",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-06",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-07",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-07",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-07",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-08",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-08",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-08",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-09",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-09",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-09",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-10",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 5.944134073843088e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-10",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.944134073843088e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-10",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-11",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-11",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.650724250154781e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-11",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-12",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-12",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 3.3584246494910985e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-12",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-13",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-13",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 2.0650148258027912e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-13",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-14",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-14",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 7.738254481637341e-14,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-14",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-15",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-15",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.184741524999481e-14,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-15",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-16",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-16",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.8118839761882555e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-16",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-17",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-17",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 3.1086244689504383e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-17",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-18",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 4.4020342926387457e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-18",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.4020342926387457e-13,
+      "absolute_area_error_m2": 0.00012586289085447788
+    },
+    {
+      "field": "west",
+      "day": "2026-06-18",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-19",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 1.1262102361797588e-12,
+      "absolute_area_error_m2": 0.00014365394599735737
+    },
+    {
+      "field": "west",
+      "day": "2026-06-19",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 7.932543510946743e-13,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-19",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-20",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-20",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 8.055778266680136e-13,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-20",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-21",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-21",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 8.37108160567368e-13,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-21",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-22",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-22",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 8.686384944667225e-13,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-22",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-23",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-23",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 8.999467837611519e-13,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-23",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-24",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-24",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 9.318101845678939e-13,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-24",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-25",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-25",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 9.633405184672483e-13,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-25",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-26",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-26",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 9.949818746690653e-13,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-26",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-27",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-27",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.0264011862659572e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-27",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-28",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-28",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.0577094755603866e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-28",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-29",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 1.0719203302755886e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-29",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.0894618540646661e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-29",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-30",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-06-30",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.1864953464169048e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-06-30",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-01",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-01",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.283195771861756e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-01",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-02",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-02",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.379674152701682e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-02",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-03",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-03",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.4768186673563832e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-03",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-04",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-04",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.574074204313547e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-04",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-05",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-05",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.6706636074559356e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-05",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-06",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-06",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.7679191444130993e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-06",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-07",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-07",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.864286502950563e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-07",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-08",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-08",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 1.961875106815114e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-08",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-09",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 2.077893412888443e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-09",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 2.0730084315800923e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-09",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-10",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-10",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 2.0872192862952943e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-10",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-11",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-11",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 2.1438406605511773e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-11",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-12",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-12",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 2.2005730571095228e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-12",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-13",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-13",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 2.2570834090629432e-12,
+      "absolute_area_error_m2": 0.00014516268856823444
+    },
+    {
+      "field": "west",
+      "day": "2026-07-13",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-14",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 2.313482738713901e-12,
+      "absolute_area_error_m2": 0.00014776107855141163
+    },
+    {
+      "field": "west",
+      "day": "2026-07-14",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 2.313482738713901e-12,
+      "absolute_area_error_m2": 0.00014776107855141163
+    },
+    {
+      "field": "west",
+      "day": "2026-07-14",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-15",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-15",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-15",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-16",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-16",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "west",
+      "day": "2026-07-16",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-01",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-01",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-01",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-02",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-02",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-02",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-03",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-03",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-03",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-04",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-04",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-04",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-05",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-05",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-05",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-06",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-06",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-06",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-07",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-07",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-07",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-08",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-08",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-08",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-09",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-09",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-09",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-10",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 7.295053450206979e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-10",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 7.295053450206979e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-10",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-11",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-11",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 6.880607195114408e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-11",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-12",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-12",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 6.466827073836612e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-12",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-13",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-13",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 6.051381618021878e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-13",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-14",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-14",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.637157407534232e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-14",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-15",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-15",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.2229331970465864e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-15",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-16",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-16",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.808597964256478e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-16",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-17",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-17",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.394484776071295e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-17",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-18",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 3.9793723871639486e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-18",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 3.9793723871639486e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-18",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-19",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 3.780309398848658e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-19",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 3.780309398848658e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-19",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-20",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-20",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 3.869460307726058e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-20",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-21",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-21",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 3.959388372720696e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-21",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-22",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-22",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.048317236993171e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-22",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-23",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-23",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.1380232573828835e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-23",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-24",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-24",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.227951322377521e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-24",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-25",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-25",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.317657342767234e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-25",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-26",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-26",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.407252340854484e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-26",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-27",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-27",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.4967363166392715e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-27",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-28",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-28",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.585998247819134e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-28",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-29",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 4.675815290511309e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-29",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.675815290511309e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-29",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-30",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-06-30",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.726108393526829e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-06-30",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-01",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-01",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.7768455857521985e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-01",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-02",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-02",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.826694599557868e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-02",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-03",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-03",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.8775428140857e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-03",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-04",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-04",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.928057961706145e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-04",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-05",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-05",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 4.9787951539315145e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-05",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-06",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-06",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.029199279249497e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-06",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-07",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-07",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.079603404567479e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-07",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-08",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-08",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.130340596792848e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-08",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-09",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 5.1803006329009804e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-09",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.1803006329009804e-12,
+      "absolute_area_error_m2": 0.0002444302663207054
+    },
+    {
+      "field": "east",
+      "day": "2026-07-09",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-10",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-10",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 6.901923477187211e-12,
+      "absolute_area_error_m2": 0.00021325424313545227
+    },
+    {
+      "field": "east",
+      "day": "2026-07-10",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-11",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-11",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 6.506239991210805e-12,
+      "absolute_area_error_m2": 0.00021325424313545227
+    },
+    {
+      "field": "east",
+      "day": "2026-07-11",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-12",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-12",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 6.109890371419624e-12,
+      "absolute_area_error_m2": 0.00021325424313545227
+    },
+    {
+      "field": "east",
+      "day": "2026-07-12",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-13",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-13",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.713984840838293e-12,
+      "absolute_area_error_m2": 0.00021325424313545227
+    },
+    {
+      "field": "east",
+      "day": "2026-07-13",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-14",
+      "statistic": "observed",
+      "has_value": true,
+      "absolute_mean_error": 5.318301354861887e-12,
+      "absolute_area_error_m2": 0.00021325424313545227
+    },
+    {
+      "field": "east",
+      "day": "2026-07-14",
+      "statistic": "supported",
+      "has_value": true,
+      "absolute_mean_error": 5.318301354861887e-12,
+      "absolute_area_error_m2": 0.00021325424313545227
+    },
+    {
+      "field": "east",
+      "day": "2026-07-14",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-15",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-15",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-15",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-16",
+      "statistic": "observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-16",
+      "statistic": "supported",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    },
+    {
+      "field": "east",
+      "day": "2026-07-16",
+      "statistic": "fixed_observed",
+      "has_value": false,
+      "absolute_mean_error": 0.0,
+      "absolute_area_error_m2": 0.0
+    }
+  ],
+  "inputs_sha256": {
+    "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3",
+    "analysis.tif": "d8342ae57beaad1ca225969e49677b9a059851ccb1d587ec4b250ac9e880db33",
+    "series-support.tif": "30c0fe93fc673b547cde8c8b774f446b179d6314222ae11d04067b706517499b",
+    "fields.geojson": "0aecf9866a4408ff9e2f08c54c0ed7a32ad04edfa302edc8d00363ba2cda11ad"
+  },
+  "limits": "Same projected geometry and input cells; does not independently validate projection, physical within-cell homogeneity, source imagery, sensor harmonization or temporal interpolation accuracy."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "rslib-reference-capture/1",
+  "case": "urban-bright-surfaces",
+  "run_id": "fabd9c51e227479b9511a1b96b276ec8",
+  "captured_utc": "2026-10-18T04:28:29.745371+00:00",
+  "plan_sha256": "841381c62016242b16e436e11c2f504b45f0d1a1568b634f0fe65f5a3d9ff01b",
+  "documents": {
+    "selection.json": "841381c62016242b16e436e11c2f504b45f0d1a1568b634f0fe65f5a3d9ff01b",
+    "inventory.json": "72682d115cba9d0380128a9500868e2fc4f18b920b90f50f6ae7188c791b5524",
+    "collections.json": "fe202f7762ed3d1a059cd1c690db4eccf2e7d68adf2f943e2d09af8decd49213"
+  }
+}

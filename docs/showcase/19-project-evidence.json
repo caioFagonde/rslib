@@ -1,0 +1,1886 @@
+{
+  "kind": "Actual project/map/area interactions over synthetic sensor observations",
+  "project_id": "b58b7cabb3c14bcc95624c1ae497d533",
+  "report": {
+    "schema_version": "rslib-stack-workflow/1",
+    "id": "9d3c0f46244c48df82d48dad5030f911",
+    "synthetic": true,
+    "request": {
+      "demo": true,
+      "bbox": {
+        "west": -44.66,
+        "south": -22.41,
+        "east": -44.64,
+        "north": -22.39
+      },
+      "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+      "sensors": [
+        "sentinel-2",
+        "landsat"
+      ],
+      "max_scenes_per_sensor": 4,
+      "max_cloud": 40.0,
+      "resolution": 30.0,
+      "cloud_buffer_m": 60.0,
+      "min_clear_fraction": 0.9,
+      "index": "ndvi",
+      "step_days": 5,
+      "max_gap_days": 20.0,
+      "refresh": false,
+      "fields": [
+        {
+          "id": "west",
+          "name": "Western area",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -44.659,
+                  -22.409
+                ],
+                [
+                  -44.651,
+                  -22.409
+                ],
+                [
+                  -44.651,
+                  -22.391
+                ],
+                [
+                  -44.659,
+                  -22.391
+                ],
+                [
+                  -44.659,
+                  -22.409
+                ]
+              ],
+              [
+                [
+                  -44.657,
+                  -22.402
+                ],
+                [
+                  -44.653,
+                  -22.402
+                ],
+                [
+                  -44.653,
+                  -22.398
+                ],
+                [
+                  -44.657,
+                  -22.398
+                ],
+                [
+                  -44.657,
+                  -22.402
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "east",
+          "name": "Eastern area",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -44.65,
+                  -22.409
+                ],
+                [
+                  -44.641,
+                  -22.409
+                ],
+                [
+                  -44.641,
+                  -22.391
+                ],
+                [
+                  -44.646,
+                  -22.393
+                ],
+                [
+                  -44.65,
+                  -22.391
+                ],
+                [
+                  -44.65,
+                  -22.409
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "coverage_target": 0.95
+    },
+    "grid": {
+      "crs": "EPSG:32723",
+      "transform": [
+        30.0,
+        0.0,
+        534990.0,
+        0.0,
+        -30.0,
+        7523970.0
+      ],
+      "width": 69,
+      "height": 75
+    },
+    "bands": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir16",
+      "swir22"
+    ],
+    "observations": [
+      {
+        "cache_key": "8993a92d456d4f60d7e6b1aad9f531c70b7c1c1dae9e26677f2b2ac999d99f16",
+        "id": "synthetic-sentinel-2a-00",
+        "collection": "sentinel-2-c1-l2a",
+        "provider": "local",
+        "datetime": "2026-06-01T10:00:00.000000Z",
+        "platform": "sentinel-2a",
+        "family": "sentinel-2",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/blue.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/green.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/red.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/nir08.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/swir16.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/swir22.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          }
+        ],
+        "adjustment": {
+          "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+          "coefficients": {
+            "blue": {
+              "slope": 0.9778,
+              "offset": -0.004
+            },
+            "green": {
+              "slope": 1.0053,
+              "offset": -0.0009
+            },
+            "red": {
+              "slope": 0.9765,
+              "offset": 0.0009
+            },
+            "nir": {
+              "slope": 0.9983,
+              "offset": -0.0001
+            },
+            "swir16": {
+              "slope": 0.9987,
+              "offset": -0.0011
+            },
+            "swir22": {
+              "slope": 1.003,
+              "offset": -0.0012
+            }
+          },
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+          "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+        },
+        "clear_fraction": 0.8685859772816295,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "a7c82553ee14dd7bd3aca5c4335c7d099c5f5b094ba79e2746a958756d3b4f2c",
+        "id": "synthetic-landsat-8-05",
+        "collection": "landsat-c2-l2",
+        "provider": "local",
+        "datetime": "2026-06-06T10:00:00.000000Z",
+        "platform": "landsat-8",
+        "family": "landsat-oli",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/blue.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/green.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/red.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/nir.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/swir16.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/swir22.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          }
+        ],
+        "adjustment": {
+          "method": "OLI reference; identity bandpass",
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+        },
+        "clear_fraction": 0.8343125734430082,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "33413d2b7eef9cce01590a6fa57730e1d2048dddbd2c056e9e1d1018d57a60e6",
+        "id": "synthetic-sentinel-2b-10",
+        "collection": "sentinel-2-c1-l2a",
+        "provider": "local",
+        "datetime": "2026-06-11T10:00:00.000000Z",
+        "platform": "sentinel-2b",
+        "family": "sentinel-2",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/blue.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/green.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/red.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/nir08.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/swir16.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/swir22.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          }
+        ],
+        "adjustment": {
+          "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+          "coefficients": {
+            "blue": {
+              "slope": 0.9778,
+              "offset": -0.004
+            },
+            "green": {
+              "slope": 1.0075,
+              "offset": -0.0008
+            },
+            "red": {
+              "slope": 0.9761,
+              "offset": 0.001
+            },
+            "nir": {
+              "slope": 0.9966,
+              "offset": 0.0
+            },
+            "swir16": {
+              "slope": 1.0,
+              "offset": -0.0003
+            },
+            "swir22": {
+              "slope": 0.9867,
+              "offset": 0.0004
+            }
+          },
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+          "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+        },
+        "clear_fraction": 0.836662749706228,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "4b23dadd4de854f45c7377c4f67700277515c6b0665af24309c9e99397882712",
+        "id": "synthetic-sentinel-2c-20",
+        "collection": "sentinel-2-c1-l2a",
+        "provider": "local",
+        "datetime": "2026-06-21T10:00:00.000000Z",
+        "platform": "sentinel-2c",
+        "family": "sentinel-2",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/blue.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/green.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/red.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/nir08.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/swir16.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/swir22.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          }
+        ],
+        "adjustment": {
+          "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+          "coefficients": {
+            "blue": {
+              "slope": 0.9851,
+              "offset": -0.0027
+            },
+            "green": {
+              "slope": 1.0038,
+              "offset": -0.0009
+            },
+            "red": {
+              "slope": 0.9718,
+              "offset": 0.0011
+            },
+            "nir": {
+              "slope": 0.9995,
+              "offset": -0.0003
+            },
+            "swir16": {
+              "slope": 0.9994,
+              "offset": -0.0007
+            },
+            "swir22": {
+              "slope": 0.991,
+              "offset": 0.0004
+            }
+          },
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+          "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+        },
+        "clear_fraction": 0.8372502937720329,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "caf73df310e76a2a7040d64cc99a92cafe51236bff2c6bd78270923b45964f40",
+        "id": "synthetic-landsat-9-25",
+        "collection": "landsat-c2-l2",
+        "provider": "local",
+        "datetime": "2026-06-26T10:00:00.000000Z",
+        "platform": "landsat-9",
+        "family": "landsat-oli",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/blue.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/green.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/red.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/nir.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/swir16.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/swir22.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          }
+        ],
+        "adjustment": {
+          "method": "OLI reference; identity bandpass",
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+        },
+        "clear_fraction": 0.8476302389345868,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "d512e39807cd86014a67d33e1ad307a7d9f57abd63cf250561948205f0c1f7d2",
+        "id": "synthetic-sentinel-2a-30",
+        "collection": "sentinel-2-c1-l2a",
+        "provider": "local",
+        "datetime": "2026-07-01T10:00:00.000000Z",
+        "platform": "sentinel-2a",
+        "family": "sentinel-2",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/blue.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/green.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/red.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/nir08.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/swir16.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/swir22.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": 0.0,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          }
+        ],
+        "adjustment": {
+          "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+          "coefficients": {
+            "blue": {
+              "slope": 0.9778,
+              "offset": -0.004
+            },
+            "green": {
+              "slope": 1.0053,
+              "offset": -0.0009
+            },
+            "red": {
+              "slope": 0.9765,
+              "offset": 0.0009
+            },
+            "nir": {
+              "slope": 0.9983,
+              "offset": -0.0001
+            },
+            "swir16": {
+              "slope": 0.9987,
+              "offset": -0.0011
+            },
+            "swir22": {
+              "slope": 1.003,
+              "offset": -0.0012
+            }
+          },
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+          "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+        },
+        "clear_fraction": 0.8797493145319232,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "65e5fbb305698414fb07fdcc6e0b06ee9397a520881a625b72f2a1056b216b37",
+        "id": "synthetic-landsat-8-40",
+        "collection": "landsat-c2-l2",
+        "provider": "local",
+        "datetime": "2026-07-11T10:00:00.000000Z",
+        "platform": "landsat-8",
+        "family": "landsat-oli",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/blue.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/green.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/red.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/nir.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/swir16.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/swir22.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          }
+        ],
+        "adjustment": {
+          "method": "OLI reference; identity bandpass",
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+        },
+        "clear_fraction": 0.8832745789267529,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "a5456694fa6d56d821a7a5b09f22e301a844bfa19b58b9b42eb53cc6337cda22",
+        "id": "synthetic-landsat-9-45",
+        "collection": "landsat-c2-l2",
+        "provider": "local",
+        "datetime": "2026-07-16T10:00:00.000000Z",
+        "platform": "landsat-9",
+        "family": "landsat-oli",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/blue.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/green.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/red.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/nir.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/swir16.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/swir22.tif",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          }
+        ],
+        "adjustment": {
+          "method": "OLI reference; identity bandpass",
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+        },
+        "clear_fraction": 0.8638856247551899,
+        "cache_hit": true
+      }
+    ],
+    "processing": {
+      "harmonization": "bandpass",
+      "bbox": {
+        "west": -44.66,
+        "south": -22.41,
+        "east": -44.64,
+        "north": -22.39
+      },
+      "aoi_pixels": 5106,
+      "cloud_buffer_m": 60.0,
+      "min_clear_fraction": 0.9,
+      "resampling": "native QA first, GDAL area-weighted clear reflectance, support threshold, common complete spectrum",
+      "nir": "Sentinel-2 B8A / Landsat OLI B05; broad B08 never substituted",
+      "all_upstream_hls": false,
+      "cache_max_bytes": 2147483648,
+      "cache_evicted_files": 0,
+      "cache": "Prepared AOI/scene cache; immutable source assumption. Use refresh=True after upstream asset revisions."
+    },
+    "discovery": [],
+    "acquisition": {
+      "target_supported_fraction": 0.95,
+      "stop_reason": "candidate_budget_exhausted",
+      "prepared_observations": 8,
+      "unread_candidates": 0,
+      "steps": [
+        {
+          "observations": 4,
+          "supported_fraction": 0.5493145319232277,
+          "observed_fraction": 0.3430278104191148
+        },
+        {
+          "observations": 5,
+          "supported_fraction": 0.722542107324716,
+          "observed_fraction": 0.43135526831179005
+        },
+        {
+          "observations": 6,
+          "supported_fraction": 0.809400705052879,
+          "observed_fraction": 0.517743830787309
+        },
+        {
+          "observations": 7,
+          "supported_fraction": 0.8487661574618097,
+          "observed_fraction": 0.6014688601645123
+        },
+        {
+          "observations": 8,
+          "supported_fraction": 0.8700940070505288,
+          "observed_fraction": 0.6851351351351351
+        }
+      ],
+      "basis": "AOI cell-date support, including permitted linear estimates",
+      "selection": "Initial date/footprint strata, then missing-date proximity weighted by scene cloud cover",
+      "limitation": "Bounded discovered candidates; unread-source benefit is a metadata heuristic, not known pixel-clear coverage or an optimal plan"
+    },
+    "summary": {
+      "observations": 8,
+      "daily_mosaics": 8,
+      "regular_dates": 10,
+      "platforms": [
+        "landsat-8",
+        "landsat-9",
+        "sentinel-2a",
+        "sentinel-2b",
+        "sentinel-2c"
+      ],
+      "cache_hits": 8,
+      "observed_fraction": 0.6851351351351351,
+      "filled_fraction": 0.18495887191539365,
+      "unsupported_fraction": 0.12990599294947122
+    },
+    "timeline": [
+      {
+        "day": "2026-06-01",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0000.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0000.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0000.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0000.png",
+        "observed_fraction": 0.8685859772816295,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 4435,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8685859772816295,
+          "mean": 0.46217894554138184,
+          "std": 0.005030771717429161,
+          "p05": 0.45393872261047363,
+          "median": 0.46202632784843445,
+          "p95": 0.4708404839038849
+        }
+      },
+      {
+        "day": "2026-06-06",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0001.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0001.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0001.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0001.png",
+        "observed_fraction": 0.8343125734430082,
+        "filled_fraction": 0.026439482961222092,
+        "statistics": {
+          "valid_pixels": 4395,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8607520564042304,
+          "mean": 0.48907843232154846,
+          "std": 0.005792028270661831,
+          "p05": 0.4795711040496826,
+          "median": 0.48894235491752625,
+          "p95": 0.49892616271972656
+        }
+      },
+      {
+        "day": "2026-06-11",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0002.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0002.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0002.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0002.png",
+        "observed_fraction": 0.836662749706228,
+        "filled_fraction": 0.043674108891500196,
+        "statistics": {
+          "valid_pixels": 4495,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8803368585977281,
+          "mean": 0.5105180740356445,
+          "std": 0.00663753179833293,
+          "p05": 0.4997260868549347,
+          "median": 0.5104712247848511,
+          "p95": 0.5215814709663391
+        }
+      },
+      {
+        "day": "2026-06-16",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0003.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0003.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0003.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0003.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.8378378378378378,
+        "statistics": {
+          "valid_pixels": 4278,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8378378378378378,
+          "mean": 0.5211082696914673,
+          "std": 0.009096714667975903,
+          "p05": 0.5102430582046509,
+          "median": 0.5215837955474854,
+          "p95": 0.5331584215164185
+        }
+      },
+      {
+        "day": "2026-06-21",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0004.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0004.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0004.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0004.png",
+        "observed_fraction": 0.8372502937720329,
+        "filled_fraction": 0.038777908343125736,
+        "statistics": {
+          "valid_pixels": 4473,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8760282021151586,
+          "mean": 0.5315142869949341,
+          "std": 0.014721582643687725,
+          "p05": 0.5210265517234802,
+          "median": 0.5327053666114807,
+          "p95": 0.5447708964347839
+        }
+      },
+      {
+        "day": "2026-06-26",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0005.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0005.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0005.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0005.png",
+        "observed_fraction": 0.8476302389345868,
+        "filled_fraction": 0.029964747356051705,
+        "statistics": {
+          "valid_pixels": 4481,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8775949862906385,
+          "mean": 0.5300982594490051,
+          "std": 0.02235865779221058,
+          "p05": 0.5210976600646973,
+          "median": 0.5329722166061401,
+          "p95": 0.5445870161056519
+        }
+      },
+      {
+        "day": "2026-07-01",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0006.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0006.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0006.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0006.png",
+        "observed_fraction": 0.8797493145319232,
+        "filled_fraction": 0.011946729338033686,
+        "statistics": {
+          "valid_pixels": 4553,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8916960438699569,
+          "mean": 0.5105746984481812,
+          "std": 0.055363234132528305,
+          "p05": 0.305144339799881,
+          "median": 0.5249242186546326,
+          "p95": 0.5369404554367065
+        }
+      },
+      {
+        "day": "2026-07-06",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0007.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0007.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0007.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0007.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.8585977281629456,
+        "statistics": {
+          "valid_pixels": 4384,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8585977281629456,
+          "mean": 0.49097123742103577,
+          "std": 0.05850645527243614,
+          "p05": 0.2805396020412445,
+          "median": 0.5067070722579956,
+          "p95": 0.5179334878921509
+        }
+      },
+      {
+        "day": "2026-07-11",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0008.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0008.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0008.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0008.png",
+        "observed_fraction": 0.8832745789267529,
+        "filled_fraction": 0.0023501762632197414,
+        "statistics": {
+          "valid_pixels": 4522,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8856247551899726,
+          "mean": 0.4647827446460724,
+          "std": 0.07211799919605255,
+          "p05": 0.24488066136837006,
+          "median": 0.48825109004974365,
+          "p95": 0.4988062381744385
+        }
+      },
+      {
+        "day": "2026-07-16",
+        "image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/frame-0009.png",
+        "support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/support-0009.png",
+        "map_image_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-frame-0009.png",
+        "map_support_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-support-0009.png",
+        "observed_fraction": 0.8638856247551899,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 4411,
+          "total_pixels": 5106,
+          "valid_fraction": 0.8638856247551899,
+          "mean": 0.4299915134906769,
+          "std": 0.08278081566095352,
+          "p05": 0.20958702266216278,
+          "median": 0.46119654178619385,
+          "p95": 0.4704892635345459
+        }
+      }
+    ],
+    "fields": [
+      {
+        "id": "west",
+        "name": "Western area",
+        "area_m2": 1458393.2318145419,
+        "area_crs": "EPSG:32723",
+        "fixed_observed_area_m2": 0.0,
+        "fixed_observed_fraction": 0.0,
+        "timeline": [
+          {
+            "day": "2026-06-01",
+            "observed_mean": 0.4615559318244531,
+            "supported_mean": 0.4615559318244531,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1253874.6578730592,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 204518.5739414827,
+            "observed_fraction": 0.859764452083325,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 0.14023554791667503
+          },
+          {
+            "day": "2026-06-06",
+            "observed_mean": 0.48843747537117294,
+            "supported_mean": 0.48828065122828535,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1167858.4584979278,
+            "estimated_area_m2": 62724.710896093464,
+            "missing_area_m2": 227810.06242052064,
+            "observed_fraction": 0.8007843378735865,
+            "estimated_fraction": 0.04300946379053816,
+            "missing_fraction": 0.15620619833587546
+          },
+          {
+            "day": "2026-06-11",
+            "observed_mean": 0.5104914988229338,
+            "supported_mean": 0.5098068740265574,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1182777.2984565082,
+            "estimated_area_m2": 109470.69179672866,
+            "missing_area_m2": 166145.241561305,
+            "observed_fraction": 0.8110139793949053,
+            "estimated_fraction": 0.07506253417024196,
+            "missing_fraction": 0.11392348643485273
+          },
+          {
+            "day": "2026-06-16",
+            "observed_mean": null,
+            "supported_mean": 0.5210008041284626,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1292247.9902532368,
+            "missing_area_m2": 166145.241561305,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.8860765135651473,
+            "missing_fraction": 0.11392348643485273
+          },
+          {
+            "day": "2026-06-21",
+            "observed_mean": 0.5331644660846937,
+            "supported_mean": 0.5321148129449306,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1262544.967874452,
+            "estimated_area_m2": 66250.3918904602,
+            "missing_area_m2": 129597.87204962964,
+            "observed_fraction": 0.8657095633278452,
+            "estimated_fraction": 0.045426974320246304,
+            "missing_fraction": 0.08886346235190845
+          },
+          {
+            "day": "2026-06-26",
+            "observed_mean": 0.5331538167419727,
+            "supported_mean": 0.5324757051662619,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1347702.70949894,
+            "estimated_area_m2": 4965.920238247259,
+            "missing_area_m2": 105724.60207735456,
+            "observed_fraction": 0.9241010449713346,
+            "estimated_fraction": 0.003405062592116277,
+            "missing_fraction": 0.07249389243654902
+          },
+          {
+            "day": "2026-07-01",
+            "observed_mean": 0.5143053895398579,
+            "supported_mean": 0.5143053895398579,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1458393.2318144832,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.9999999999999598,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-07-06",
+            "observed_mean": null,
+            "supported_mean": 0.4955160693283649,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-07-11",
+            "observed_mean": 0.47672674858173064,
+            "supported_mean": 0.47672674858173064,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1458393.2318144832,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.9999999999999598,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-07-16",
+            "observed_mean": 0.44946845902226507,
+            "supported_mean": 0.44946845902226507,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1458393.2318144832,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.9999999999999598,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 4.0190073491430667e-14
+          }
+        ]
+      },
+      {
+        "id": "east",
+        "name": "Eastern area",
+        "area_m2": 1743232.6830152434,
+        "area_crs": "EPSG:32723",
+        "fixed_observed_area_m2": 0.0,
+        "fixed_observed_fraction": 0.0,
+        "timeline": [
+          {
+            "day": "2026-06-01",
+            "observed_mean": 0.46219299986231005,
+            "supported_mean": 0.46219299986231005,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1674978.017361338,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 68254.66565390537,
+            "observed_fraction": 0.9608459235999142,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 0.039154076400085835
+          },
+          {
+            "day": "2026-06-06",
+            "observed_mean": 0.48941325488032256,
+            "supported_mean": 0.48900853955205037,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1565104.8118836205,
+            "estimated_area_m2": 56018.41233669806,
+            "missing_area_m2": 122109.45879492487,
+            "observed_fraction": 0.8978175014344512,
+            "estimated_fraction": 0.03213478778966205,
+            "missing_fraction": 0.07004771077588678
+          },
+          {
+            "day": "2026-06-11",
+            "observed_mean": 0.5107775731078764,
+            "supported_mean": 0.5100856648370807,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1495213.8202656433,
+            "estimated_area_m2": 89100.0,
+            "missing_area_m2": 158918.86274960008,
+            "observed_fraction": 0.8577247517407685,
+            "estimated_fraction": 0.05111193753313818,
+            "missing_fraction": 0.0911633107260934
+          },
+          {
+            "day": "2026-06-16",
+            "observed_mean": null,
+            "supported_mean": 0.5210301475894464,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1398585.6885694992,
+            "missing_area_m2": 344646.9944457442,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.8022943249035387,
+            "missing_fraction": 0.1977056750964613
+          },
+          {
+            "day": "2026-06-21",
+            "observed_mean": 0.5329189266539898,
+            "supported_mean": 0.5317523350564392,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1368561.8927078538,
+            "estimated_area_m2": 77342.65861123937,
+            "missing_area_m2": 297328.1316961502,
+            "observed_fraction": 0.7850712679047945,
+            "estimated_fraction": 0.04436737525908529,
+            "missing_fraction": 0.17056135683612017
+          },
+          {
+            "day": "2026-06-26",
+            "observed_mean": 0.5334079669528393,
+            "supported_mean": 0.5282815122684374,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1235376.2266730794,
+            "estimated_area_m2": 98928.32464601379,
+            "missing_area_m2": 408928.1316961502,
+            "observed_fraction": 0.7086697253382536,
+            "estimated_fraction": 0.05674992535987735,
+            "missing_fraction": 0.2345803493018691
+          },
+          {
+            "day": "2026-07-01",
+            "observed_mean": 0.5067656907177321,
+            "supported_mean": 0.50216666770361,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1219104.5513190932,
+            "estimated_area_m2": 54900.0,
+            "missing_area_m2": 469228.1316961502,
+            "observed_fraction": 0.6993355294431643,
+            "estimated_fraction": 0.03149321403556999,
+            "missing_fraction": 0.2691712565212656
+          },
+          {
+            "day": "2026-07-06",
+            "observed_mean": null,
+            "supported_mean": 0.47905381507010525,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1121904.5513190932,
+            "missing_area_m2": 621328.1316961502,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.6435770521342864,
+            "missing_fraction": 0.3564229478657136
+          },
+          {
+            "day": "2026-07-11",
+            "observed_mean": 0.4410046047420614,
+            "supported_mean": 0.441386351606755,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1206832.6830152373,
+            "estimated_area_m2": 10800.0,
+            "missing_area_m2": 525600.000000006,
+            "observed_fraction": 0.6922958104065585,
+            "estimated_fraction": 0.0061953863676531135,
+            "missing_fraction": 0.3015088032257883
+          },
+          {
+            "day": "2026-07-16",
+            "observed_mean": 0.3901154198748304,
+            "supported_mean": 0.3901154198748304,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1188220.6816424327,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 555012.0013728107,
+            "observed_fraction": 0.6816190937787979,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 0.3183809062212021
+          }
+        ]
+      }
+    ],
+    "display": {
+      "bounds": [
+        -44.660082338846905,
+        -22.410280739497097,
+        -44.63992084033618,
+        -22.389910810113047
+      ],
+      "grid": {
+        "crs": "EPSG:3857",
+        "transform": [
+          32.52706880932269,
+          0.0,
+          -4971537.624746108,
+          0.0,
+          -32.701768037496755,
+          -2558403.519845236
+        ],
+        "width": 69,
+        "height": 75
+      },
+      "method": "Nearest-neighbor Web Mercator display reprojection; inspect original analysis cells",
+      "composite_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/map-composite.png"
+    },
+    "elapsed_seconds": 0.355,
+    "sampling": "Projected common grid; QA applied on native grids before area averaging. Bands matched by sensor. Output pixels are masked below the clear-support threshold.",
+    "limitations": [
+      "Bandpass adjustment on ordinary SR is partial harmonization; no BRDF normalization or common atmospheric reprocessing.",
+      "Daily mosaics represent a UTC day, not a simultaneous multi-sensor exposure.",
+      "Interpolation is allowed only between clear observations within max_gap_days, can smear change, and never extrapolates.",
+      "Search limits/truncation are retained; these scenes do not guarantee complete temporal or AOI coverage."
+    ],
+    "coverage_notes": [
+      "Coverage goal 95% was not met: 87.0% supported. All planned candidates within the scene budget were prepared; missing data remain explicit."
+    ],
+    "before_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/before.png",
+    "preview_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/preview.png",
+    "stack_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/stack.npz",
+    "series_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/series.npz",
+    "support_cog_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/series-support.tif",
+    "cog_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/analysis.tif",
+    "composite_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/composite.tif",
+    "provenance_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/provenance.tif",
+    "manifest_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/manifest.json",
+    "fields_csv_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/fields.csv",
+    "fields_geojson_url": "/api/runs/9d3c0f46244c48df82d48dad5030f911/fields.geojson",
+    "outputs": [
+      {
+        "path": "analysis.tif",
+        "sha256": "4f7e14faff44c2aec2a54b7c73813ef5ea18cdb9fbef0a8c48032bd8b466bff0"
+      },
+      {
+        "path": "before.png",
+        "sha256": "e3ef41ce9a025e63a62ac8a79142f440b9aee41f2fed81c98939afc4e9d9fea7"
+      },
+      {
+        "path": "composite.tif",
+        "sha256": "746fa0102f51569add73c1536b7a8d8fccc183b5b32b67693227a3004de3b80c"
+      },
+      {
+        "path": "fields.csv",
+        "sha256": "603e25aff3bb6a9bc328f9f8441963c77d0cfe407725cf4e3c8c0cd272b8a88b"
+      },
+      {
+        "path": "fields.geojson",
+        "sha256": "0aecf9866a4408ff9e2f08c54c0ed7a32ad04edfa302edc8d00363ba2cda11ad"
+      },
+      {
+        "path": "frame-0000.png",
+        "sha256": "e3ef41ce9a025e63a62ac8a79142f440b9aee41f2fed81c98939afc4e9d9fea7"
+      },
+      {
+        "path": "frame-0001.png",
+        "sha256": "73f9ff4b9f74ff6f430bb869fe95760757903746415227204fc70fff7e3b5f78"
+      },
+      {
+        "path": "frame-0002.png",
+        "sha256": "6ebf6412502c87d63825c4ab8fdc1a09a48f79f3df488af7698aa2daf67794f1"
+      },
+      {
+        "path": "frame-0003.png",
+        "sha256": "0474618ab91feceeb6a128bc759413d26e0903046712ec338869f8fcd3afe253"
+      },
+      {
+        "path": "frame-0004.png",
+        "sha256": "aa3f9a44b89d634a0998ceeac578b40f0936e6a3f78824fa3eb34479ff5d3c64"
+      },
+      {
+        "path": "frame-0005.png",
+        "sha256": "baf26f635bca057fd2fbdcbc39e5123b4f1f61b4a7ddc82c9d7e8dd2a8897847"
+      },
+      {
+        "path": "frame-0006.png",
+        "sha256": "c59ccd529b44e444882f2b99ae0659462f7f2b8cbc97208a5e050484766b333f"
+      },
+      {
+        "path": "frame-0007.png",
+        "sha256": "72bfe901a4e67b222a6aae9705a5a0cf8aa5d9e3126689fc3830dec7348ee5f7"
+      },
+      {
+        "path": "frame-0008.png",
+        "sha256": "002d874b8418abe7e9c6cc32aa7919d80c4239514e749ab135a7f2d15ffa0104"
+      },
+      {
+        "path": "frame-0009.png",
+        "sha256": "43c31dca2a594c37c728886e0d3d2bccb0fd8e3ad5297e9d0126c4f9875e7d79"
+      },
+      {
+        "path": "map-composite.png",
+        "sha256": "9be1c06623d77e043df2c7623549267312f87bc1cbdd8973ca63fab24e3c2e3d"
+      },
+      {
+        "path": "map-frame-0000.png",
+        "sha256": "e3ef41ce9a025e63a62ac8a79142f440b9aee41f2fed81c98939afc4e9d9fea7"
+      },
+      {
+        "path": "map-frame-0001.png",
+        "sha256": "73f9ff4b9f74ff6f430bb869fe95760757903746415227204fc70fff7e3b5f78"
+      },
+      {
+        "path": "map-frame-0002.png",
+        "sha256": "6ebf6412502c87d63825c4ab8fdc1a09a48f79f3df488af7698aa2daf67794f1"
+      },
+      {
+        "path": "map-frame-0003.png",
+        "sha256": "0474618ab91feceeb6a128bc759413d26e0903046712ec338869f8fcd3afe253"
+      },
+      {
+        "path": "map-frame-0004.png",
+        "sha256": "aa3f9a44b89d634a0998ceeac578b40f0936e6a3f78824fa3eb34479ff5d3c64"
+      },
+      {
+        "path": "map-frame-0005.png",
+        "sha256": "baf26f635bca057fd2fbdcbc39e5123b4f1f61b4a7ddc82c9d7e8dd2a8897847"
+      },
+      {
+        "path": "map-frame-0006.png",
+        "sha256": "c59ccd529b44e444882f2b99ae0659462f7f2b8cbc97208a5e050484766b333f"
+      },
+      {
+        "path": "map-frame-0007.png",
+        "sha256": "72bfe901a4e67b222a6aae9705a5a0cf8aa5d9e3126689fc3830dec7348ee5f7"
+      },
+      {
+        "path": "map-frame-0008.png",
+        "sha256": "002d874b8418abe7e9c6cc32aa7919d80c4239514e749ab135a7f2d15ffa0104"
+      },
+      {
+        "path": "map-frame-0009.png",
+        "sha256": "43c31dca2a594c37c728886e0d3d2bccb0fd8e3ad5297e9d0126c4f9875e7d79"
+      },
+      {
+        "path": "map-support-0000.png",
+        "sha256": "be797cd3cb94d16743d6c4c3b1480b8f1eef62d3c20419c72b9d4b2b1eed2b4a"
+      },
+      {
+        "path": "map-support-0001.png",
+        "sha256": "9357c4a0a7cd7747ab37ae1a4669f888e4f70f43a705f45ed01bcfb2111e624f"
+      },
+      {
+        "path": "map-support-0002.png",
+        "sha256": "fdeae0b2256d3daaa70af784e185ed7e71d6dd2388bcbd0fb7dd3f27837a3014"
+      },
+      {
+        "path": "map-support-0003.png",
+        "sha256": "a900aeb018919b58f202645fd03e76571a3fb4f0d78adf5aa816295d7a9b69ed"
+      },
+      {
+        "path": "map-support-0004.png",
+        "sha256": "ad11fde2b37009d10b7645ea2d9b157c39e69baf9d91e799837d2bb1c41a43f5"
+      },
+      {
+        "path": "map-support-0005.png",
+        "sha256": "ee1231fb27b88b0e671161b185f00c1cce7d7f2b22157587483b38ebcecc42fd"
+      },
+      {
+        "path": "map-support-0006.png",
+        "sha256": "c0a469bfc23e7c2d7247a8e3d33ea1c2c67834b0c1e16f0ca2b4c1e436fe70b5"
+      },
+      {
+        "path": "map-support-0007.png",
+        "sha256": "3b6d670eb8f164e242eea478fc26b3d60ae394cd33cfc0713a51b29140814499"
+      },
+      {
+        "path": "map-support-0008.png",
+        "sha256": "5e5a6471e3fb1b3c5ae7ea3b1d07dc7429a28c1ec484873b2d5c6ce28c36093a"
+      },
+      {
+        "path": "map-support-0009.png",
+        "sha256": "3181b6a9dc3a49db09dae9092fc5f5b608a4129c508c62e17c12a71a4da10349"
+      },
+      {
+        "path": "preview.png",
+        "sha256": "9be1c06623d77e043df2c7623549267312f87bc1cbdd8973ca63fab24e3c2e3d"
+      },
+      {
+        "path": "provenance.tif",
+        "sha256": "3e9f340ff6eb91b471332d076688b5d1409e987efadb17c3602dbcccffd13f93"
+      },
+      {
+        "path": "series-support.tif",
+        "sha256": "385e4c9a1e4a1b38783b5945f95d9f0a1ff8277ff3bc9129d743a8366b59f67c"
+      },
+      {
+        "path": "series.npz",
+        "sha256": "f204aa895c347b6b787c6f20404ffd6e89e4b5572ee0a249b5a9c0c593b70d76"
+      },
+      {
+        "path": "stack.npz",
+        "sha256": "36365ffff661f70e87b694df4e605ab384701b63562ee8f8532a2e0b3533173d"
+      },
+      {
+        "path": "support-0000.png",
+        "sha256": "dd3a3f13d0ab3356a831d03703a4e6ba3f1d73e55012490197024d5b7fe45658"
+      },
+      {
+        "path": "support-0001.png",
+        "sha256": "1e9b5ed8eb206ac041ec9fd74f38e9dd687f8d2416638d8bfb38ad06f84df773"
+      },
+      {
+        "path": "support-0002.png",
+        "sha256": "5b90f1657bbfa8462934570f60e13670329a7aee884898239dcba91ce9861083"
+      },
+      {
+        "path": "support-0003.png",
+        "sha256": "fc70e641e8d3e0895223e1974d95bd92c95486d4bd2a1bc1c121c0d4820b1b48"
+      },
+      {
+        "path": "support-0004.png",
+        "sha256": "778ee47e5087acbf773142166fef9127cfe19fab6e3b4b59244c4132a1eda1eb"
+      },
+      {
+        "path": "support-0005.png",
+        "sha256": "7cda2ff0d86f47809aa8fc964587023a20799166518d642867beca5f8ac5fbac"
+      },
+      {
+        "path": "support-0006.png",
+        "sha256": "47fb9b512028f26be9606aebcd9eb1854659bf8189b7d1c77f39820a195279f7"
+      },
+      {
+        "path": "support-0007.png",
+        "sha256": "cd7c2db56e5fdebfda1fc9fd54feb1429b15530323331af35eb0b81621a093f5"
+      },
+      {
+        "path": "support-0008.png",
+        "sha256": "fb895d8dff630665a9fe16eecdb4df342311fc1a5bd3c60f54175a0704a5a49d"
+      },
+      {
+        "path": "support-0009.png",
+        "sha256": "7f09725072c27ddeea43f16b8ef6fcc44391ddc11e943b1673018a1e59113982"
+      }
+    ],
+    "timings": {
+      "catalog_seconds": 0.0,
+      "processing_export_seconds": 0.355,
+      "total_seconds": 0.356
+    }
+  },
+  "point": {
+    "run_id": "9d3c0f46244c48df82d48dad5030f911",
+    "row": 37,
+    "col": 34,
+    "longitude": -44.65000232163848,
+    "latitude": -22.40009608292789,
+    "x": 536025.0,
+    "y": 7522845.0,
+    "crs": "EPSG:32723",
+    "index": "ndvi",
+    "units": "1",
+    "synthetic": true,
+    "series": [
+      {
+        "day": "2026-06-01",
+        "value": 0.46464917063713074,
+        "support": 1,
+        "left_source": {
+          "index": 0,
+          "id": "synthetic-sentinel-2a-00",
+          "platform": "sentinel-2a",
+          "datetime": "2026-06-01T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "right_source": {
+          "index": 0,
+          "id": "synthetic-sentinel-2a-00",
+          "platform": "sentinel-2a",
+          "datetime": "2026-06-01T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-06-06",
+        "value": 0.49159249663352966,
+        "support": 1,
+        "left_source": {
+          "index": 1,
+          "id": "synthetic-landsat-8-05",
+          "platform": "landsat-8",
+          "datetime": "2026-06-06T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "right_source": {
+          "index": 1,
+          "id": "synthetic-landsat-8-05",
+          "platform": "landsat-8",
+          "datetime": "2026-06-06T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-06-11",
+        "value": 0.5136982798576355,
+        "support": 1,
+        "left_source": {
+          "index": 2,
+          "id": "synthetic-sentinel-2b-10",
+          "platform": "sentinel-2b",
+          "datetime": "2026-06-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "right_source": {
+          "index": 2,
+          "id": "synthetic-sentinel-2b-10",
+          "platform": "sentinel-2b",
+          "datetime": "2026-06-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-06-16",
+        "value": null,
+        "support": 0,
+        "left_source": null,
+        "right_source": null,
+        "bracket_days": null
+      },
+      {
+        "day": "2026-06-21",
+        "value": null,
+        "support": 0,
+        "left_source": null,
+        "right_source": null,
+        "bracket_days": null
+      },
+      {
+        "day": "2026-06-26",
+        "value": null,
+        "support": 0,
+        "left_source": null,
+        "right_source": null,
+        "bracket_days": null
+      },
+      {
+        "day": "2026-07-01",
+        "value": null,
+        "support": 0,
+        "left_source": null,
+        "right_source": null,
+        "bracket_days": null
+      },
+      {
+        "day": "2026-07-06",
+        "value": null,
+        "support": 0,
+        "left_source": null,
+        "right_source": null,
+        "bracket_days": null
+      },
+      {
+        "day": "2026-07-11",
+        "value": 0.2476494312286377,
+        "support": 1,
+        "left_source": {
+          "index": 6,
+          "id": "synthetic-landsat-8-40",
+          "platform": "landsat-8",
+          "datetime": "2026-07-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "right_source": {
+          "index": 6,
+          "id": "synthetic-landsat-8-40",
+          "platform": "landsat-8",
+          "datetime": "2026-07-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-07-16",
+        "value": 0.21411031484603882,
+        "support": 1,
+        "left_source": {
+          "index": 7,
+          "id": "synthetic-landsat-9-45",
+          "platform": "landsat-9",
+          "datetime": "2026-07-16T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "right_source": {
+          "index": 7,
+          "id": "synthetic-landsat-9-45",
+          "platform": "landsat-9",
+          "datetime": "2026-07-16T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "bracket_days": 0.0
+      }
+    ]
+  },
+  "checks": [
+    "GeoJSON polygon holes",
+    "polygon drawing and removal",
+    "project save and revision",
+    "QA-measured acquisition stopping",
+    "map polygon selection",
+    "map cell inspection",
+    "area CSV exact values and area balance",
+    "reopen project without acquisition",
+    "support layer",
+    "fixed observed footprint null handling",
+    "390px layout"
+  ],
+  "errors": []
+}

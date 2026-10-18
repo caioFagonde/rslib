@@ -1,0 +1,35 @@
+{
+  "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "synthetic": false,
+  "pair_count": 1,
+  "reference": {
+    "index": 1,
+    "id": "LC09_L2SP_218076_20260618_02_T1",
+    "platform": "landsat-9",
+    "datetime": "2026-06-18T12:57:33.519817Z",
+    "family": "landsat-oli"
+  },
+  "comparison": {
+    "index": 2,
+    "id": "S2B_T23KNR_20260619T131449_L2A",
+    "platform": "sentinel-2b",
+    "datetime": "2026-06-19T13:18:19.012000Z",
+    "family": "sentinel-2"
+  },
+  "inspected_scatter_cell": {
+    "row": 0,
+    "column": 0
+  },
+  "assertions": {
+    "api_matches_checksum_report": true,
+    "scatter_opens_actual_grid_cell": true,
+    "band_selection": true,
+    "empty_overlap_result_explicit": true,
+    "research_entries": 98,
+    "classical_method_entries": 28,
+    "verified_checkpoint_entries": 8,
+    "domain_search_filters_work": true,
+    "mobile_no_horizontal_overflow": true,
+    "page_errors": []
+  }
+}

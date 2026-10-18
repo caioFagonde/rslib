@@ -1,0 +1,109 @@
+{
+  "kind": "Actual pretrained inference on real satellite data; no HR ground truth",
+  "scene": "S2B_T23KNR_20260729T131748_L2A",
+  "provider": "earth-search",
+  "collection": "sentinel-2-c1-l2a",
+  "center_lon_lat": [
+    -44.65,
+    -22.4
+  ],
+  "input_grid": {
+    "crs": "EPSG:32723",
+    "transform": [
+      10.0,
+      0.0,
+      535385.2637250612,
+      0.0,
+      -10.0,
+      7523495.635140831
+    ],
+    "width": 128,
+    "height": 128
+  },
+  "output_grid": {
+    "crs": "EPSG:32723",
+    "transform": [
+      2.5,
+      0.0,
+      535385.2637250612,
+      0.0,
+      -2.5,
+      7523495.635140831
+    ],
+    "width": 512,
+    "height": 512
+  },
+  "clear_fraction": 1.0,
+  "model": {
+    "id": "SEN2SRLite_NonReference_RGBN_x4",
+    "revision": "469e9b3a049f9320ba66b3a39b9655dbd31480b3",
+    "package": "sen2sr==0.8.5",
+    "weights_sha256": {
+      "model.safetensor": "479aa796d5068d0b1206118ccbca27bd3223df0214db1a9b31a1e18349ed1c7e",
+      "hard_constraint.safetensor": "fbad981519066387c413ead1d6af7ef3e0d2947c34147ba90163fc79ae539239"
+    },
+    "source": "https://github.com/ESAOpenSR/SEN2SR",
+    "weights_license": "cc0-1.0 (upstream model repository card)",
+    "bands": [
+      "B04",
+      "B03",
+      "B02",
+      "B08"
+    ],
+    "input_units": "L2A surface reflectance",
+    "input_spacing_m": 10,
+    "output_grid_spacing_m": 2.5,
+    "scale": 4,
+    "tile_size": 128,
+    "architecture": "SPAN + Fourier hard constraint",
+    "training_domain": "SEN2NAIPv2; transfer to other regions requires evaluation",
+    "interpretation": "Model-derived detail; 2.5 m grid is not verified 2.5 m spatial resolution"
+  },
+  "device": "cuda",
+  "precision": "float16",
+  "fft_precision": "float32",
+  "tile_size": 128,
+  "halo": 16,
+  "batch_size": 1,
+  "input_shape": [
+    4,
+    128,
+    128
+  ],
+  "output_shape": [
+    4,
+    512,
+    512
+  ],
+  "seconds_warm_repeats": [
+    0.07688091698219068,
+    0.08365901300567202,
+    0.07451656999182887
+  ],
+  "seconds_warm_median": 0.07688091698219068,
+  "timing_scope": "inference, halo assembly and device transfers; excludes acquisition, loading and export",
+  "torch": "2.7.1+cu126",
+  "python": "3.12.7",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "gpu_total_mib": 5806.3125,
+  "peak_torch_allocated_mib": 102.47998046875,
+  "peak_torch_reserved_mib": 136.0,
+  "memory_scope": "PyTorch allocator only; excludes driver, CUDA context and other processes",
+  "box_average_back_to_native_rmse_rgbn": [
+    0.00043786384048871696,
+    0.00048826474812813103,
+    0.00048403377877548337,
+    0.0022886483930051327
+  ],
+  "metric_scope": "Diagnostic box-average consistency, not the sensor PSF and not HR accuracy",
+  "artifacts": [
+    {
+      "path": "data/superresolution/native-rgbn.tif",
+      "sha256": "116e7cc9ef87559b11183da8720893e6dcc2cdf1973f510499ba904c47d3b0c1"
+    },
+    {
+      "path": "data/superresolution/sen2sr-lite-rgbn.tif",
+      "sha256": "e4ffc39e375bbc81d0832c9b4dcc501b32ba2accf59495db85037ecdc367b980"
+    }
+  ]
+}

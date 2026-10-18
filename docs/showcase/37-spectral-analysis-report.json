@@ -1,0 +1,1801 @@
+{
+  "schema_version": "rslib-spectral-analysis/1",
+  "id": "4c2574f10b8748ee867ce7880f2fe222",
+  "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "recipe": {
+    "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+    "source_index": 2,
+    "components": 3,
+    "endmembers": 3,
+    "projection": "affine",
+    "seed": 0,
+    "input_checksums": {
+      "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+      "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+    }
+  },
+  "implementation": {
+    "algorithm_contract": "rslib-spectral/1",
+    "rslib": "0.1.0",
+    "python": "3.12.7",
+    "numpy": "2.5.4",
+    "rasterio": "1.5.2",
+    "gdal": "3.12.2",
+    "source_sha256": {
+      "spectral.py": "82e4401f22575255578792c22d6742fe87eece76d39ebe48c7461b57f87a29f6",
+      "spectral_workflow.py": "519cb705d8f5db864ed1f3c33b3678ea2fe7f9ec33044323bc10d3037b7ee4ea",
+      "spectral_request.py": "636d33a61a4140834aa87419419baeaa17f5b0b88820f87aa0290d73a5dd924f",
+      "spectral_artifacts.py": "47ed9d99413bcab326a42f85aa22369d61f70df3de32a10a6a211dc865b8223d",
+      "raster.py": "69f246fabacbef9ebec000f0e11282f7f46da8d397c8818fb91498907227275e",
+      "validation.py": "724a2eb943d23470d6f52d2bc021b3799497b15ec97093628cee27648911c2f7"
+    }
+  },
+  "parent": {
+    "request": {
+      "demo": false,
+      "bbox": {
+        "west": -44.66,
+        "south": -22.41,
+        "east": -44.64,
+        "north": -22.39
+      },
+      "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+      "sensors": [
+        "sentinel-2",
+        "landsat"
+      ],
+      "max_scenes_per_sensor": 4,
+      "max_cloud": 40.0,
+      "resolution": 30.0,
+      "cloud_buffer_m": 60.0,
+      "min_clear_fraction": 0.9,
+      "index": "ndvi",
+      "step_days": 1,
+      "max_gap_days": 20.0,
+      "refresh": false,
+      "fields": [
+        {
+          "id": "west",
+          "name": "Western area",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -44.659,
+                  -22.409
+                ],
+                [
+                  -44.651,
+                  -22.409
+                ],
+                [
+                  -44.651,
+                  -22.391
+                ],
+                [
+                  -44.659,
+                  -22.391
+                ],
+                [
+                  -44.659,
+                  -22.409
+                ]
+              ],
+              [
+                [
+                  -44.657,
+                  -22.402
+                ],
+                [
+                  -44.653,
+                  -22.402
+                ],
+                [
+                  -44.653,
+                  -22.398
+                ],
+                [
+                  -44.657,
+                  -22.398
+                ],
+                [
+                  -44.657,
+                  -22.402
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "east",
+          "name": "Eastern area",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -44.65,
+                  -22.409
+                ],
+                [
+                  -44.641,
+                  -22.409
+                ],
+                [
+                  -44.641,
+                  -22.391
+                ],
+                [
+                  -44.646,
+                  -22.393
+                ],
+                [
+                  -44.65,
+                  -22.391
+                ],
+                [
+                  -44.65,
+                  -22.409
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "coverage_target": 0.8
+    },
+    "summary": {
+      "observations": 6,
+      "daily_mosaics": 6,
+      "regular_dates": 46,
+      "platforms": [
+        "landsat-8",
+        "landsat-9",
+        "sentinel-2b",
+        "sentinel-2c"
+      ],
+      "cache_hits": 4,
+      "observed_fraction": 0.1260239445494644,
+      "filled_fraction": 0.6073715492430048,
+      "unsupported_fraction": 0.2666045062075308
+    },
+    "coverage_notes": [
+      "Coverage goal 80% was not met: 73.3% supported. All planned candidates within the scene budget were prepared; missing data remain explicit."
+    ],
+    "limitations": [
+      "Bandpass adjustment on ordinary SR is partial harmonization; no BRDF normalization or common atmospheric reprocessing.",
+      "Daily mosaics represent a UTC day, not a simultaneous multi-sensor exposure.",
+      "Interpolation is allowed only between clear observations within max_gap_days, can smear change, and never extrapolates.",
+      "Search limits/truncation are retained; these scenes do not guarantee complete temporal or AOI coverage."
+    ],
+    "fields": [
+      {
+        "id": "west",
+        "name": "Western area",
+        "area_m2": 1458393.2318145419,
+        "area_crs": "EPSG:32723",
+        "fixed_observed_area_m2": 0.0,
+        "fixed_observed_fraction": 0.0,
+        "timeline": [
+          {
+            "day": "2026-06-01",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-02",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-03",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-04",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-05",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-06",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-07",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-08",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-09",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-10",
+            "observed_mean": 0.6778471507882144,
+            "supported_mean": 0.6778471507882144,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1458393.2318144832,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.9999999999999598,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-11",
+            "observed_mean": null,
+            "supported_mean": 0.6805282196173089,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-12",
+            "observed_mean": null,
+            "supported_mean": 0.6832092873720857,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-13",
+            "observed_mean": null,
+            "supported_mean": 0.6858903558883892,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-14",
+            "observed_mean": null,
+            "supported_mean": 0.6885714233558972,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-15",
+            "observed_mean": null,
+            "supported_mean": 0.6912524923116197,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-16",
+            "observed_mean": null,
+            "supported_mean": 0.6939335608144327,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-17",
+            "observed_mean": null,
+            "supported_mean": 0.696614628545158,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-18",
+            "observed_mean": 0.6992956973930236,
+            "supported_mean": 0.6992956973930236,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1458393.2318144832,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.9999999999999598,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-19",
+            "observed_mean": 0.71364735815427,
+            "supported_mean": 0.7137775786104359,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1335988.770017811,
+            "estimated_area_m2": 5468.829997647554,
+            "missing_area_m2": 116935.6317990832,
+            "observed_fraction": 0.9160689592309514,
+            "estimated_fraction": 0.003749900834936817,
+            "missing_fraction": 0.08018113993411169
+          },
+          {
+            "day": "2026-06-20",
+            "observed_mean": null,
+            "supported_mean": 0.7129137867368998,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-21",
+            "observed_mean": null,
+            "supported_mean": 0.7118518075539799,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-22",
+            "observed_mean": null,
+            "supported_mean": 0.710789825592932,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-23",
+            "observed_mean": null,
+            "supported_mean": 0.7097278469275781,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-24",
+            "observed_mean": null,
+            "supported_mean": 0.7086658656987282,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-25",
+            "observed_mean": null,
+            "supported_mean": 0.7076038846549526,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-26",
+            "observed_mean": null,
+            "supported_mean": 0.7065419056109326,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-27",
+            "observed_mean": null,
+            "supported_mean": 0.7054799240270162,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-28",
+            "observed_mean": null,
+            "supported_mean": 0.7044179449422454,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-29",
+            "observed_mean": 0.7035304908030042,
+            "supported_mean": 0.7033559639778908,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1335157.6000154587,
+            "estimated_area_m2": 1800.0,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.9154990374950159,
+            "estimated_fraction": 0.0012342350202492567,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-30",
+            "observed_mean": null,
+            "supported_mean": 0.7010543557896846,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-01",
+            "observed_mean": null,
+            "supported_mean": 0.6987527463222345,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-02",
+            "observed_mean": null,
+            "supported_mean": 0.6964511365496905,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-03",
+            "observed_mean": null,
+            "supported_mean": 0.6941495278533417,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-04",
+            "observed_mean": null,
+            "supported_mean": 0.6918479179222725,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-05",
+            "observed_mean": null,
+            "supported_mean": 0.6895463101411629,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-06",
+            "observed_mean": null,
+            "supported_mean": 0.6872447009877805,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-07",
+            "observed_mean": null,
+            "supported_mean": 0.684943091503879,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-08",
+            "observed_mean": null,
+            "supported_mean": 0.6826414823401202,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-09",
+            "observed_mean": 0.6801602164630834,
+            "supported_mean": 0.6801660263874215,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1336957.6000154587,
+            "estimated_area_m2": 2700.0,
+            "missing_area_m2": 118735.6317990832,
+            "observed_fraction": 0.9167332725152652,
+            "estimated_fraction": 0.0018513525303738851,
+            "missing_fraction": 0.08141537495436102
+          },
+          {
+            "day": "2026-07-10",
+            "observed_mean": null,
+            "supported_mean": 0.6848856892171601,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1335157.6000154587,
+            "missing_area_m2": 123235.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9154990374950159,
+            "missing_fraction": 0.08450096250498407
+          },
+          {
+            "day": "2026-07-11",
+            "observed_mean": null,
+            "supported_mean": 0.6891519581838005,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1335157.6000154587,
+            "missing_area_m2": 123235.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9154990374950159,
+            "missing_fraction": 0.08450096250498407
+          },
+          {
+            "day": "2026-07-12",
+            "observed_mean": null,
+            "supported_mean": 0.693418227511148,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1335157.6000154587,
+            "missing_area_m2": 123235.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9154990374950159,
+            "missing_fraction": 0.08450096250498407
+          },
+          {
+            "day": "2026-07-13",
+            "observed_mean": null,
+            "supported_mean": 0.6976844963441495,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1335157.6000154587,
+            "missing_area_m2": 123235.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9154990374950159,
+            "missing_fraction": 0.08450096250498407
+          },
+          {
+            "day": "2026-07-14",
+            "observed_mean": 0.7020477094418549,
+            "supported_mean": 0.7020477094418549,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1348747.178993049,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 109646.05282149278,
+            "observed_fraction": 0.9248172232086743,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 0.07518277679132568
+          },
+          {
+            "day": "2026-07-15",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-07-16",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          }
+        ]
+      },
+      {
+        "id": "east",
+        "name": "Eastern area",
+        "area_m2": 1743232.6830152434,
+        "area_crs": "EPSG:32723",
+        "fixed_observed_area_m2": 0.0,
+        "fixed_observed_fraction": 0.0,
+        "timeline": [
+          {
+            "day": "2026-06-01",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-02",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-03",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-04",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-05",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-06",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-07",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-08",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-09",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-10",
+            "observed_mean": 0.7087835613241849,
+            "supported_mean": 0.7087835613241849,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-11",
+            "observed_mean": null,
+            "supported_mean": 0.7138960956486012,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-12",
+            "observed_mean": null,
+            "supported_mean": 0.7190086308034568,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-13",
+            "observed_mean": null,
+            "supported_mean": 0.7241211650103179,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-14",
+            "observed_mean": null,
+            "supported_mean": 0.7292336995383782,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-15",
+            "observed_mean": null,
+            "supported_mean": 0.7343462341135498,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-16",
+            "observed_mean": null,
+            "supported_mean": 0.7394587683204109,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-17",
+            "observed_mean": null,
+            "supported_mean": 0.7445713034752668,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-18",
+            "observed_mean": 0.7496838377996828,
+            "supported_mean": 0.7496838377996828,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-19",
+            "observed_mean": 0.766619617523656,
+            "supported_mean": 0.766619617523656,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-20",
+            "observed_mean": null,
+            "supported_mean": 0.7656180911695022,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-21",
+            "observed_mean": null,
+            "supported_mean": 0.7646165644341743,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-22",
+            "observed_mean": null,
+            "supported_mean": 0.7636150378357129,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-23",
+            "observed_mean": null,
+            "supported_mean": 0.7626135118633158,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-24",
+            "observed_mean": null,
+            "supported_mean": 0.7616119848440476,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-25",
+            "observed_mean": null,
+            "supported_mean": 0.760610459347887,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-26",
+            "observed_mean": null,
+            "supported_mean": 0.7596089332690182,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-27",
+            "observed_mean": null,
+            "supported_mean": 0.7586074067966945,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-28",
+            "observed_mean": null,
+            "supported_mean": 0.7576058799758296,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-29",
+            "observed_mean": 0.7566043536819933,
+            "supported_mean": 0.7566043536819933,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-30",
+            "observed_mean": null,
+            "supported_mean": 0.7543714938491837,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-01",
+            "observed_mean": null,
+            "supported_mean": 0.7521386328031532,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-02",
+            "observed_mean": null,
+            "supported_mean": 0.7499057712249236,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-03",
+            "observed_mean": null,
+            "supported_mean": 0.747672911250111,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-04",
+            "observed_mean": null,
+            "supported_mean": 0.745440050688149,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-05",
+            "observed_mean": null,
+            "supported_mean": 0.7432071914162833,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-06",
+            "observed_mean": null,
+            "supported_mean": 0.7409743303670754,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-07",
+            "observed_mean": null,
+            "supported_mean": 0.7387414698786275,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-08",
+            "observed_mean": null,
+            "supported_mean": 0.73650860965325,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-09",
+            "observed_mean": 0.734275749015174,
+            "supported_mean": 0.734275749015174,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-10",
+            "observed_mean": null,
+            "supported_mean": 0.7286217112281916,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1582208.6661654245,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9076290741799895,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-11",
+            "observed_mean": null,
+            "supported_mean": 0.7322114664284051,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1582208.6661654245,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9076290741799895,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-12",
+            "observed_mean": null,
+            "supported_mean": 0.7358012223081638,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1582208.6661654245,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9076290741799895,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-13",
+            "observed_mean": null,
+            "supported_mean": 0.7393909775422814,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1582208.6661654245,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9076290741799895,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-14",
+            "observed_mean": 0.7429807328977331,
+            "supported_mean": 0.7429807328977331,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1582208.6661654245,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.9076290741799895,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-15",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-07-16",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          }
+        ]
+      }
+    ]
+  },
+  "input_checksums": {
+    "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+    "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+  },
+  "synthetic": false,
+  "source_index": 2,
+  "source": {
+    "cache_key": "9e92a5ef6c8257057d37bf1d294ac30aaa7b9b06d26ff6b9645fa107e1776e8f",
+    "id": "S2B_T23KNR_20260619T131449_L2A",
+    "collection": "sentinel-2-c1-l2a",
+    "provider": "earth-search",
+    "datetime": "2026-06-19T13:18:19.012000Z",
+    "platform": "sentinel-2b",
+    "family": "sentinel-2",
+    "already_harmonized": false,
+    "inputs": [
+      {
+        "band": "blue",
+        "asset": "blue",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B02.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "green",
+        "asset": "green",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B03.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "red",
+        "asset": "red",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B04.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "nir",
+        "asset": "nir08",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B8A.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      },
+      {
+        "band": "swir16",
+        "asset": "swir16",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B11.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      },
+      {
+        "band": "swir22",
+        "asset": "swir22",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B12.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      }
+    ],
+    "adjustment": {
+      "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+      "coefficients": {
+        "blue": {
+          "slope": 0.9778,
+          "offset": -0.004
+        },
+        "green": {
+          "slope": 1.0075,
+          "offset": -0.0008
+        },
+        "red": {
+          "slope": 0.9761,
+          "offset": 0.001
+        },
+        "nir": {
+          "slope": 0.9966,
+          "offset": 0.0
+        },
+        "swir16": {
+          "slope": 1.0,
+          "offset": -0.0003
+        },
+        "swir22": {
+          "slope": 0.9867,
+          "offset": 0.0004
+        }
+      },
+      "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+      "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+    },
+    "clear_fraction": 0.9590677634155895,
+    "cache_hit": true
+  },
+  "grid": {
+    "crs": "EPSG:32723",
+    "transform": [
+      30.0,
+      0.0,
+      534990.0,
+      0.0,
+      -30.0,
+      7523970.0
+    ],
+    "width": 69,
+    "height": 75
+  },
+  "pca": {
+    "method": "Centered covariance PCA; no per-band standardization or whitening",
+    "bands": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir16",
+      "swir22"
+    ],
+    "mean": [
+      0.016531434690068944,
+      0.03471313720883386,
+      0.031212831791194582,
+      0.21866985338715136,
+      0.15444646769256307,
+      0.08280426898865839
+    ],
+    "loadings": [
+      [
+        -0.09036073048846283,
+        -0.06662173808436178,
+        -0.1926215588240289,
+        0.8153110992187328,
+        -0.37196050563258326,
+        -0.3836751376056387
+      ],
+      [
+        0.11220846396389365,
+        0.16737795112199483,
+        0.18150542727922211,
+        0.5682235897651815,
+        0.6400368247179893,
+        0.44036856949666425
+      ],
+      [
+        -0.044604253559439165,
+        -0.2282095048940997,
+        -0.46952016602889185,
+        0.05457775792457953,
+        -0.3732393948532511,
+        0.7636722586306918
+      ]
+    ],
+    "eigenvalues": [
+      0.002642620480984589,
+      0.0015722964146732167,
+      4.719159305443069e-05
+    ],
+    "variance_fraction": [
+      0.6171726118399785,
+      0.36720304402884174,
+      0.011021392951378639
+    ],
+    "fit_samples": 4897,
+    "units": "1 (reflectance scores); eigenvalues in reflectance squared",
+    "sign_convention": "Largest absolute loading in each component is positive"
+  },
+  "vca": {
+    "reference": "https://doi.org/10.1109/TGRS.2005.844293",
+    "projection": "affine",
+    "projection_selection": "Explicit projection branch selected by caller; SNR not estimated",
+    "seed": 0,
+    "bands": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir16",
+      "swir22"
+    ],
+    "projected_endmembers": [
+      [
+        0.0881443007815339,
+        0.1304108866134665,
+        0.1546337223117694,
+        0.37357685206512964,
+        0.5395135236152909,
+        0.3685940004425847
+      ],
+      [
+        0.0014234506347353335,
+        0.00693359664922525,
+        0.010348018610216,
+        0.04425090256984435,
+        0.05723576254640715,
+        0.02574660440524503
+      ],
+      [
+        0.018951648788602705,
+        0.05001364379633709,
+        0.027160580556824028,
+        0.44922353890449684,
+        0.19285374264367905,
+        0.08732068815785239
+      ]
+    ],
+    "observed_spectra": [
+      [
+        0.09738698601722717,
+        0.13348855078220367,
+        0.15474659204483032,
+        0.37827613949775696,
+        0.5046888589859009,
+        0.4095735251903534
+      ],
+      [
+        0.002985833678394556,
+        0.0035994122736155987,
+        0.0029305045027285814,
+        0.044858064502477646,
+        0.05293332785367966,
+        0.035142797976732254
+      ],
+      [
+        0.02012992836534977,
+        0.05119819566607475,
+        0.028851384297013283,
+        0.44914543628692627,
+        0.19316665828227997,
+        0.08551931381225586
+      ]
+    ],
+    "cells": [
+      {
+        "row": 8,
+        "column": 4
+      },
+      {
+        "row": 11,
+        "column": 2
+      },
+      {
+        "row": 21,
+        "column": 54
+      }
+    ]
+  },
+  "fcls": {
+    "method": "Unweighted fully constrained least squares; enumerate simplex faces with convex optimality certificate",
+    "units": {
+      "abundance": "1",
+      "rmse": "reflectance (1)",
+      "optimality_gap": "reflectance squared"
+    },
+    "valid_cells": 4897,
+    "rmse_median": 0.002820966163978739,
+    "rmse_p95": 0.008445031915330648,
+    "maximum_optimality_gap": 1.4222021997578604e-16,
+    "maximum_sum_to_one_error": 2.220446049250313e-16
+  },
+  "limitations": [
+    "A scene-specific exploratory fit on QA-valid observed spectra; no independent material labels or held-out accuracy evaluation.",
+    "VCA assumes linear mixtures and pure pixels. Extreme spectra may represent illumination, residual atmosphere/cloud or anomalies; endmembers are numbered, not assigned material names.",
+    "FCLS fractions describe the selected geometric library. Small reconstruction residual and an optimization certificate do not validate physical material fractions.",
+    "Reflectance is the run's prepared common-grid product, including any recorded bandpass transform. Residual misregistration, BRDF and atmospheric differences remain.",
+    "PCA covariance eigenvectors describe variance, not noise removal or physical variables. Reuse a declared training basis for cross-date comparisons; no MNF/noise whitening is performed."
+  ],
+  "displays": [
+    {
+      "filename": "rgb.png",
+      "title": "Observed RGB",
+      "description": "R/G/B, independent P02\u2013P98 display stretches; physical reflectance is preserved in the source.",
+      "minimum": [
+        0.010943636111915112,
+        0.0185945950448513,
+        0.005255634095519781
+      ],
+      "maximum": [
+        0.0556858879327774,
+        0.05150223791599273,
+        0.030379442721605296
+      ]
+    },
+    {
+      "filename": "pca.png",
+      "title": "PCA overview",
+      "description": "PC1/PC2/PC3 in R/G/B, independent P02\u2013P98 stretches. Colors have no material meaning.",
+      "minimum": [
+        -0.08532058468587535,
+        -0.07570109851114426,
+        -0.010413204853087854
+      ],
+      "maximum": [
+        0.10605329441874843,
+        0.09195785386182248,
+        0.019146677872374323
+      ]
+    },
+    {
+      "filename": "abundance.png",
+      "title": "Spectral fractions overview",
+      "description": "E1/E2/E3 in R/G/B, 0\u20131. Additional endmembers are available individually; components are not assigned material names.",
+      "minimum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "filename": "rmse.png",
+      "title": "Reconstruction RMSE",
+      "description": "Reflectance RMSE; black=0, white=scene P98. Display clips; inspector values remain unclipped.",
+      "minimum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        0.010588496779390638,
+        0.010588496779390638,
+        0.010588496779390638
+      ]
+    },
+    {
+      "filename": "pc-01.png",
+      "title": "PC1",
+      "description": "Dimensionless covariance-PCA score; grayscale P02\u2013P98 display stretch.",
+      "minimum": [
+        -0.08532058468587535,
+        -0.08532058468587535,
+        -0.08532058468587535
+      ],
+      "maximum": [
+        0.10605329441874843,
+        0.10605329441874843,
+        0.10605329441874843
+      ]
+    },
+    {
+      "filename": "pc-02.png",
+      "title": "PC2",
+      "description": "Dimensionless covariance-PCA score; grayscale P02\u2013P98 display stretch.",
+      "minimum": [
+        -0.07570109851114426,
+        -0.07570109851114426,
+        -0.07570109851114426
+      ],
+      "maximum": [
+        0.09195785386182248,
+        0.09195785386182248,
+        0.09195785386182248
+      ]
+    },
+    {
+      "filename": "pc-03.png",
+      "title": "PC3",
+      "description": "Dimensionless covariance-PCA score; grayscale P02\u2013P98 display stretch.",
+      "minimum": [
+        -0.010413204853087854,
+        -0.010413204853087854,
+        -0.010413204853087854
+      ],
+      "maximum": [
+        0.019146677872374323,
+        0.019146677872374323,
+        0.019146677872374323
+      ]
+    },
+    {
+      "filename": "endmember-01.png",
+      "title": "Endmember 1 fraction",
+      "description": "Black=0, white=1; fraction conditional on the selected geometric library, not validated material abundance.",
+      "minimum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "filename": "endmember-02.png",
+      "title": "Endmember 2 fraction",
+      "description": "Black=0, white=1; fraction conditional on the selected geometric library, not validated material abundance.",
+      "minimum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "filename": "endmember-03.png",
+      "title": "Endmember 3 fraction",
+      "description": "Black=0, white=1; fraction conditional on the selected geometric library, not validated material abundance.",
+      "minimum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "path": "abundance.png",
+      "sha256": "d4d729d456a79fdbe66c1e89c810d73855e4081ff630b469a640bcba875bd9d0"
+    },
+    {
+      "path": "abundance.tif",
+      "sha256": "4ab2dda7d4ea6bc367bf98c1023491698e57f6ce62ecb9f730fc8a3069e88add"
+    },
+    {
+      "path": "endmember-01.png",
+      "sha256": "920af0c796c505bfa731494d711f3e303d97cd7a31807302e8066db38f63a1d8"
+    },
+    {
+      "path": "endmember-02.png",
+      "sha256": "6a4f71e94731fb4ceddddbe301c70e31e78bae926a142803d0f31b66c5f675bf"
+    },
+    {
+      "path": "endmember-03.png",
+      "sha256": "ca9bbf784386740e44adde4adf985631edef98ac2982a9ab5d237236110e9523"
+    },
+    {
+      "path": "pc-01.png",
+      "sha256": "04dd2e6e73bf81df5734b78d3440294a554a1d14c31caaf0bf406422d19c0cfb"
+    },
+    {
+      "path": "pc-02.png",
+      "sha256": "c0412346b4b769d7d6509cda3dd32889b52ee2821a7be2264b5acd70bc2f6f83"
+    },
+    {
+      "path": "pc-03.png",
+      "sha256": "092c6b9cb1935666bdb03114416079798c83ec2d7e29b3fb238e58303d31dc65"
+    },
+    {
+      "path": "pca.png",
+      "sha256": "88c8a83594720abdb5424d255912c77f4d1d634046f1a10549f5dc4c6fdaee0c"
+    },
+    {
+      "path": "pca.tif",
+      "sha256": "db7676230f23c2a5b9ff38d79f662dfe6bbe4e29b16880ebc31a6aaba113438e"
+    },
+    {
+      "path": "reconstruction-rmse.tif",
+      "sha256": "03d9f6473fdf200e724f3b445b1d193c0cf94975b6e239c06e43a79053884bb2"
+    },
+    {
+      "path": "request.json",
+      "sha256": "c8f74d3dd1386cc8c78741980dd517640347e65bf66471d6cdfd7bed6aa99af4"
+    },
+    {
+      "path": "rgb.png",
+      "sha256": "9d4244f5a77dd73e47626f43d62e8ff76d6eae76201f571e03c2c95f52bc041e"
+    },
+    {
+      "path": "rmse.png",
+      "sha256": "f610bb74219faf17e46d0b3c7cba9cd200587c15d249030a5e346d3ccf745ea9"
+    },
+    {
+      "path": "report.html",
+      "sha256": "ba48ded3f21bbae35108500ab3f4b9b3c17cb6a62b63a4c128d1956bce78a89b"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[package]
+name = "rslib-hydro"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Native transient infiltration and slope-stability kernels from public USGS equations"
+
+[dependencies]
+libm = "0.2"
+rayon = "1.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[[bin]]
+name = "rslib-hydro"
+path = "src/main.rs"

@@ -1,0 +1,35 @@
+services:
+  postgis:
+    image: postgis/postgis:17-3.5
+    environment:
+      POSTGRES_USER: rslib
+      POSTGRES_DB: rslib
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-rslib_local}
+    ports: ["127.0.0.1:${POSTGRES_PORT:-5432}:5432"]
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rslib -d rslib"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  api:
+    build: .
+    environment:
+      RSLIB_DATA: /data
+      RSLIB_DATABASE_URL: postgresql://rslib:${POSTGRES_PASSWORD:-rslib_local}@postgis:5432/rslib
+      RSLIB_HYDRO_BIN: /usr/local/bin/rslib-hydro
+      RAYON_NUM_THREADS: "4"
+    ports: ["127.0.0.1:${RSLIB_PORT:-8000}:8000"]
+    volumes: ["analysis_data:/data"]
+    depends_on:
+      postgis: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  postgres_data:
+  analysis_data:

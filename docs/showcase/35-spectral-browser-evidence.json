@@ -1,0 +1,20 @@
+{
+  "synthetic": false,
+  "source": "S2B_T23KNR_20260619T131449_L2A",
+  "input_checksums": {
+    "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+    "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+  },
+  "assertions": {
+    "four_actual_grid_images": true,
+    "click_picks_exact_source_cell": {
+      "row": 8,
+      "column": 4
+    },
+    "displayed_spectra_match_report_observations": true,
+    "missing_cell_has_no_fraction_or_spectrum": true,
+    "download_equals_analysis_report": true,
+    "mobile_no_horizontal_overflow": true,
+    "page_errors": []
+  }
+}

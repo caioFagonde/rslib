@@ -1,0 +1,47 @@
+{
+  "cells": [
+    {
+      "slope_deg": 32,
+      "water_table_depth_m": 1.5,
+      "conductivity_m_s": 1e-05,
+      "diffusivity_m2_s": 0.0001,
+      "background_flux_m_s": 0,
+      "cohesion_pa": 1500,
+      "friction_deg": 34,
+      "unit_weight_n_m3": 19000,
+      "boundary": {
+        "kind": "finite",
+        "depth_m": 3
+      }
+    }
+  ],
+  "rain": [
+    {
+      "start_s": 0,
+      "end_s": 21600,
+      "intensity_m_s": 5e-06
+    }
+  ],
+  "depths_m": [
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.25,
+    1.5,
+    2,
+    2.5,
+    3
+  ],
+  "times_s": [
+    0,
+    1800,
+    3600,
+    7200,
+    10800,
+    14400,
+    21600,
+    28800,
+    43200
+  ]
+}

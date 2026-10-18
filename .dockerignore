@@ -1,0 +1,10 @@
+.git
+.venv
+target
+data
+web/node_modules
+src/rslib/web
+__pycache__
+.pytest_cache
+.ruff_cache
+.env

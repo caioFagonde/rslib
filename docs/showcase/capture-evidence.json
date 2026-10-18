@@ -1,0 +1,41 @@
+{
+  "base_url": "http://127.0.0.1:8768",
+  "captures": [
+    {
+      "path": "01-browser-demo.png",
+      "kind": "working browser; synthetic multispectral fixture"
+    },
+    {
+      "path": "03-browser-terrain.png",
+      "kind": "actual Copernicus DEM surface mesh; synthetic analysis texture"
+    },
+    {
+      "path": "04-rust-storm-lab.png",
+      "kind": "working Rust laboratory; hypothetical material/storm parameters"
+    },
+    {
+      "path": "05-live-sentinel-analysis.png",
+      "kind": "working browser with actual Sentinel-2 Collection 1 observations"
+    },
+    {
+      "path": "06-mobile-workbench.png",
+      "kind": "responsive browser layout"
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "live": {
+    "scene": "S2B_T23KNR_20260729T131748_L2A",
+    "statistics": {
+      "valid_pixels": 256902,
+      "total_pixels": 262144,
+      "valid_fraction": 0.9800033569335938,
+      "mean": 0.7968355417251587,
+      "std": 0.1513233780860901,
+      "p05": 0.47857925295829773,
+      "median": 0.8695652484893799,
+      "p95": 0.9172536134719849
+    },
+    "seconds": 10.854
+  }
+}

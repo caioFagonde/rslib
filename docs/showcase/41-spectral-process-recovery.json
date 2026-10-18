@@ -1,0 +1,25 @@
+{
+  "synthetic": false,
+  "source_run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "job_id": "a21264c7c84c4ad1813d0990af403a7d",
+  "analysis_id": "ff120311d4e2482f93eb3b5a6b4dcfe0",
+  "input_checksums": {
+    "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+    "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+  },
+  "attempts": 2,
+  "scratch_data_directory": "/home/caion/Documentos/github/fun_projects/rslib/data/acceptance/spectral-recovery-0f1b2618dc354d2d992e2afccbe464a9",
+  "harness": "Delay only at exporting checkpoint; real SIGKILL before COG export/publication; restart without the delay",
+  "assertions": {
+    "incomplete_result_not_public": true,
+    "same_job_and_result_identity_after_process_death": true,
+    "same_pinned_input_checksums": true,
+    "restarted_fit_matches_original_satellite_result": true,
+    "staging_removed_after_publication": true,
+    "recovery_and_both_fit_attempts_journaled": true
+  },
+  "limitations": [
+    "Only this deterministic checkpoint is a real process-death experiment. It does not establish storage-failure/load safety or every interruption window.",
+    "Spectral recovery restarts the fit on the pinned prepared run; it does not resume the eigendecomposition or simplex solver internally."
+  ]
+}

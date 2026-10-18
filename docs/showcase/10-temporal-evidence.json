@@ -1,0 +1,31 @@
+{
+  "kind": "actual computations over synthetic data",
+  "seed": "deterministic analytical fields",
+  "shape_tcyx": [
+    9,
+    4,
+    128,
+    128
+  ],
+  "times": [
+    "2026-06-01",
+    "2026-06-06",
+    "2026-06-11",
+    "2026-06-21",
+    "2026-06-26",
+    "2026-07-11",
+    "2026-07-16",
+    "2026-07-26",
+    "2026-08-05"
+  ],
+  "algorithms": [
+    "latest-clear quality composite",
+    "L1 spectral medoid",
+    "gap-limited linear interpolation"
+  ],
+  "max_gap_days": 40,
+  "composite_supported_fraction": 1.0,
+  "input_clear_fraction": 0.81622314453125,
+  "interpolated_samples": 6469,
+  "limitations": "Synthetic benchmark only. No cloud-removal weights or calibrated uncertainty; abrupt changes are not recovered reliably."
+}

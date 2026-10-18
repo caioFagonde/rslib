@@ -1,0 +1,21 @@
+{
+  "capture_color_mode": "truecolor; NO_COLOR unset only for the capture process",
+  "synthetic": false,
+  "job_id": "0028358f37e04667acd99414df76b582",
+  "analysis_id": "4c2574f10b8748ee867ce7880f2fe222",
+  "source_run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "input_checksums": {
+    "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+    "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+  },
+  "assertions": {
+    "same_browser_job_opened_in_terminal": true,
+    "terminal_shared_existing_worker": true,
+    "six_band_cell_inspection": true,
+    "all_pca_components_selectable": true,
+    "browser_terminal_cli_python_numerical_parity": true,
+    "new_job_not_submitted_on_open": true
+  },
+  "separate_parity_outputs": "data/acceptance/spectral-8a2447232b314d7888c3f609ffef032e",
+  "cli_return_code": 0
+}

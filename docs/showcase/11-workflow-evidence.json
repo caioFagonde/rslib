@@ -1,0 +1,835 @@
+{
+  "kind": "Actual browser/API execution over explicitly synthetic multi-sensor inputs",
+  "errors": [],
+  "summary": {
+    "observations": 8,
+    "daily_mosaics": 8,
+    "regular_dates": 10,
+    "platforms": [
+      "landsat-8",
+      "landsat-9",
+      "sentinel-2a",
+      "sentinel-2b",
+      "sentinel-2c"
+    ],
+    "cache_hits": 8,
+    "observed_fraction": 0.6851351351351351,
+    "filled_fraction": 0.18495887191539365,
+    "unsupported_fraction": 0.12990599294947122
+  },
+  "elapsed_seconds": 0.173,
+  "grid": {
+    "crs": "EPSG:32723",
+    "transform": [
+      30.0,
+      0.0,
+      534990.0,
+      0.0,
+      -30.0,
+      7523970.0
+    ],
+    "width": 69,
+    "height": 75
+  },
+  "processing": {
+    "harmonization": "bandpass",
+    "bbox": {
+      "west": -44.66,
+      "south": -22.41,
+      "east": -44.64,
+      "north": -22.39
+    },
+    "aoi_pixels": 5106,
+    "cloud_buffer_m": 60.0,
+    "min_clear_fraction": 0.9,
+    "resampling": "native QA first, GDAL area-weighted clear reflectance, support threshold, common complete spectrum",
+    "nir": "Sentinel-2 B8A / Landsat OLI B05; broad B08 never substituted",
+    "all_upstream_hls": false,
+    "cache_max_bytes": 2147483648,
+    "cache_evicted_files": 0,
+    "cache": "Prepared AOI/scene cache; immutable source assumption. Use refresh=True after upstream asset revisions."
+  },
+  "synthetic": true,
+  "observations": [
+    {
+      "cache_key": "3601ea647d5e03d621dfa0850cbc7edd8b95a51a705d1138057b44bfba6ba647",
+      "id": "synthetic-sentinel-2a-00",
+      "collection": "sentinel-2-c1-l2a",
+      "provider": "local",
+      "datetime": "2026-06-01T10:00:00.000000Z",
+      "platform": "sentinel-2a",
+      "family": "sentinel-2",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/blue.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/green.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/red.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir08",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/nir08.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/swir16.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-00/swir22.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        }
+      ],
+      "adjustment": {
+        "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+        "coefficients": {
+          "blue": {
+            "slope": 0.9778,
+            "offset": -0.004
+          },
+          "green": {
+            "slope": 1.0053,
+            "offset": -0.0009
+          },
+          "red": {
+            "slope": 0.9765,
+            "offset": 0.0009
+          },
+          "nir": {
+            "slope": 0.9983,
+            "offset": -0.0001
+          },
+          "swir16": {
+            "slope": 0.9987,
+            "offset": -0.0011
+          },
+          "swir22": {
+            "slope": 1.003,
+            "offset": -0.0012
+          }
+        },
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+        "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+      },
+      "clear_fraction": 0.8685859772816295,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "f462b69ed82b67834c2989f9b07181386886ec7520d289008628daa0fe15f29e",
+      "id": "synthetic-landsat-8-05",
+      "collection": "landsat-c2-l2",
+      "provider": "local",
+      "datetime": "2026-06-06T10:00:00.000000Z",
+      "platform": "landsat-8",
+      "family": "landsat-oli",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/blue.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/green.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/red.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/nir.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/swir16.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-05/swir22.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        }
+      ],
+      "adjustment": {
+        "method": "OLI reference; identity bandpass",
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+      },
+      "clear_fraction": 0.8343125734430082,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "7b1de15b9ffdbdafe9aa4438396e036cd0372836883352833fa24bf7f6af7228",
+      "id": "synthetic-sentinel-2b-10",
+      "collection": "sentinel-2-c1-l2a",
+      "provider": "local",
+      "datetime": "2026-06-11T10:00:00.000000Z",
+      "platform": "sentinel-2b",
+      "family": "sentinel-2",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/blue.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/green.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/red.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir08",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/nir08.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/swir16.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2b-10/swir22.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        }
+      ],
+      "adjustment": {
+        "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+        "coefficients": {
+          "blue": {
+            "slope": 0.9778,
+            "offset": -0.004
+          },
+          "green": {
+            "slope": 1.0075,
+            "offset": -0.0008
+          },
+          "red": {
+            "slope": 0.9761,
+            "offset": 0.001
+          },
+          "nir": {
+            "slope": 0.9966,
+            "offset": 0.0
+          },
+          "swir16": {
+            "slope": 1.0,
+            "offset": -0.0003
+          },
+          "swir22": {
+            "slope": 0.9867,
+            "offset": 0.0004
+          }
+        },
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+        "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+      },
+      "clear_fraction": 0.836662749706228,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "e9d8910c6c47ba54f135642d43087eb29172685bc36888bb79bbd5e41b76314f",
+      "id": "synthetic-sentinel-2c-20",
+      "collection": "sentinel-2-c1-l2a",
+      "provider": "local",
+      "datetime": "2026-06-21T10:00:00.000000Z",
+      "platform": "sentinel-2c",
+      "family": "sentinel-2",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/blue.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/green.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/red.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir08",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/nir08.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/swir16.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2c-20/swir22.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        }
+      ],
+      "adjustment": {
+        "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+        "coefficients": {
+          "blue": {
+            "slope": 0.9851,
+            "offset": -0.0027
+          },
+          "green": {
+            "slope": 1.0038,
+            "offset": -0.0009
+          },
+          "red": {
+            "slope": 0.9718,
+            "offset": 0.0011
+          },
+          "nir": {
+            "slope": 0.9995,
+            "offset": -0.0003
+          },
+          "swir16": {
+            "slope": 0.9994,
+            "offset": -0.0007
+          },
+          "swir22": {
+            "slope": 0.991,
+            "offset": 0.0004
+          }
+        },
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+        "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+      },
+      "clear_fraction": 0.8372502937720329,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "ee3d074aef9bb8290b47c8eb9b4e011aca3faafd9b5f557db35e4aa2d57cb0dd",
+      "id": "synthetic-landsat-9-25",
+      "collection": "landsat-c2-l2",
+      "provider": "local",
+      "datetime": "2026-06-26T10:00:00.000000Z",
+      "platform": "landsat-9",
+      "family": "landsat-oli",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/blue.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/green.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/red.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/nir.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/swir16.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-25/swir22.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        }
+      ],
+      "adjustment": {
+        "method": "OLI reference; identity bandpass",
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+      },
+      "clear_fraction": 0.8476302389345868,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "dc66fb2f2d2344eadbb7916a46cf10863bf9b4148da7c7c86c5d21b06f4aaccd",
+      "id": "synthetic-sentinel-2a-30",
+      "collection": "sentinel-2-c1-l2a",
+      "provider": "local",
+      "datetime": "2026-07-01T10:00:00.000000Z",
+      "platform": "sentinel-2a",
+      "family": "sentinel-2",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/blue.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/green.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/red.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir08",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/nir08.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/swir16.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/sentinel-2a-30/swir22.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": 0.0,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        }
+      ],
+      "adjustment": {
+        "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+        "coefficients": {
+          "blue": {
+            "slope": 0.9778,
+            "offset": -0.004
+          },
+          "green": {
+            "slope": 1.0053,
+            "offset": -0.0009
+          },
+          "red": {
+            "slope": 0.9765,
+            "offset": 0.0009
+          },
+          "nir": {
+            "slope": 0.9983,
+            "offset": -0.0001
+          },
+          "swir16": {
+            "slope": 0.9987,
+            "offset": -0.0011
+          },
+          "swir22": {
+            "slope": 1.003,
+            "offset": -0.0012
+          }
+        },
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+        "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+      },
+      "clear_fraction": 0.8797493145319232,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "24280b2c74fa4f0ea92e5b145ebab3b3bff94ec0922ee9842214ec6d74c4209f",
+      "id": "synthetic-landsat-8-40",
+      "collection": "landsat-c2-l2",
+      "provider": "local",
+      "datetime": "2026-07-11T10:00:00.000000Z",
+      "platform": "landsat-8",
+      "family": "landsat-oli",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/blue.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/green.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/red.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/nir.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/swir16.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-8-40/swir22.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        }
+      ],
+      "adjustment": {
+        "method": "OLI reference; identity bandpass",
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+      },
+      "clear_fraction": 0.8832745789267529,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "9f59acb255fc8f52c98fb6ae12972018fad9903740a9d9ae58a44f78d85e4718",
+      "id": "synthetic-landsat-9-45",
+      "collection": "landsat-c2-l2",
+      "provider": "local",
+      "datetime": "2026-07-16T10:00:00.000000Z",
+      "platform": "landsat-9",
+      "family": "landsat-oli",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/blue.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/green.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/red.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/nir.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/swir16.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "/home/caion/Documentos/github/fun_projects/rslib/data/stack-demo/landsat-9-45/swir22.tif",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        }
+      ],
+      "adjustment": {
+        "method": "OLI reference; identity bandpass",
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+      },
+      "clear_fraction": 0.8638856247551899,
+      "cache_hit": true
+    }
+  ]
+}

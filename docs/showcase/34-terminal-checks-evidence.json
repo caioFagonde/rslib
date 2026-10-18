@@ -1,0 +1,7 @@
+{
+  "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "synthetic": false,
+  "agreement_band_rows": 6,
+  "whole_date_holdout_rows": 6,
+  "same_published_input": true
+}

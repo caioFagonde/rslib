@@ -1,0 +1,15 @@
+{
+  "kind": "spectral",
+  "spectral": {
+    "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+    "source_index": 2,
+    "components": 3,
+    "endmembers": 3,
+    "projection": "affine",
+    "seed": 0,
+    "input_checksums": {
+      "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+      "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+    }
+  }
+}

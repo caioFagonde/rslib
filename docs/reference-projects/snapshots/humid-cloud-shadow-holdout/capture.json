@@ -1,0 +1,12 @@
+{
+  "schema_version": "rslib-reference-capture/1",
+  "case": "humid-cloud-shadow-holdout",
+  "run_id": "b2f31c4c063e475e8fd34bc9df0067cf",
+  "captured_utc": "2026-10-18T12:32:25.676031+00:00",
+  "plan_sha256": "841381c62016242b16e436e11c2f504b45f0d1a1568b634f0fe65f5a3d9ff01b",
+  "documents": {
+    "selection.json": "841381c62016242b16e436e11c2f504b45f0d1a1568b634f0fe65f5a3d9ff01b",
+    "inventory.json": "f007c2357b0c721dae76cd8dc68e564997441682329cf26e32ea2acc38124640",
+    "collections.json": "fe202f7762ed3d1a059cd1c690db4eccf2e7d68adf2f943e2d09af8decd49213"
+  }
+}

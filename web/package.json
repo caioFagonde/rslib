@@ -1,0 +1,32 @@
+{
+  "name": "@rslib/workbench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "build": "node scripts/prepare-showcase.mjs && tsc --noEmit && vite build"
+  },
+  "dependencies": {
+    "@deck.gl/aggregation-layers": "^9.1.0",
+    "@deck.gl/core": "^9.1.0",
+    "@deck.gl/extensions": "^9.1.0",
+    "@deck.gl/geo-layers": "^9.1.0",
+    "@deck.gl/layers": "^9.1.0",
+    "@deck.gl/mesh-layers": "^9.1.0",
+    "@loaders.gl/terrain": "^4.5.4",
+    "@turf/area": "^7.2.0",
+    "@turf/bbox-polygon": "^7.2.0",
+    "@turf/buffer": "^7.2.0",
+    "@types/geojson": "^7946.0.16"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.3",
+    "vite": "^6.4.0"
+  },
+  "overrides": {
+    "@loaders.gl/textures": "4.5.4",
+    "fflate": "^0.8.3"
+  }
+}

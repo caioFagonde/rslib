@@ -1,0 +1,181 @@
+{
+  "synthetic": false,
+  "source_run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "job_id": "0028358f37e04667acd99414df76b582",
+  "analysis_id": "4c2574f10b8748ee867ce7880f2fe222",
+  "source": {
+    "cache_key": "9e92a5ef6c8257057d37bf1d294ac30aaa7b9b06d26ff6b9645fa107e1776e8f",
+    "id": "S2B_T23KNR_20260619T131449_L2A",
+    "collection": "sentinel-2-c1-l2a",
+    "provider": "earth-search",
+    "datetime": "2026-06-19T13:18:19.012000Z",
+    "platform": "sentinel-2b",
+    "family": "sentinel-2",
+    "already_harmonized": false,
+    "inputs": [
+      {
+        "band": "blue",
+        "asset": "blue",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B02.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "green",
+        "asset": "green",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B03.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "red",
+        "asset": "red",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B04.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "nir",
+        "asset": "nir08",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B8A.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      },
+      {
+        "band": "swir16",
+        "asset": "swir16",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B11.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      },
+      {
+        "band": "swir22",
+        "asset": "swir22",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B12.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      }
+    ],
+    "adjustment": {
+      "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+      "coefficients": {
+        "blue": {
+          "slope": 0.9778,
+          "offset": -0.004
+        },
+        "green": {
+          "slope": 1.0075,
+          "offset": -0.0008
+        },
+        "red": {
+          "slope": 0.9761,
+          "offset": 0.001
+        },
+        "nir": {
+          "slope": 0.9966,
+          "offset": 0.0
+        },
+        "swir16": {
+          "slope": 1.0,
+          "offset": -0.0003
+        },
+        "swir22": {
+          "slope": 0.9867,
+          "offset": 0.0004
+        }
+      },
+      "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+      "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+    },
+    "clear_fraction": 0.9590677634155895,
+    "cache_hit": true
+  },
+  "input_checksums": {
+    "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+    "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+  },
+  "assertions": {
+    "optical_run_launch_link": true,
+    "queued_browser_execution": true,
+    "numeric_parity_with_prior_cli_scene_fit": true,
+    "terminal_journal_contains_publication": true,
+    "raster_picks_actual_source_cell": {
+      "analysis_id": "4c2574f10b8748ee867ce7880f2fe222",
+      "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+      "source_id": "S2B_T23KNR_20260619T131449_L2A",
+      "row": 21,
+      "col": 54,
+      "easting_m": 536625.0,
+      "northing_m": 7523325.0,
+      "valid": true,
+      "bands": [
+        "blue",
+        "green",
+        "red",
+        "nir",
+        "swir16",
+        "swir22"
+      ],
+      "observed": [
+        0.02012992836534977,
+        0.05119819566607475,
+        0.028851384297013283,
+        0.44914543628692627,
+        0.19316665828227997,
+        0.08551931381225586
+      ],
+      "reconstructed": [
+        0.018951648788602705,
+        0.05001364379633709,
+        0.02716058055682403,
+        0.44922353890449684,
+        0.19285374264367905,
+        0.08732068815785239
+      ],
+      "abundance": [
+        0.0,
+        2.220446049250313e-16,
+        1.0
+      ],
+      "scores": [
+        0.1714966595172882,
+        0.1596740335226059,
+        -0.0026134634390473366
+      ],
+      "rmse": 0.0012246965197846293,
+      "units": "1"
+    },
+    "all_component_maps_and_loadings": true,
+    "missing_values_remain_missing": true,
+    "reload_keeps_job_and_parameters_without_duplicate_submission": true,
+    "portable_bundle_and_saved_request_match_report": true,
+    "printable_parent_recipe_and_support": true,
+    "cancelled_job_retry_reuses_pinned_recipe": true,
+    "mobile_no_overflow": true,
+    "page_errors": []
+  }
+}

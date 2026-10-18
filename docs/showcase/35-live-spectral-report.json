@@ -1,0 +1,306 @@
+{
+  "schema_version": "rslib-spectral-analysis/1",
+  "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "input_checksums": {
+    "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+    "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+  },
+  "synthetic": false,
+  "source_index": 2,
+  "source": {
+    "cache_key": "9e92a5ef6c8257057d37bf1d294ac30aaa7b9b06d26ff6b9645fa107e1776e8f",
+    "id": "S2B_T23KNR_20260619T131449_L2A",
+    "collection": "sentinel-2-c1-l2a",
+    "provider": "earth-search",
+    "datetime": "2026-06-19T13:18:19.012000Z",
+    "platform": "sentinel-2b",
+    "family": "sentinel-2",
+    "already_harmonized": false,
+    "inputs": [
+      {
+        "band": "blue",
+        "asset": "blue",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B02.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "green",
+        "asset": "green",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B03.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "red",
+        "asset": "red",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B04.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 10.0
+      },
+      {
+        "band": "nir",
+        "asset": "nir08",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B8A.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      },
+      {
+        "band": "swir16",
+        "asset": "swir16",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B11.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      },
+      {
+        "band": "swir22",
+        "asset": "swir22",
+        "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B12.tif",
+        "calibration": {
+          "scale": 0.0001,
+          "offset": -0.1,
+          "policy": "STAC raster metadata"
+        },
+        "native_resolution_m": 20.0
+      }
+    ],
+    "adjustment": {
+      "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+      "coefficients": {
+        "blue": {
+          "slope": 0.9778,
+          "offset": -0.004
+        },
+        "green": {
+          "slope": 1.0075,
+          "offset": -0.0008
+        },
+        "red": {
+          "slope": 0.9761,
+          "offset": 0.001
+        },
+        "nir": {
+          "slope": 0.9966,
+          "offset": 0.0
+        },
+        "swir16": {
+          "slope": 1.0,
+          "offset": -0.0003
+        },
+        "swir22": {
+          "slope": 0.9867,
+          "offset": 0.0004
+        }
+      },
+      "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+      "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+    },
+    "clear_fraction": 0.9590677634155895,
+    "cache_hit": true
+  },
+  "grid": {
+    "crs": "EPSG:32723",
+    "transform": [
+      30.0,
+      0.0,
+      534990.0,
+      0.0,
+      -30.0,
+      7523970.0
+    ],
+    "width": 69,
+    "height": 75
+  },
+  "pca": {
+    "method": "Centered covariance PCA; no per-band standardization or whitening",
+    "bands": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir16",
+      "swir22"
+    ],
+    "mean": [
+      0.016531434690068944,
+      0.03471313720883386,
+      0.031212831791194582,
+      0.21866985338715136,
+      0.15444646769256307,
+      0.08280426898865839
+    ],
+    "loadings": [
+      [
+        -0.09036073048846283,
+        -0.06662173808436178,
+        -0.1926215588240289,
+        0.8153110992187328,
+        -0.37196050563258326,
+        -0.3836751376056387
+      ],
+      [
+        0.11220846396389365,
+        0.16737795112199483,
+        0.18150542727922211,
+        0.5682235897651815,
+        0.6400368247179893,
+        0.44036856949666425
+      ],
+      [
+        -0.044604253559439165,
+        -0.2282095048940997,
+        -0.46952016602889185,
+        0.05457775792457953,
+        -0.3732393948532511,
+        0.7636722586306918
+      ]
+    ],
+    "eigenvalues": [
+      0.002642620480984589,
+      0.0015722964146732167,
+      4.719159305443069e-05
+    ],
+    "variance_fraction": [
+      0.6171726118399785,
+      0.36720304402884174,
+      0.011021392951378639
+    ],
+    "fit_samples": 4897,
+    "units": "1 (reflectance scores); eigenvalues in reflectance squared",
+    "sign_convention": "Largest absolute loading in each component is positive"
+  },
+  "vca": {
+    "reference": "https://doi.org/10.1109/TGRS.2005.844293",
+    "projection": "affine",
+    "projection_selection": "Explicit p-1 centered PCA branch; SNR not estimated",
+    "seed": 0,
+    "bands": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir16",
+      "swir22"
+    ],
+    "projected_endmembers": [
+      [
+        0.0881443007815339,
+        0.1304108866134665,
+        0.1546337223117694,
+        0.37357685206512964,
+        0.5395135236152909,
+        0.3685940004425847
+      ],
+      [
+        0.0014234506347353335,
+        0.00693359664922525,
+        0.010348018610216,
+        0.04425090256984435,
+        0.05723576254640715,
+        0.02574660440524503
+      ],
+      [
+        0.018951648788602705,
+        0.05001364379633709,
+        0.027160580556824028,
+        0.44922353890449684,
+        0.19285374264367905,
+        0.08732068815785239
+      ]
+    ],
+    "observed_spectra": [
+      [
+        0.09738698601722717,
+        0.13348855078220367,
+        0.15474659204483032,
+        0.37827613949775696,
+        0.5046888589859009,
+        0.4095735251903534
+      ],
+      [
+        0.002985833678394556,
+        0.0035994122736155987,
+        0.0029305045027285814,
+        0.044858064502477646,
+        0.05293332785367966,
+        0.035142797976732254
+      ],
+      [
+        0.02012992836534977,
+        0.05119819566607475,
+        0.028851384297013283,
+        0.44914543628692627,
+        0.19316665828227997,
+        0.08551931381225586
+      ]
+    ],
+    "cells": [
+      {
+        "row": 8,
+        "column": 4
+      },
+      {
+        "row": 11,
+        "column": 2
+      },
+      {
+        "row": 21,
+        "column": 54
+      }
+    ]
+  },
+  "fcls": {
+    "method": "Unweighted fully constrained least squares; enumerate simplex faces with convex optimality certificate",
+    "units": {
+      "abundance": "1",
+      "rmse": "reflectance (1)",
+      "optimality_gap": "reflectance squared"
+    },
+    "valid_cells": 4897,
+    "rmse_median": 0.002820966163978739,
+    "rmse_p95": 0.008445031915330648,
+    "maximum_optimality_gap": 1.4222021997578604e-16,
+    "maximum_sum_to_one_error": 2.220446049250313e-16
+  },
+  "limitations": [
+    "A scene-specific exploratory fit on QA-valid observed spectra; no independent material labels or held-out accuracy evaluation.",
+    "VCA assumes linear mixtures and pure pixels. Extreme spectra may represent illumination, residual atmosphere/cloud or anomalies; endmembers are numbered, not assigned material names.",
+    "FCLS fractions describe the selected geometric library. Small reconstruction residual and an optimization certificate do not validate physical material fractions.",
+    "Reflectance is the run's prepared common-grid product, including any recorded bandpass transform. Residual misregistration, BRDF and atmospheric differences remain.",
+    "PCA covariance eigenvectors describe variance, not noise removal or physical variables. Reuse a declared training basis for cross-date comparisons; no MNF/noise whitening is performed."
+  ],
+  "outputs": [
+    {
+      "path": "abundance.tif",
+      "sha256": "4ab2dda7d4ea6bc367bf98c1023491698e57f6ce62ecb9f730fc8a3069e88add"
+    },
+    {
+      "path": "pca.tif",
+      "sha256": "db7676230f23c2a5b9ff38d79f662dfe6bbe4e29b16880ebc31a6aaba113438e"
+    },
+    {
+      "path": "reconstruction-rmse.tif",
+      "sha256": "03d9f6473fdf200e724f3b445b1d193c0cf94975b6e239c06e43a79053884bb2"
+    }
+  ]
+}

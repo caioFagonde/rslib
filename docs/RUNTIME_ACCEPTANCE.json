@@ -1,0 +1,97 @@
+{
+  "image": "rslib:jobs",
+  "image_id": "sha256:56b341ec953c5392d0a509a0b2e9eca3603060495bcc6d47f465b6cc2adad31c",
+  "network": "none",
+  "first_execution": {
+    "job": {
+      "id": "ea74667fc2854d5c9c3b18294f268457",
+      "project_id": null,
+      "recipe_revision": null,
+      "status": "succeeded",
+      "attempt": 1,
+      "created": "2026-10-17T20:49:30.137024+00:00",
+      "updated": "2026-10-17T20:49:32.065569+00:00",
+      "run_id": "d85334b70e3d4efab17a72ec89777ba2",
+      "recipe": {
+        "demo": true,
+        "bbox": {
+          "west": -44.66,
+          "south": -22.41,
+          "east": -44.64,
+          "north": -22.39
+        },
+        "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+        "sensors": [
+          "sentinel-2",
+          "landsat"
+        ],
+        "max_scenes_per_sensor": 4,
+        "max_cloud": 40.0,
+        "resolution": 30.0,
+        "cloud_buffer_m": 60.0,
+        "min_clear_fraction": 0.9,
+        "index": "ndvi",
+        "step_days": 5,
+        "max_gap_days": 20.0,
+        "refresh": false,
+        "fields": [],
+        "coverage_target": null
+      },
+      "cancel_requested": false,
+      "progress": {
+        "phase": "succeeded",
+        "message": "Complete exports are available"
+      },
+      "inventory_count": 8,
+      "error": null,
+      "manifest_url": "/api/runs/d85334b70e3d4efab17a72ec89777ba2/manifest.json"
+    },
+    "summary": {
+      "observations": 8,
+      "daily_mosaics": 8,
+      "regular_dates": 10,
+      "platforms": [
+        "landsat-8",
+        "landsat-9",
+        "sentinel-2a",
+        "sentinel-2b",
+        "sentinel-2c"
+      ],
+      "cache_hits": 0,
+      "observed_fraction": 0.6851351351351351,
+      "filled_fraction": 0.18495887191539365,
+      "unsupported_fraction": 0.12990599294947122
+    },
+    "validation_summary": {
+      "held_out_clear_cells": 34983,
+      "scored_cells": 23341,
+      "scored_fraction": 0.6672097876111254,
+      "scored_dates": 6,
+      "linear": {
+        "samples": 23341,
+        "mae": 0.007265275987212698,
+        "rmse": 0.015618640034798906,
+        "bias": -0.0055784389704145385
+      },
+      "nearest": {
+        "samples": 23341,
+        "mae": 0.015562144395042663,
+        "rmse": 0.026153620090013277,
+        "bias": -0.010062430463649892
+      }
+    }
+  },
+  "after_restart": {
+    "job_id": "ea74667fc2854d5c9c3b18294f268457",
+    "run_id": "d85334b70e3d4efab17a72ec89777ba2",
+    "status": "succeeded",
+    "capture_sha256": "baac844dbcd2b0d19c14be9f1a177ce601721d859fea807d4365f280faef1ba3"
+  },
+  "assertions": {
+    "completed_job_persisted": true,
+    "same_run_id": true,
+    "offline_native_preparation": true,
+    "evaluation_available": true,
+    "gallery_matches_source": true
+  }
+}

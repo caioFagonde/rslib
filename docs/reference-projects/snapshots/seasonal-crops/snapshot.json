@@ -1,0 +1,189 @@
+{
+  "id": "seasonal-crops",
+  "name": "Iowa cropland",
+  "site_group": "iowa-ames",
+  "status": "local_snapshot",
+  "partition": "development",
+  "regimes": [
+    "seasonal agriculture"
+  ],
+  "run_id": "54bc7fcc686141c19527581641750af5",
+  "input_checksums": {
+    "stack.npz": "99b98a6fc568fb72dcae6166dca36c7e4f4c503700929afd130d026933acf450",
+    "manifest.json": "9ed9a7df4ce4d4c4726c9eb695a70c162b9f5501bf25557f566df5d90226a7fb"
+  },
+  "request": {
+    "demo": false,
+    "bbox": {
+      "west": -93.65,
+      "south": 42.0,
+      "east": -93.62,
+      "north": 42.03
+    },
+    "datetime": "2025-06-01T00:00:00Z/2025-07-15T23:59:59.999999Z",
+    "sensors": [
+      "sentinel-2",
+      "landsat"
+    ],
+    "max_scenes_per_sensor": 2,
+    "max_cloud": 100.0,
+    "resolution": 30.0,
+    "cloud_buffer_m": 60.0,
+    "min_clear_fraction": 0.9,
+    "index": "ndvi",
+    "step_days": 5,
+    "max_gap_days": 20.0,
+    "refresh": false,
+    "fields": [],
+    "coverage_target": null
+  },
+  "grid": {
+    "crs": "EPSG:32615",
+    "transform": [
+      30.0,
+      0.0,
+      446160.0,
+      0.0,
+      -30.0,
+      4653330.0
+    ],
+    "width": 84,
+    "height": 113
+  },
+  "bands": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir16",
+    "swir22"
+  ],
+  "synthetic": false,
+  "observations": [
+    {
+      "id": "LC08_L2SP_026031_20250622_02_T1",
+      "collection": "landsat-c2-l2",
+      "provider": "planetary-computer",
+      "datetime": "2025-06-22T16:53:20.929010Z",
+      "platform": "landsat-8"
+    },
+    {
+      "id": "S2A_T15TVG_20250629T171717_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "provider": "earth-search",
+      "datetime": "2025-06-29T17:22:20.398000Z",
+      "platform": "sentinel-2a"
+    },
+    {
+      "id": "S2C_T15TVG_20250714T170400_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "provider": "earth-search",
+      "datetime": "2025-07-14T17:12:30.639000Z",
+      "platform": "sentinel-2c"
+    },
+    {
+      "id": "LC08_L2SP_027031_20250715_02_T1",
+      "collection": "landsat-c2-l2",
+      "provider": "planetary-computer",
+      "datetime": "2025-07-15T16:59:38.675431Z",
+      "platform": "landsat-8"
+    }
+  ],
+  "source_documents": {
+    "directory": "seasonal-crops",
+    "checksums": {
+      "selection.json": "841381c62016242b16e436e11c2f504b45f0d1a1568b634f0fe65f5a3d9ff01b",
+      "inventory.json": "43f39290d2eaba7f7c47f2530f6cff75872fa292fedbb582b07204e62b692995",
+      "collections.json": "fe202f7762ed3d1a059cd1c690db4eccf2e7d68adf2f943e2d09af8decd49213",
+      "capture.json": "a9c2118e342e404df32269017d7755374101c58c420770f7e5a028e24897d950"
+    }
+  },
+  "license_records": [
+    {
+      "provider": "earth-search",
+      "collection": "sentinel-2-c1-l2a",
+      "declared_license": "proprietary",
+      "license_links": [
+        {
+          "rel": "license",
+          "href": "https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+          "title": "proprietary"
+        }
+      ],
+      "providers": [
+        {
+          "name": "ESA",
+          "roles": [
+            "producer"
+          ],
+          "url": "https://earth.esa.int/web/guest/home"
+        },
+        {
+          "name": "Sinergise",
+          "roles": [
+            "processor"
+          ],
+          "url": "https://registry.opendata.aws/sentinel-2/"
+        },
+        {
+          "name": "AWS",
+          "roles": [
+            "host"
+          ],
+          "url": "http://sentinel-pds.s3-website.eu-central-1.amazonaws.com/"
+        },
+        {
+          "name": "Element 84",
+          "roles": [
+            "processor"
+          ],
+          "url": "https://element84.com"
+        }
+      ],
+      "interpretation": "Source metadata captured; no automatic legal clearance inferred."
+    },
+    {
+      "provider": "planetary-computer",
+      "collection": "landsat-c2-l2",
+      "declared_license": "proprietary",
+      "license_links": [
+        {
+          "rel": "license",
+          "href": "https://www.usgs.gov/core-science-systems/hdds/data-policy",
+          "title": "Public Domain"
+        }
+      ],
+      "providers": [
+        {
+          "url": "https://landsat.gsfc.nasa.gov/",
+          "name": "NASA",
+          "roles": [
+            "producer",
+            "licensor"
+          ]
+        },
+        {
+          "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products",
+          "name": "USGS",
+          "roles": [
+            "producer",
+            "processor",
+            "licensor"
+          ]
+        },
+        {
+          "url": "https://planetarycomputer.microsoft.com",
+          "name": "Microsoft",
+          "roles": [
+            "host"
+          ]
+        }
+      ],
+      "interpretation": "Source metadata captured; no automatic legal clearance inferred."
+    }
+  ],
+  "independent_labels": [],
+  "purpose": "Input regression and support diagnostics. No independent accuracy labels.",
+  "redistribution": "Prepared rasters remain local. Public source metadata and declared collection licenses are retained with this snapshot.",
+  "selection_sha256": "841381c62016242b16e436e11c2f504b45f0d1a1568b634f0fe65f5a3d9ff01b"
+}

@@ -1,0 +1,114 @@
+{
+  "job": {
+    "id": "266c730ce5444033b8d545d14c540ce3",
+    "project_id": null,
+    "recipe_revision": null,
+    "status": "succeeded",
+    "attempt": 2,
+    "created": "2026-10-17T20:44:27.339135+00:00",
+    "updated": "2026-10-17T20:44:38.148697+00:00",
+    "run_id": "490bd0057f904f0cb15ba9a82d91fd8e",
+    "recipe": {
+      "demo": false,
+      "bbox": {
+        "west": -44.66,
+        "south": -22.41,
+        "east": -44.64,
+        "north": -22.39
+      },
+      "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+      "sensors": [
+        "sentinel-2",
+        "landsat"
+      ],
+      "max_scenes_per_sensor": 4,
+      "max_cloud": 40.0,
+      "resolution": 30.0,
+      "cloud_buffer_m": 60.0,
+      "min_clear_fraction": 0.9,
+      "index": "ndvi",
+      "step_days": 1,
+      "max_gap_days": 20.0,
+      "refresh": true,
+      "fields": [],
+      "coverage_target": null
+    },
+    "cancel_requested": false,
+    "progress": {
+      "phase": "succeeded",
+      "message": "Complete exports are available"
+    },
+    "inventory_count": 6,
+    "error": null,
+    "manifest_url": "/api/runs/490bd0057f904f0cb15ba9a82d91fd8e/manifest.json"
+  },
+  "cancelled_attempt": {
+    "id": "266c730ce5444033b8d545d14c540ce3",
+    "project_id": null,
+    "recipe_revision": null,
+    "status": "cancelled",
+    "attempt": 1,
+    "created": "2026-10-17T20:44:27.339135+00:00",
+    "updated": "2026-10-17T20:44:27.717545+00:00",
+    "run_id": "490bd0057f904f0cb15ba9a82d91fd8e",
+    "recipe": {
+      "demo": false,
+      "bbox": {
+        "west": -44.66,
+        "south": -22.41,
+        "east": -44.64,
+        "north": -22.39
+      },
+      "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+      "sensors": [
+        "sentinel-2",
+        "landsat"
+      ],
+      "max_scenes_per_sensor": 4,
+      "max_cloud": 40.0,
+      "resolution": 30.0,
+      "cloud_buffer_m": 60.0,
+      "min_clear_fraction": 0.9,
+      "index": "ndvi",
+      "step_days": 1,
+      "max_gap_days": 20.0,
+      "refresh": true,
+      "fields": [],
+      "coverage_target": null
+    },
+    "cancel_requested": true,
+    "progress": {
+      "phase": "cancelled",
+      "message": "Cancelled at a processing checkpoint"
+    },
+    "inventory_count": 0,
+    "error": null,
+    "manifest_url": null
+  },
+  "assertions": {
+    "single_recipe_submission_across_reloads": true,
+    "same_job_retry": true,
+    "cancellation_has_no_manifest": true,
+    "validation_matches_checksum_evidence": true,
+    "mobile_no_horizontal_overflow": true,
+    "page_errors": []
+  },
+  "validation_summary": {
+    "held_out_clear_cells": 29600,
+    "scored_cells": 19349,
+    "scored_fraction": 0.6536824324324324,
+    "scored_dates": 4,
+    "linear": {
+      "samples": 19349,
+      "mae": 0.01705973290141482,
+      "rmse": 0.02251935533642605,
+      "bias": 0.0022673424429792205
+    },
+    "nearest": {
+      "samples": 19349,
+      "mae": 0.019745825070042012,
+      "rmse": 0.025612216278470015,
+      "bias": 0.007533162645889725
+    }
+  }
+}

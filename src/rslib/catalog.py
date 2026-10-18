@@ -1,0 +1,71 @@
+"""Public source metadata, kept separate from operational endpoint discovery."""
+
+PROVIDERS = {
+    "earth-search": "https://earth-search.aws.element84.com/v1",
+    "planetary-computer": "https://planetarycomputer.microsoft.com/api/stac/v1",
+}
+
+SOURCES = [
+    {
+        "id": "sentinel-2",
+        "title": "Sentinel-2 L2A",
+        "kind": "optical",
+        "resolution": "10–60 m",
+        "provider": "earth-search",
+        "collection": "sentinel-2-c1-l2a",
+        "access": "STAC + unsigned COG",
+        "url": "https://registry.opendata.aws/sentinel-2-l2a-cogs/",
+        "attribution": "Copernicus Sentinel data / ESA, processed by Element 84; retain item license links",
+    },
+    {
+        "id": "landsat",
+        "title": "Landsat Collection 2 L2",
+        "kind": "optical + thermal",
+        "resolution": "30 m",
+        "provider": "planetary-computer",
+        "collection": "landsat-c2-l2",
+        "access": "STAC + signed COG",
+        "url": "https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2",
+        "attribution": "USGS Landsat; collection terms apply",
+    },
+    {
+        "id": "dem",
+        "title": "Copernicus DEM GLO-30",
+        "kind": "surface elevation",
+        "resolution": "30 m",
+        "provider": "earth-search",
+        "collection": "cop-dem-glo-30",
+        "access": "STAC + COG; search without date/cloud filters",
+        "url": "https://registry.opendata.aws/copernicus-dem/",
+        "attribution": "Copernicus DEM / Airbus; verify tile license and vertical datum (EGM2008)",
+    },
+    {
+        "id": "terrain",
+        "title": "AWS / Mapzen Terrain",
+        "kind": "terrain visualization",
+        "resolution": "zoom dependent",
+        "access": "Terrarium tiles",
+        "url": "https://registry.opendata.aws/terrain-tiles/",
+        "attribution": "Mapzen / Tilezen, sources: https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+    },
+    {
+        "id": "soilgrids",
+        "title": "ISRIC SoilGrids 2.0",
+        "kind": "soil predictions",
+        "resolution": "250 m · 6 depth intervals",
+        "access": "VRT/GeoTIFF through GDAL; explicit layer URL",
+        "url": "https://docs.isric.org/globaldata/soilgrids/",
+        "attribution": "ISRIC — World Soil Information, CC BY 4.0; Poggio et al. 2021",
+    },
+    {
+        "id": "sentinel-1",
+        "title": "Sentinel-1 GRD",
+        "kind": "SAR",
+        "resolution": "product dependent",
+        "provider": "planetary-computer",
+        "collection": "sentinel-1-grd",
+        "access": "STAC discovery; calibrated SAR pipeline is planned",
+        "url": "https://registry.opendata.aws/sentinel-1/",
+        "attribution": "Copernicus Sentinel data / ESA",
+    },
+]

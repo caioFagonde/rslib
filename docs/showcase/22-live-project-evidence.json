@@ -1,0 +1,3734 @@
+{
+  "kind": "Actual satellite observations; user-defined analysis polygons, not cadastral boundaries",
+  "project_id": "b7b28ff5d9064bd6b1d3069f4fc96245",
+  "report": {
+    "schema_version": "rslib-stack-workflow/1",
+    "id": "1315d34695e8484093cf6a0ec3cdacad",
+    "synthetic": false,
+    "request": {
+      "demo": false,
+      "bbox": {
+        "west": -44.66,
+        "south": -22.41,
+        "east": -44.64,
+        "north": -22.39
+      },
+      "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+      "sensors": [
+        "sentinel-2",
+        "landsat"
+      ],
+      "max_scenes_per_sensor": 4,
+      "max_cloud": 40.0,
+      "resolution": 30.0,
+      "cloud_buffer_m": 60.0,
+      "min_clear_fraction": 0.9,
+      "index": "ndvi",
+      "step_days": 1,
+      "max_gap_days": 20.0,
+      "refresh": false,
+      "fields": [
+        {
+          "id": "west",
+          "name": "Western area",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -44.659,
+                  -22.409
+                ],
+                [
+                  -44.651,
+                  -22.409
+                ],
+                [
+                  -44.651,
+                  -22.391
+                ],
+                [
+                  -44.659,
+                  -22.391
+                ],
+                [
+                  -44.659,
+                  -22.409
+                ]
+              ],
+              [
+                [
+                  -44.657,
+                  -22.402
+                ],
+                [
+                  -44.653,
+                  -22.402
+                ],
+                [
+                  -44.653,
+                  -22.398
+                ],
+                [
+                  -44.657,
+                  -22.398
+                ],
+                [
+                  -44.657,
+                  -22.402
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "east",
+          "name": "Eastern area",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -44.65,
+                  -22.409
+                ],
+                [
+                  -44.641,
+                  -22.409
+                ],
+                [
+                  -44.641,
+                  -22.391
+                ],
+                [
+                  -44.646,
+                  -22.393
+                ],
+                [
+                  -44.65,
+                  -22.391
+                ],
+                [
+                  -44.65,
+                  -22.409
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "coverage_target": 0.8
+    },
+    "grid": {
+      "crs": "EPSG:32723",
+      "transform": [
+        30.0,
+        0.0,
+        534990.0,
+        0.0,
+        -30.0,
+        7523970.0
+      ],
+      "width": 69,
+      "height": 75
+    },
+    "bands": [
+      "blue",
+      "green",
+      "red",
+      "nir",
+      "swir16",
+      "swir22"
+    ],
+    "observations": [
+      {
+        "cache_key": "46a466f259cc335e0d423df4f3d6408b0bc9d885080547cd14ab3dfcc3a58600",
+        "id": "LC08_L2SP_218076_20260610_02_T1",
+        "collection": "landsat-c2-l2",
+        "provider": "planetary-computer",
+        "datetime": "2026-06-10T12:57:15.769621Z",
+        "platform": "landsat-8",
+        "family": "landsat-oli",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B2.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B3.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B4.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B5.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B6.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B7.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          }
+        ],
+        "adjustment": {
+          "method": "OLI reference; identity bandpass",
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+        },
+        "clear_fraction": 1.0,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "fcaa322ee185c87c6fcb9331d937d0588108d79560f6ac273e438b0b9468a56f",
+        "id": "LC09_L2SP_218076_20260618_02_T1",
+        "collection": "landsat-c2-l2",
+        "provider": "planetary-computer",
+        "datetime": "2026-06-18T12:57:33.519817Z",
+        "platform": "landsat-9",
+        "family": "landsat-oli",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B2.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B3.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B4.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B5.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B6.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B7.TIF",
+            "calibration": {
+              "scale": 2.75e-05,
+              "offset": -0.2,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 30.0
+          }
+        ],
+        "adjustment": {
+          "method": "OLI reference; identity bandpass",
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+        },
+        "clear_fraction": 1.0,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "9e92a5ef6c8257057d37bf1d294ac30aaa7b9b06d26ff6b9645fa107e1776e8f",
+        "id": "S2B_T23KNR_20260619T131449_L2A",
+        "collection": "sentinel-2-c1-l2a",
+        "provider": "earth-search",
+        "datetime": "2026-06-19T13:18:19.012000Z",
+        "platform": "sentinel-2b",
+        "family": "sentinel-2",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B02.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B03.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B04.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B8A.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B11.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B12.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          }
+        ],
+        "adjustment": {
+          "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+          "coefficients": {
+            "blue": {
+              "slope": 0.9778,
+              "offset": -0.004
+            },
+            "green": {
+              "slope": 1.0075,
+              "offset": -0.0008
+            },
+            "red": {
+              "slope": 0.9761,
+              "offset": 0.001
+            },
+            "nir": {
+              "slope": 0.9966,
+              "offset": 0.0
+            },
+            "swir16": {
+              "slope": 1.0,
+              "offset": -0.0003
+            },
+            "swir22": {
+              "slope": 0.9867,
+              "offset": 0.0004
+            }
+          },
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+          "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+        },
+        "clear_fraction": 0.9590677634155895,
+        "cache_hit": true
+      },
+      {
+        "cache_key": "870b2bd073c14a0fe4cf50e18034e905dba0d452a3ac9c72756d09d757ceca39",
+        "id": "S2B_T23KNR_20260629T131615_L2A",
+        "collection": "sentinel-2-c1-l2a",
+        "provider": "earth-search",
+        "datetime": "2026-06-29T13:18:18.220000Z",
+        "platform": "sentinel-2b",
+        "family": "sentinel-2",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260629T131615_L2A/B02.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260629T131615_L2A/B03.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260629T131615_L2A/B04.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260629T131615_L2A/B8A.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260629T131615_L2A/B11.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260629T131615_L2A/B12.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          }
+        ],
+        "adjustment": {
+          "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+          "coefficients": {
+            "blue": {
+              "slope": 0.9778,
+              "offset": -0.004
+            },
+            "green": {
+              "slope": 1.0075,
+              "offset": -0.0008
+            },
+            "red": {
+              "slope": 0.9761,
+              "offset": 0.001
+            },
+            "nir": {
+              "slope": 0.9966,
+              "offset": 0.0
+            },
+            "swir16": {
+              "slope": 1.0,
+              "offset": -0.0003
+            },
+            "swir22": {
+              "slope": 0.9867,
+              "offset": 0.0004
+            }
+          },
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+          "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+        },
+        "clear_fraction": 0.9592636114375245,
+        "cache_hit": false
+      },
+      {
+        "cache_key": "741b3baac5792f3952235dca117b14103995d763d90100d9abadf6f884b9dae4",
+        "id": "S2B_T23KNR_20260709T131519_L2A",
+        "collection": "sentinel-2-c1-l2a",
+        "provider": "earth-search",
+        "datetime": "2026-07-09T13:18:19.384000Z",
+        "platform": "sentinel-2b",
+        "family": "sentinel-2",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2B_T23KNR_20260709T131519_L2A/B02.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2B_T23KNR_20260709T131519_L2A/B03.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2B_T23KNR_20260709T131519_L2A/B04.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2B_T23KNR_20260709T131519_L2A/B8A.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2B_T23KNR_20260709T131519_L2A/B11.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2B_T23KNR_20260709T131519_L2A/B12.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          }
+        ],
+        "adjustment": {
+          "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+          "coefficients": {
+            "blue": {
+              "slope": 0.9778,
+              "offset": -0.004
+            },
+            "green": {
+              "slope": 1.0075,
+              "offset": -0.0008
+            },
+            "red": {
+              "slope": 0.9761,
+              "offset": 0.001
+            },
+            "nir": {
+              "slope": 0.9966,
+              "offset": 0.0
+            },
+            "swir16": {
+              "slope": 1.0,
+              "offset": -0.0003
+            },
+            "swir22": {
+              "slope": 0.9867,
+              "offset": 0.0004
+            }
+          },
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+          "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+        },
+        "clear_fraction": 0.9592636114375245,
+        "cache_hit": false
+      },
+      {
+        "cache_key": "544ee8bd413ba7729eb7386c5ecdf390bea5811494633ae519fdcab0d19399c5",
+        "id": "S2C_T23KNR_20260714T131242_L2A",
+        "collection": "sentinel-2-c1-l2a",
+        "provider": "earth-search",
+        "datetime": "2026-07-14T13:18:21.516000Z",
+        "platform": "sentinel-2c",
+        "family": "sentinel-2",
+        "already_harmonized": false,
+        "inputs": [
+          {
+            "band": "blue",
+            "asset": "blue",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B02.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "green",
+            "asset": "green",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B03.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "red",
+            "asset": "red",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B04.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 10.0
+          },
+          {
+            "band": "nir",
+            "asset": "nir08",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B8A.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir16",
+            "asset": "swir16",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B11.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          },
+          {
+            "band": "swir22",
+            "asset": "swir22",
+            "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B12.tif",
+            "calibration": {
+              "scale": 0.0001,
+              "offset": -0.1,
+              "policy": "STAC raster metadata"
+            },
+            "native_resolution_m": 20.0
+          }
+        ],
+        "adjustment": {
+          "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+          "coefficients": {
+            "blue": {
+              "slope": 0.9851,
+              "offset": -0.0027
+            },
+            "green": {
+              "slope": 1.0038,
+              "offset": -0.0009
+            },
+            "red": {
+              "slope": 0.9718,
+              "offset": 0.0011
+            },
+            "nir": {
+              "slope": 0.9995,
+              "offset": -0.0003
+            },
+            "swir16": {
+              "slope": 0.9994,
+              "offset": -0.0007
+            },
+            "swir22": {
+              "slope": 0.991,
+              "offset": 0.0004
+            }
+          },
+          "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+          "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+        },
+        "clear_fraction": 0.9195064629847238,
+        "cache_hit": true
+      }
+    ],
+    "processing": {
+      "harmonization": "bandpass",
+      "bbox": {
+        "west": -44.66,
+        "south": -22.41,
+        "east": -44.64,
+        "north": -22.39
+      },
+      "aoi_pixels": 5106,
+      "cloud_buffer_m": 60.0,
+      "min_clear_fraction": 0.9,
+      "resampling": "native QA first, GDAL area-weighted clear reflectance, support threshold, common complete spectrum",
+      "nir": "Sentinel-2 B8A / Landsat OLI B05; broad B08 never substituted",
+      "all_upstream_hls": false,
+      "cache_max_bytes": 2147483648,
+      "cache_evicted_files": 0,
+      "cache": "Prepared AOI/scene cache; immutable source assumption. Use refresh=True after upstream asset revisions."
+    },
+    "discovery": [
+      {
+        "sensor": "sentinel-2",
+        "provider": "earth-search",
+        "query": {
+          "provider": "earth-search",
+          "collections": [
+            "sentinel-2-c1-l2a"
+          ],
+          "bbox": {
+            "west": -44.66,
+            "south": -22.41,
+            "east": -44.64,
+            "north": -22.39
+          },
+          "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+          "max_cloud": 40.0,
+          "max_items": 16,
+          "max_pages": 5
+        },
+        "pages": 2,
+        "examined": 11,
+        "cloud_rejected_or_unknown": 7,
+        "returned": 4,
+        "truncated": false,
+        "stop_reason": null,
+        "ranking": "scene cloud cover ascending within fetched results; not AOI clear coverage",
+        "acquisition_plan": {
+          "method": "date-stratified sampled-footprint set cover",
+          "candidate_items": 4,
+          "candidate_days": 4,
+          "selected_items": 4,
+          "selected_days": [
+            "2026-06-19",
+            "2026-06-29",
+            "2026-07-09",
+            "2026-07-14"
+          ],
+          "raster_scene_limit": 4,
+          "limitation": "Bounded fetched candidates and sampled geometry; no guarantee of AOI cloud-free or complete temporal coverage"
+        }
+      },
+      {
+        "sensor": "landsat",
+        "provider": "planetary-computer",
+        "query": {
+          "provider": "planetary-computer",
+          "collections": [
+            "landsat-c2-l2"
+          ],
+          "bbox": {
+            "west": -44.66,
+            "south": -22.41,
+            "east": -44.64,
+            "north": -22.39
+          },
+          "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+          "max_cloud": 40.0,
+          "max_items": 16,
+          "max_pages": 5
+        },
+        "pages": 1,
+        "examined": 11,
+        "cloud_rejected_or_unknown": 7,
+        "returned": 4,
+        "truncated": false,
+        "stop_reason": null,
+        "ranking": "scene cloud cover ascending within fetched results; not AOI clear coverage",
+        "acquisition_plan": {
+          "method": "date-stratified sampled-footprint set cover",
+          "candidate_items": 4,
+          "candidate_days": 2,
+          "selected_items": 2,
+          "selected_days": [
+            "2026-06-10",
+            "2026-06-18"
+          ],
+          "raster_scene_limit": 4,
+          "limitation": "Bounded fetched candidates and sampled geometry; no guarantee of AOI cloud-free or complete temporal coverage"
+        }
+      }
+    ],
+    "acquisition": {
+      "target_supported_fraction": 0.8,
+      "stop_reason": "candidate_budget_exhausted",
+      "prepared_observations": 6,
+      "unread_candidates": 0,
+      "steps": [
+        {
+          "observations": 4,
+          "supported_fraction": 0.23649074405218062,
+          "observed_fraction": 0.08431683100870246
+        },
+        {
+          "observations": 5,
+          "supported_fraction": 0.7235392292103068,
+          "observed_fraction": 0.10517038777908343
+        },
+        {
+          "observations": 6,
+          "supported_fraction": 0.7333954937924693,
+          "observed_fraction": 0.1260239445494644
+        }
+      ],
+      "basis": "AOI cell-date support, including permitted linear estimates",
+      "selection": "Initial date/footprint strata, then missing-date proximity weighted by scene cloud cover",
+      "limitation": "Bounded discovered candidates; unread-source benefit is a metadata heuristic, not known pixel-clear coverage or an optimal plan"
+    },
+    "summary": {
+      "observations": 6,
+      "daily_mosaics": 6,
+      "regular_dates": 46,
+      "platforms": [
+        "landsat-8",
+        "landsat-9",
+        "sentinel-2b",
+        "sentinel-2c"
+      ],
+      "cache_hits": 4,
+      "observed_fraction": 0.1260239445494644,
+      "filled_fraction": 0.6073715492430048,
+      "unsupported_fraction": 0.2666045062075308
+    },
+    "timeline": [
+      {
+        "day": "2026-06-01",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0000.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0000.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0000.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0000.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-02",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0001.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0001.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0001.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0001.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-03",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0002.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0002.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0002.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0002.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-04",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0003.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0003.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0003.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0003.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-05",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0004.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0004.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0004.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0004.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-06",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0005.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0005.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0005.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0005.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-07",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0006.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0006.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0006.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0006.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-08",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0007.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0007.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0007.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0007.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-09",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0008.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0008.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0008.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0008.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-06-10",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0009.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0009.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0009.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0009.png",
+        "observed_fraction": 1.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.689657986164093,
+          "std": 0.08657048642635345,
+          "p05": 0.563560962677002,
+          "median": 0.6818605661392212,
+          "p95": 0.8397018909454346
+        }
+      },
+      {
+        "day": "2026-06-11",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0010.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0010.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0010.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0010.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 1.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.6937681436538696,
+          "std": 0.08774996548891068,
+          "p05": 0.563667356967926,
+          "median": 0.6855717301368713,
+          "p95": 0.8419160842895508
+        }
+      },
+      {
+        "day": "2026-06-12",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0011.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0011.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0011.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0011.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 1.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.6978783011436462,
+          "std": 0.08921192586421967,
+          "p05": 0.565284013748169,
+          "median": 0.6901853084564209,
+          "p95": 0.8449017405509949
+        }
+      },
+      {
+        "day": "2026-06-13",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0012.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0012.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0012.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0012.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 1.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.7019884586334229,
+          "std": 0.09094273298978806,
+          "p05": 0.5663092136383057,
+          "median": 0.6939082145690918,
+          "p95": 0.8481208086013794
+        }
+      },
+      {
+        "day": "2026-06-14",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0013.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0013.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0013.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0013.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 1.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.7060986757278442,
+          "std": 0.09292736649513245,
+          "p05": 0.5670421123504639,
+          "median": 0.6980628371238708,
+          "p95": 0.851883053779602
+        }
+      },
+      {
+        "day": "2026-06-15",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0014.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0014.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0014.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0014.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 1.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.7102088332176208,
+          "std": 0.09514995664358139,
+          "p05": 0.5671916007995605,
+          "median": 0.7019671201705933,
+          "p95": 0.8563051819801331
+        }
+      },
+      {
+        "day": "2026-06-16",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0015.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0015.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0015.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0015.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 1.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.7143190503120422,
+          "std": 0.0975942388176918,
+          "p05": 0.5679143667221069,
+          "median": 0.7057609558105469,
+          "p95": 0.8606902360916138
+        }
+      },
+      {
+        "day": "2026-06-17",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0016.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0016.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0016.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0016.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 1.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.7184291481971741,
+          "std": 0.10024399310350418,
+          "p05": 0.5682714581489563,
+          "median": 0.7095360159873962,
+          "p95": 0.8664001226425171
+        }
+      },
+      {
+        "day": "2026-06-18",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0017.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0017.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0017.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0017.png",
+        "observed_fraction": 1.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 5106,
+          "total_pixels": 5106,
+          "valid_fraction": 1.0,
+          "mean": 0.7225393652915955,
+          "std": 0.10308337211608887,
+          "p05": 0.5681134462356567,
+          "median": 0.7142635583877563,
+          "p95": 0.8732036352157593
+        }
+      },
+      {
+        "day": "2026-06-19",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0018.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0018.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0018.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0018.png",
+        "observed_fraction": 0.9590677634155895,
+        "filled_fraction": 0.0015667841754798276,
+        "statistics": {
+          "valid_pixels": 4905,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9606345475910694,
+          "mean": 0.7407527565956116,
+          "std": 0.11525044590234756,
+          "p05": 0.5621594190597534,
+          "median": 0.7342039942741394,
+          "p95": 0.9020897746086121
+        }
+      },
+      {
+        "day": "2026-06-20",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0019.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0019.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0019.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0019.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7397878766059875,
+          "std": 0.11523918062448502,
+          "p05": 0.5620226263999939,
+          "median": 0.7331587076187134,
+          "p95": 0.9011642932891846
+        }
+      },
+      {
+        "day": "2026-06-21",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0020.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0020.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0020.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0020.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7387354373931885,
+          "std": 0.11524700373411179,
+          "p05": 0.5609707832336426,
+          "median": 0.7320383787155151,
+          "p95": 0.9002386331558228
+        }
+      },
+      {
+        "day": "2026-06-22",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0021.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0021.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0021.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0021.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7376829385757446,
+          "std": 0.1152600422501564,
+          "p05": 0.5598514676094055,
+          "median": 0.7311666011810303,
+          "p95": 0.8994428515434265
+        }
+      },
+      {
+        "day": "2026-06-23",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0022.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0022.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0022.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0022.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7366304993629456,
+          "std": 0.11527828872203827,
+          "p05": 0.5587926506996155,
+          "median": 0.7298362255096436,
+          "p95": 0.898608922958374
+        }
+      },
+      {
+        "day": "2026-06-24",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0023.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0023.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0023.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0023.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7355780601501465,
+          "std": 0.11530175060033798,
+          "p05": 0.5581877827644348,
+          "median": 0.7286933660507202,
+          "p95": 0.8976308703422546
+        }
+      },
+      {
+        "day": "2026-06-25",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0024.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0024.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0024.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0024.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7345255613327026,
+          "std": 0.11533042788505554,
+          "p05": 0.5571033954620361,
+          "median": 0.7274290323257446,
+          "p95": 0.8968432545661926
+        }
+      },
+      {
+        "day": "2026-06-26",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0025.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0025.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0025.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0025.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7334731817245483,
+          "std": 0.11536429822444916,
+          "p05": 0.555959939956665,
+          "median": 0.7263501882553101,
+          "p95": 0.8960921168327332
+        }
+      },
+      {
+        "day": "2026-06-27",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0026.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0026.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0026.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0026.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7324206829071045,
+          "std": 0.11540336906909943,
+          "p05": 0.5548861026763916,
+          "median": 0.7251461744308472,
+          "p95": 0.8951964378356934
+        }
+      },
+      {
+        "day": "2026-06-28",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0027.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0027.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0027.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0027.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7313682436943054,
+          "std": 0.11544763296842575,
+          "p05": 0.5538968443870544,
+          "median": 0.7242612838745117,
+          "p95": 0.894172728061676
+        }
+      },
+      {
+        "day": "2026-06-29",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0028.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0028.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0028.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0028.png",
+        "observed_fraction": 0.9592636114375245,
+        "filled_fraction": 0.0003916960438699569,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7303156852722168,
+          "std": 0.11549708992242813,
+          "p05": 0.5531711578369141,
+          "median": 0.7231083512306213,
+          "p95": 0.8932145237922668
+        }
+      },
+      {
+        "day": "2026-06-30",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0029.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0029.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0029.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0029.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7280420660972595,
+          "std": 0.11567634344100952,
+          "p05": 0.5510743856430054,
+          "median": 0.7204334735870361,
+          "p95": 0.891471266746521
+        }
+      },
+      {
+        "day": "2026-07-01",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0030.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0030.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0030.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0030.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7257682681083679,
+          "std": 0.11586231738328934,
+          "p05": 0.5482132434844971,
+          "median": 0.7183377742767334,
+          "p95": 0.8892360925674438
+        }
+      },
+      {
+        "day": "2026-07-02",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0031.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0031.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0031.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0031.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7234945893287659,
+          "std": 0.11605499684810638,
+          "p05": 0.5461323261260986,
+          "median": 0.7160454988479614,
+          "p95": 0.8874831795692444
+        }
+      },
+      {
+        "day": "2026-07-03",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0032.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0032.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0032.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0032.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7212207913398743,
+          "std": 0.11625432223081589,
+          "p05": 0.5440093874931335,
+          "median": 0.7135698795318604,
+          "p95": 0.8853936195373535
+        }
+      },
+      {
+        "day": "2026-07-04",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0033.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0033.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0033.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0033.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7189471125602722,
+          "std": 0.11646027863025665,
+          "p05": 0.5418936014175415,
+          "median": 0.7113767862319946,
+          "p95": 0.883635938167572
+        }
+      },
+      {
+        "day": "2026-07-05",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0034.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0034.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0034.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0034.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7166733741760254,
+          "std": 0.1166728287935257,
+          "p05": 0.5395619869232178,
+          "median": 0.708747386932373,
+          "p95": 0.8817123770713806
+        }
+      },
+      {
+        "day": "2026-07-06",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0035.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0035.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0035.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0035.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7143996953964233,
+          "std": 0.11689193546772003,
+          "p05": 0.5371729731559753,
+          "median": 0.7062250375747681,
+          "p95": 0.879836916923523
+        }
+      },
+      {
+        "day": "2026-07-07",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0036.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0036.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0036.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0036.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7121259570121765,
+          "std": 0.11711755394935608,
+          "p05": 0.5343125462532043,
+          "median": 0.7039556503295898,
+          "p95": 0.8778704404830933
+        }
+      },
+      {
+        "day": "2026-07-08",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0037.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0037.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0037.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0037.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9596553074813945,
+        "statistics": {
+          "valid_pixels": 4900,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9596553074813945,
+          "mean": 0.7098522186279297,
+          "std": 0.11734965443611145,
+          "p05": 0.5317019820213318,
+          "median": 0.7014991044998169,
+          "p95": 0.8763440251350403
+        }
+      },
+      {
+        "day": "2026-07-09",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0038.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0038.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0038.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0038.png",
+        "observed_fraction": 0.9592636114375245,
+        "filled_fraction": 0.0009792401096748924,
+        "statistics": {
+          "valid_pixels": 4903,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9602428515471993,
+          "mean": 0.7075091004371643,
+          "std": 0.11758624762296677,
+          "p05": 0.5289669036865234,
+          "median": 0.6989074945449829,
+          "p95": 0.8747959733009338
+        }
+      },
+      {
+        "day": "2026-07-10",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0039.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0039.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0039.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0039.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9155895025460243,
+        "statistics": {
+          "valid_pixels": 4675,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9155895025460243,
+          "mean": 0.7057465314865112,
+          "std": 0.11652610450983047,
+          "p05": 0.532069981098175,
+          "median": 0.694232165813446,
+          "p95": 0.8778733611106873
+        }
+      },
+      {
+        "day": "2026-07-11",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0040.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0040.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0040.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0040.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9155895025460243,
+        "statistics": {
+          "valid_pixels": 4675,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9155895025460243,
+          "mean": 0.7097881436347961,
+          "std": 0.11690603196620941,
+          "p05": 0.5360628366470337,
+          "median": 0.6972843408584595,
+          "p95": 0.8818126320838928
+        }
+      },
+      {
+        "day": "2026-07-12",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0041.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0041.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0041.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0041.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9155895025460243,
+        "statistics": {
+          "valid_pixels": 4675,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9155895025460243,
+          "mean": 0.713829755783081,
+          "std": 0.11734627187252045,
+          "p05": 0.5393641591072083,
+          "median": 0.7007606625556946,
+          "p95": 0.8862560987472534
+        }
+      },
+      {
+        "day": "2026-07-13",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0042.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0042.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0042.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0042.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.9155895025460243,
+        "statistics": {
+          "valid_pixels": 4675,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9155895025460243,
+          "mean": 0.7178713083267212,
+          "std": 0.11784616112709045,
+          "p05": 0.541922390460968,
+          "median": 0.7046533823013306,
+          "p95": 0.8906923532485962
+        }
+      },
+      {
+        "day": "2026-07-14",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0043.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0043.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0043.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0043.png",
+        "observed_fraction": 0.9195064629847238,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 4695,
+          "total_pixels": 5106,
+          "valid_fraction": 0.9195064629847238,
+          "mean": 0.7218011617660522,
+          "std": 0.11834129691123962,
+          "p05": 0.5450664162635803,
+          "median": 0.7085911631584167,
+          "p95": 0.895289421081543
+        }
+      },
+      {
+        "day": "2026-07-15",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0044.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0044.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0044.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0044.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      },
+      {
+        "day": "2026-07-16",
+        "image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/frame-0045.png",
+        "support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/support-0045.png",
+        "map_image_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-frame-0045.png",
+        "map_support_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-support-0045.png",
+        "observed_fraction": 0.0,
+        "filled_fraction": 0.0,
+        "statistics": {
+          "valid_pixels": 0,
+          "total_pixels": 5106,
+          "valid_fraction": 0.0,
+          "mean": null,
+          "std": null,
+          "p05": null,
+          "median": null,
+          "p95": null
+        }
+      }
+    ],
+    "fields": [
+      {
+        "id": "west",
+        "name": "Western area",
+        "area_m2": 1458393.2318145419,
+        "area_crs": "EPSG:32723",
+        "fixed_observed_area_m2": 0.0,
+        "fixed_observed_fraction": 0.0,
+        "timeline": [
+          {
+            "day": "2026-06-01",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-02",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-03",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-04",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-05",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-06",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-07",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-08",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-09",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-10",
+            "observed_mean": 0.6778471507882144,
+            "supported_mean": 0.6778471507882144,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1458393.2318144832,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.9999999999999598,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-11",
+            "observed_mean": null,
+            "supported_mean": 0.6805282196173089,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-12",
+            "observed_mean": null,
+            "supported_mean": 0.6832092873720857,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-13",
+            "observed_mean": null,
+            "supported_mean": 0.6858903558883892,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-14",
+            "observed_mean": null,
+            "supported_mean": 0.6885714233558972,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-15",
+            "observed_mean": null,
+            "supported_mean": 0.6912524923116197,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-16",
+            "observed_mean": null,
+            "supported_mean": 0.6939335608144327,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-17",
+            "observed_mean": null,
+            "supported_mean": 0.696614628545158,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1458393.2318144832,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999598,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-18",
+            "observed_mean": 0.6992956973930236,
+            "supported_mean": 0.6992956973930236,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1458393.2318144832,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.8673322200775146e-08,
+            "observed_fraction": 0.9999999999999598,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 4.0190073491430667e-14
+          },
+          {
+            "day": "2026-06-19",
+            "observed_mean": 0.71364735815427,
+            "supported_mean": 0.7137775786104359,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1335988.770017811,
+            "estimated_area_m2": 5468.829997647554,
+            "missing_area_m2": 116935.6317990832,
+            "observed_fraction": 0.9160689592309514,
+            "estimated_fraction": 0.003749900834936817,
+            "missing_fraction": 0.08018113993411169
+          },
+          {
+            "day": "2026-06-20",
+            "observed_mean": null,
+            "supported_mean": 0.7129137867368998,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-21",
+            "observed_mean": null,
+            "supported_mean": 0.7118518075539799,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-22",
+            "observed_mean": null,
+            "supported_mean": 0.710789825592932,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-23",
+            "observed_mean": null,
+            "supported_mean": 0.7097278469275781,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-24",
+            "observed_mean": null,
+            "supported_mean": 0.7086658656987282,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-25",
+            "observed_mean": null,
+            "supported_mean": 0.7076038846549526,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-26",
+            "observed_mean": null,
+            "supported_mean": 0.7065419056109326,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-27",
+            "observed_mean": null,
+            "supported_mean": 0.7054799240270162,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-28",
+            "observed_mean": null,
+            "supported_mean": 0.7044179449422454,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-29",
+            "observed_mean": 0.7035304908030042,
+            "supported_mean": 0.7033559639778908,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1335157.6000154587,
+            "estimated_area_m2": 1800.0,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.9154990374950159,
+            "estimated_fraction": 0.0012342350202492567,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-06-30",
+            "observed_mean": null,
+            "supported_mean": 0.7010543557896846,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-01",
+            "observed_mean": null,
+            "supported_mean": 0.6987527463222345,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-02",
+            "observed_mean": null,
+            "supported_mean": 0.6964511365496905,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-03",
+            "observed_mean": null,
+            "supported_mean": 0.6941495278533417,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-04",
+            "observed_mean": null,
+            "supported_mean": 0.6918479179222725,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-05",
+            "observed_mean": null,
+            "supported_mean": 0.6895463101411629,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-06",
+            "observed_mean": null,
+            "supported_mean": 0.6872447009877805,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-07",
+            "observed_mean": null,
+            "supported_mean": 0.684943091503879,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-08",
+            "observed_mean": null,
+            "supported_mean": 0.6826414823401202,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1336957.6000154587,
+            "missing_area_m2": 121435.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9167332725152652,
+            "missing_fraction": 0.08326672748473485
+          },
+          {
+            "day": "2026-07-09",
+            "observed_mean": 0.6801602164630834,
+            "supported_mean": 0.6801660263874215,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1336957.6000154587,
+            "estimated_area_m2": 2700.0,
+            "missing_area_m2": 118735.6317990832,
+            "observed_fraction": 0.9167332725152652,
+            "estimated_fraction": 0.0018513525303738851,
+            "missing_fraction": 0.08141537495436102
+          },
+          {
+            "day": "2026-07-10",
+            "observed_mean": null,
+            "supported_mean": 0.6848856892171601,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1335157.6000154587,
+            "missing_area_m2": 123235.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9154990374950159,
+            "missing_fraction": 0.08450096250498407
+          },
+          {
+            "day": "2026-07-11",
+            "observed_mean": null,
+            "supported_mean": 0.6891519581838005,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1335157.6000154587,
+            "missing_area_m2": 123235.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9154990374950159,
+            "missing_fraction": 0.08450096250498407
+          },
+          {
+            "day": "2026-07-12",
+            "observed_mean": null,
+            "supported_mean": 0.693418227511148,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1335157.6000154587,
+            "missing_area_m2": 123235.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9154990374950159,
+            "missing_fraction": 0.08450096250498407
+          },
+          {
+            "day": "2026-07-13",
+            "observed_mean": null,
+            "supported_mean": 0.6976844963441495,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1335157.6000154587,
+            "missing_area_m2": 123235.6317990832,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9154990374950159,
+            "missing_fraction": 0.08450096250498407
+          },
+          {
+            "day": "2026-07-14",
+            "observed_mean": 0.7020477094418549,
+            "supported_mean": 0.7020477094418549,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1348747.178993049,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 109646.05282149278,
+            "observed_fraction": 0.9248172232086743,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 0.07518277679132568
+          },
+          {
+            "day": "2026-07-15",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-07-16",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1458393.2318145419,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          }
+        ]
+      },
+      {
+        "id": "east",
+        "name": "Eastern area",
+        "area_m2": 1743232.6830152434,
+        "area_crs": "EPSG:32723",
+        "fixed_observed_area_m2": 0.0,
+        "fixed_observed_fraction": 0.0,
+        "timeline": [
+          {
+            "day": "2026-06-01",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-02",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-03",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-04",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-05",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-06",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-07",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-08",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-09",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-06-10",
+            "observed_mean": 0.7087835613241849,
+            "supported_mean": 0.7087835613241849,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-11",
+            "observed_mean": null,
+            "supported_mean": 0.7138960956486012,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-12",
+            "observed_mean": null,
+            "supported_mean": 0.7190086308034568,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-13",
+            "observed_mean": null,
+            "supported_mean": 0.7241211650103179,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-14",
+            "observed_mean": null,
+            "supported_mean": 0.7292336995383782,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-15",
+            "observed_mean": null,
+            "supported_mean": 0.7343462341135498,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-16",
+            "observed_mean": null,
+            "supported_mean": 0.7394587683204109,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-17",
+            "observed_mean": null,
+            "supported_mean": 0.7445713034752668,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-18",
+            "observed_mean": 0.7496838377996828,
+            "supported_mean": 0.7496838377996828,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-19",
+            "observed_mean": 0.766619617523656,
+            "supported_mean": 0.766619617523656,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-20",
+            "observed_mean": null,
+            "supported_mean": 0.7656180911695022,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-21",
+            "observed_mean": null,
+            "supported_mean": 0.7646165644341743,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-22",
+            "observed_mean": null,
+            "supported_mean": 0.7636150378357129,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-23",
+            "observed_mean": null,
+            "supported_mean": 0.7626135118633158,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-24",
+            "observed_mean": null,
+            "supported_mean": 0.7616119848440476,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-25",
+            "observed_mean": null,
+            "supported_mean": 0.760610459347887,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-26",
+            "observed_mean": null,
+            "supported_mean": 0.7596089332690182,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-27",
+            "observed_mean": null,
+            "supported_mean": 0.7586074067966945,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-28",
+            "observed_mean": null,
+            "supported_mean": 0.7576058799758296,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-29",
+            "observed_mean": 0.7566043536819933,
+            "supported_mean": 0.7566043536819933,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-06-30",
+            "observed_mean": null,
+            "supported_mean": 0.7543714938491837,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-01",
+            "observed_mean": null,
+            "supported_mean": 0.7521386328031532,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-02",
+            "observed_mean": null,
+            "supported_mean": 0.7499057712249236,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-03",
+            "observed_mean": null,
+            "supported_mean": 0.747672911250111,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-04",
+            "observed_mean": null,
+            "supported_mean": 0.745440050688149,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-05",
+            "observed_mean": null,
+            "supported_mean": 0.7432071914162833,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-06",
+            "observed_mean": null,
+            "supported_mean": 0.7409743303670754,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-07",
+            "observed_mean": null,
+            "supported_mean": 0.7387414698786275,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-08",
+            "observed_mean": null,
+            "supported_mean": 0.73650860965325,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1743232.6830152376,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9999999999999967,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-09",
+            "observed_mean": 0.734275749015174,
+            "supported_mean": 0.734275749015174,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1743232.6830152376,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 5.820766091346741e-09,
+            "observed_fraction": 0.9999999999999967,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 3.3306690738754696e-15
+          },
+          {
+            "day": "2026-07-10",
+            "observed_mean": null,
+            "supported_mean": 0.7286217112281916,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1582208.6661654245,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9076290741799895,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-11",
+            "observed_mean": null,
+            "supported_mean": 0.7322114664284051,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1582208.6661654245,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9076290741799895,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-12",
+            "observed_mean": null,
+            "supported_mean": 0.7358012223081638,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1582208.6661654245,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9076290741799895,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-13",
+            "observed_mean": null,
+            "supported_mean": 0.7393909775422814,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 1582208.6661654245,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.9076290741799895,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-14",
+            "observed_mean": 0.7429807328977331,
+            "supported_mean": 0.7429807328977331,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 1582208.6661654245,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 161024.01684981887,
+            "observed_fraction": 0.9076290741799895,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 0.0923709258200105
+          },
+          {
+            "day": "2026-07-15",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          },
+          {
+            "day": "2026-07-16",
+            "observed_mean": null,
+            "supported_mean": null,
+            "fixed_observed_mean": null,
+            "observed_area_m2": 0.0,
+            "estimated_area_m2": 0.0,
+            "missing_area_m2": 1743232.6830152434,
+            "observed_fraction": 0.0,
+            "estimated_fraction": 0.0,
+            "missing_fraction": 1.0
+          }
+        ]
+      }
+    ],
+    "display": {
+      "bounds": [
+        -44.660082338846905,
+        -22.410280739497097,
+        -44.63992084033618,
+        -22.389910810113047
+      ],
+      "grid": {
+        "crs": "EPSG:3857",
+        "transform": [
+          32.52706880932269,
+          0.0,
+          -4971537.624746108,
+          0.0,
+          -32.701768037496755,
+          -2558403.519845236
+        ],
+        "width": 69,
+        "height": 75
+      },
+      "method": "Nearest-neighbor Web Mercator display reprojection; inspect original analysis cells",
+      "composite_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/map-composite.png"
+    },
+    "elapsed_seconds": 20.638,
+    "sampling": "Projected common grid; QA applied on native grids before area averaging. Bands matched by sensor. Output pixels are masked below the clear-support threshold.",
+    "limitations": [
+      "Bandpass adjustment on ordinary SR is partial harmonization; no BRDF normalization or common atmospheric reprocessing.",
+      "Daily mosaics represent a UTC day, not a simultaneous multi-sensor exposure.",
+      "Interpolation is allowed only between clear observations within max_gap_days, can smear change, and never extrapolates.",
+      "Search limits/truncation are retained; these scenes do not guarantee complete temporal or AOI coverage."
+    ],
+    "coverage_notes": [
+      "Coverage goal 80% was not met: 73.3% supported. All planned candidates within the scene budget were prepared; missing data remain explicit."
+    ],
+    "before_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/before.png",
+    "preview_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/preview.png",
+    "stack_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/stack.npz",
+    "series_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/series.npz",
+    "support_cog_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/series-support.tif",
+    "cog_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/analysis.tif",
+    "composite_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/composite.tif",
+    "provenance_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/provenance.tif",
+    "manifest_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/manifest.json",
+    "fields_csv_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/fields.csv",
+    "fields_geojson_url": "/api/runs/1315d34695e8484093cf6a0ec3cdacad/fields.geojson",
+    "outputs": [
+      {
+        "path": "analysis.tif",
+        "sha256": "d8342ae57beaad1ca225969e49677b9a059851ccb1d587ec4b250ac9e880db33"
+      },
+      {
+        "path": "before.png",
+        "sha256": "47a089825c82b31372505509ae3d8c3ab88ee6841df5d9dd1a4c242dc1f9f3e3"
+      },
+      {
+        "path": "composite.tif",
+        "sha256": "0ff04b2933a3dc40e80aa810fe62309236ddf0d8e784f47e2a128de0ecff116f"
+      },
+      {
+        "path": "fields.csv",
+        "sha256": "5a73fa271dc7eba24fac7f343645cc5e9a9fd36351ba5d3d847adeab1c64b0b2"
+      },
+      {
+        "path": "fields.geojson",
+        "sha256": "0aecf9866a4408ff9e2f08c54c0ed7a32ad04edfa302edc8d00363ba2cda11ad"
+      },
+      {
+        "path": "frame-0000.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0001.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0002.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0003.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0004.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0005.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0006.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0007.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0008.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0009.png",
+        "sha256": "47a089825c82b31372505509ae3d8c3ab88ee6841df5d9dd1a4c242dc1f9f3e3"
+      },
+      {
+        "path": "frame-0010.png",
+        "sha256": "85dd12bbef6adeacabae5b956dfaa172d2eae112f444eba8782aab216087d4bb"
+      },
+      {
+        "path": "frame-0011.png",
+        "sha256": "954c5b4034fb810367e6b57bafe9411cb92afaf51bfa03baf40361c3f90acda2"
+      },
+      {
+        "path": "frame-0012.png",
+        "sha256": "1adcb37ab1b812666e4e6305140439ada16a298705628e38fec9aeda1eeadc89"
+      },
+      {
+        "path": "frame-0013.png",
+        "sha256": "d293aad42610bd9ed63eb5479a05110f728bf754537ce3f3ce0234539daad280"
+      },
+      {
+        "path": "frame-0014.png",
+        "sha256": "7a6da0e125aed0ec265c4c39b13971a03717b05028f6e4d320ceda90a1778e97"
+      },
+      {
+        "path": "frame-0015.png",
+        "sha256": "54e9e8c6e446ba064624b3dc5ec64d25d31b10b0bb6f6cfcc58bd8a397da175b"
+      },
+      {
+        "path": "frame-0016.png",
+        "sha256": "b5b33b7b9da871126f5492666249f08ba627f6369cb3b59639c1df4cd1fcdd7c"
+      },
+      {
+        "path": "frame-0017.png",
+        "sha256": "3a00874dd2a04e8de4617b582b3866608bbaaa1c48fa04fd703423a577d82fb9"
+      },
+      {
+        "path": "frame-0018.png",
+        "sha256": "7e95249ad96c8db313a1c8824c065eb5b42be14ad1c7a01fd84d2f2146bfd93b"
+      },
+      {
+        "path": "frame-0019.png",
+        "sha256": "33889958eab183743b3ea6c346082ffa11e11822be4569cc26e6e72a848437cf"
+      },
+      {
+        "path": "frame-0020.png",
+        "sha256": "13e4b28e1c44190f64ea4cfc0c0715b2b8a79853f951ac8da42e3172b064dbd1"
+      },
+      {
+        "path": "frame-0021.png",
+        "sha256": "d304392c642e66c0edfd0db3d80f8393e36c4ff5462759a4c3d98c04f5f6492a"
+      },
+      {
+        "path": "frame-0022.png",
+        "sha256": "a3b019bdf9376d56a2525eb8cc24023c15c97fce1f5ae5aeabb1d32d10ccef3d"
+      },
+      {
+        "path": "frame-0023.png",
+        "sha256": "cd38a5ebf0d5923ce60f125696953b12010e11405c40648510297d4d78b21930"
+      },
+      {
+        "path": "frame-0024.png",
+        "sha256": "e292eb4f72287e32136a00b9a8282c51c7201131e0292c49628cbdcf59f68edd"
+      },
+      {
+        "path": "frame-0025.png",
+        "sha256": "b61096f7a10769c1979224f2031af43585997dbdb6c2080b75068e105bc59a6b"
+      },
+      {
+        "path": "frame-0026.png",
+        "sha256": "0b43a060f56ad16896f78f2320ed7b278d3af2a02c018a4922f1f2173c84b445"
+      },
+      {
+        "path": "frame-0027.png",
+        "sha256": "5f5b100340e82ad24f6700390595661fc4645262290f65f4a198bd1b274849ca"
+      },
+      {
+        "path": "frame-0028.png",
+        "sha256": "10abf7646e1cf11e14c9944b2970e8f5a5e18fde7a256b66cbdf8ad8e0ea9a8c"
+      },
+      {
+        "path": "frame-0029.png",
+        "sha256": "922dac3776ab0aa202b45502ffeedf5256f865bd091c97ff956ba59eae8a635c"
+      },
+      {
+        "path": "frame-0030.png",
+        "sha256": "10880583fe6d35e25571c8c4d10a88ed9c4570f247d7999d2d1ff5462efb67e2"
+      },
+      {
+        "path": "frame-0031.png",
+        "sha256": "41818085a342057198f7c9d65f2d47ae18bc81e1482ccdd1ddd0c1286a5fafc2"
+      },
+      {
+        "path": "frame-0032.png",
+        "sha256": "2d4dd4408f7c9ec588bf7e2a5adef0910bcb87e13b07c8d55c81e3ffc0558055"
+      },
+      {
+        "path": "frame-0033.png",
+        "sha256": "bbb1616327a25fc659c169b2caf7bb157165c21007bb0997f3287a186514dbf6"
+      },
+      {
+        "path": "frame-0034.png",
+        "sha256": "f2006b8d3ab15160406f0b57f96a171862e02cc338c3afd4a825be2c766460ed"
+      },
+      {
+        "path": "frame-0035.png",
+        "sha256": "80116544327bcf7b677c24a521a4d2b7aac62d67988da7977263c1bf446d6541"
+      },
+      {
+        "path": "frame-0036.png",
+        "sha256": "44ad9a520df38a29bcaf5dc980fd0d14e074695de4fb8691cf220964be43e4a6"
+      },
+      {
+        "path": "frame-0037.png",
+        "sha256": "b4dbeb59402242f308b252f939d835049dde3fba7b7d0a42a5b945fea9d817a7"
+      },
+      {
+        "path": "frame-0038.png",
+        "sha256": "3115ae6954f4fe13d1f74ff080fecae99a5ea97bf8c4fee841a90f29d9735069"
+      },
+      {
+        "path": "frame-0039.png",
+        "sha256": "a179e2e4f51b136411311d922c17cd744de3d9d9027a1bce313cdc4dbd88c0da"
+      },
+      {
+        "path": "frame-0040.png",
+        "sha256": "aa27a8a1d0cb46778654fa27bffea2fb9e5350443bfb2f7172f39848dfbde907"
+      },
+      {
+        "path": "frame-0041.png",
+        "sha256": "a5660b82ea8fc3e412ffc97b46854050b690670658018fb5e9c7bb49cd020cf4"
+      },
+      {
+        "path": "frame-0042.png",
+        "sha256": "8af581ed926344be75d5393623ffc63a7d671237e15662f977f55e784c16de2c"
+      },
+      {
+        "path": "frame-0043.png",
+        "sha256": "52f6cdbab7afd159063c60c9a8a8bfebf78e88948972c2100b84d8236b4c9c09"
+      },
+      {
+        "path": "frame-0044.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "frame-0045.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-composite.png",
+        "sha256": "3222a1f4ec2de93fe1457d742d358d91cac9a5cb71b7e00bffcf6d3c04b7dcc6"
+      },
+      {
+        "path": "map-frame-0000.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0001.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0002.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0003.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0004.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0005.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0006.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0007.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0008.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0009.png",
+        "sha256": "47a089825c82b31372505509ae3d8c3ab88ee6841df5d9dd1a4c242dc1f9f3e3"
+      },
+      {
+        "path": "map-frame-0010.png",
+        "sha256": "85dd12bbef6adeacabae5b956dfaa172d2eae112f444eba8782aab216087d4bb"
+      },
+      {
+        "path": "map-frame-0011.png",
+        "sha256": "954c5b4034fb810367e6b57bafe9411cb92afaf51bfa03baf40361c3f90acda2"
+      },
+      {
+        "path": "map-frame-0012.png",
+        "sha256": "1adcb37ab1b812666e4e6305140439ada16a298705628e38fec9aeda1eeadc89"
+      },
+      {
+        "path": "map-frame-0013.png",
+        "sha256": "d293aad42610bd9ed63eb5479a05110f728bf754537ce3f3ce0234539daad280"
+      },
+      {
+        "path": "map-frame-0014.png",
+        "sha256": "7a6da0e125aed0ec265c4c39b13971a03717b05028f6e4d320ceda90a1778e97"
+      },
+      {
+        "path": "map-frame-0015.png",
+        "sha256": "54e9e8c6e446ba064624b3dc5ec64d25d31b10b0bb6f6cfcc58bd8a397da175b"
+      },
+      {
+        "path": "map-frame-0016.png",
+        "sha256": "b5b33b7b9da871126f5492666249f08ba627f6369cb3b59639c1df4cd1fcdd7c"
+      },
+      {
+        "path": "map-frame-0017.png",
+        "sha256": "3a00874dd2a04e8de4617b582b3866608bbaaa1c48fa04fd703423a577d82fb9"
+      },
+      {
+        "path": "map-frame-0018.png",
+        "sha256": "7e95249ad96c8db313a1c8824c065eb5b42be14ad1c7a01fd84d2f2146bfd93b"
+      },
+      {
+        "path": "map-frame-0019.png",
+        "sha256": "33889958eab183743b3ea6c346082ffa11e11822be4569cc26e6e72a848437cf"
+      },
+      {
+        "path": "map-frame-0020.png",
+        "sha256": "13e4b28e1c44190f64ea4cfc0c0715b2b8a79853f951ac8da42e3172b064dbd1"
+      },
+      {
+        "path": "map-frame-0021.png",
+        "sha256": "d304392c642e66c0edfd0db3d80f8393e36c4ff5462759a4c3d98c04f5f6492a"
+      },
+      {
+        "path": "map-frame-0022.png",
+        "sha256": "a3b019bdf9376d56a2525eb8cc24023c15c97fce1f5ae5aeabb1d32d10ccef3d"
+      },
+      {
+        "path": "map-frame-0023.png",
+        "sha256": "cd38a5ebf0d5923ce60f125696953b12010e11405c40648510297d4d78b21930"
+      },
+      {
+        "path": "map-frame-0024.png",
+        "sha256": "e292eb4f72287e32136a00b9a8282c51c7201131e0292c49628cbdcf59f68edd"
+      },
+      {
+        "path": "map-frame-0025.png",
+        "sha256": "b61096f7a10769c1979224f2031af43585997dbdb6c2080b75068e105bc59a6b"
+      },
+      {
+        "path": "map-frame-0026.png",
+        "sha256": "0b43a060f56ad16896f78f2320ed7b278d3af2a02c018a4922f1f2173c84b445"
+      },
+      {
+        "path": "map-frame-0027.png",
+        "sha256": "5f5b100340e82ad24f6700390595661fc4645262290f65f4a198bd1b274849ca"
+      },
+      {
+        "path": "map-frame-0028.png",
+        "sha256": "10abf7646e1cf11e14c9944b2970e8f5a5e18fde7a256b66cbdf8ad8e0ea9a8c"
+      },
+      {
+        "path": "map-frame-0029.png",
+        "sha256": "922dac3776ab0aa202b45502ffeedf5256f865bd091c97ff956ba59eae8a635c"
+      },
+      {
+        "path": "map-frame-0030.png",
+        "sha256": "10880583fe6d35e25571c8c4d10a88ed9c4570f247d7999d2d1ff5462efb67e2"
+      },
+      {
+        "path": "map-frame-0031.png",
+        "sha256": "41818085a342057198f7c9d65f2d47ae18bc81e1482ccdd1ddd0c1286a5fafc2"
+      },
+      {
+        "path": "map-frame-0032.png",
+        "sha256": "2d4dd4408f7c9ec588bf7e2a5adef0910bcb87e13b07c8d55c81e3ffc0558055"
+      },
+      {
+        "path": "map-frame-0033.png",
+        "sha256": "bbb1616327a25fc659c169b2caf7bb157165c21007bb0997f3287a186514dbf6"
+      },
+      {
+        "path": "map-frame-0034.png",
+        "sha256": "f2006b8d3ab15160406f0b57f96a171862e02cc338c3afd4a825be2c766460ed"
+      },
+      {
+        "path": "map-frame-0035.png",
+        "sha256": "80116544327bcf7b677c24a521a4d2b7aac62d67988da7977263c1bf446d6541"
+      },
+      {
+        "path": "map-frame-0036.png",
+        "sha256": "44ad9a520df38a29bcaf5dc980fd0d14e074695de4fb8691cf220964be43e4a6"
+      },
+      {
+        "path": "map-frame-0037.png",
+        "sha256": "b4dbeb59402242f308b252f939d835049dde3fba7b7d0a42a5b945fea9d817a7"
+      },
+      {
+        "path": "map-frame-0038.png",
+        "sha256": "3115ae6954f4fe13d1f74ff080fecae99a5ea97bf8c4fee841a90f29d9735069"
+      },
+      {
+        "path": "map-frame-0039.png",
+        "sha256": "a179e2e4f51b136411311d922c17cd744de3d9d9027a1bce313cdc4dbd88c0da"
+      },
+      {
+        "path": "map-frame-0040.png",
+        "sha256": "aa27a8a1d0cb46778654fa27bffea2fb9e5350443bfb2f7172f39848dfbde907"
+      },
+      {
+        "path": "map-frame-0041.png",
+        "sha256": "a5660b82ea8fc3e412ffc97b46854050b690670658018fb5e9c7bb49cd020cf4"
+      },
+      {
+        "path": "map-frame-0042.png",
+        "sha256": "8af581ed926344be75d5393623ffc63a7d671237e15662f977f55e784c16de2c"
+      },
+      {
+        "path": "map-frame-0043.png",
+        "sha256": "52f6cdbab7afd159063c60c9a8a8bfebf78e88948972c2100b84d8236b4c9c09"
+      },
+      {
+        "path": "map-frame-0044.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-frame-0045.png",
+        "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+      },
+      {
+        "path": "map-support-0000.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0001.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0002.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0003.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0004.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0005.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0006.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0007.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0008.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0009.png",
+        "sha256": "543b3e7abb212ee8ba589abee8fe1a0e4877f7547cfb940c9ba0ae6e65d2d868"
+      },
+      {
+        "path": "map-support-0010.png",
+        "sha256": "a2f0e13162e22930d1ee9a0c579e27d22e1aad2224887782b8683532da5937dc"
+      },
+      {
+        "path": "map-support-0011.png",
+        "sha256": "a2f0e13162e22930d1ee9a0c579e27d22e1aad2224887782b8683532da5937dc"
+      },
+      {
+        "path": "map-support-0012.png",
+        "sha256": "a2f0e13162e22930d1ee9a0c579e27d22e1aad2224887782b8683532da5937dc"
+      },
+      {
+        "path": "map-support-0013.png",
+        "sha256": "a2f0e13162e22930d1ee9a0c579e27d22e1aad2224887782b8683532da5937dc"
+      },
+      {
+        "path": "map-support-0014.png",
+        "sha256": "a2f0e13162e22930d1ee9a0c579e27d22e1aad2224887782b8683532da5937dc"
+      },
+      {
+        "path": "map-support-0015.png",
+        "sha256": "a2f0e13162e22930d1ee9a0c579e27d22e1aad2224887782b8683532da5937dc"
+      },
+      {
+        "path": "map-support-0016.png",
+        "sha256": "a2f0e13162e22930d1ee9a0c579e27d22e1aad2224887782b8683532da5937dc"
+      },
+      {
+        "path": "map-support-0017.png",
+        "sha256": "543b3e7abb212ee8ba589abee8fe1a0e4877f7547cfb940c9ba0ae6e65d2d868"
+      },
+      {
+        "path": "map-support-0018.png",
+        "sha256": "1216e2bb445184599ecbf2bfb454a88925459f16ddd7730b1b22e541ffa8fa0f"
+      },
+      {
+        "path": "map-support-0019.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0020.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0021.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0022.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0023.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0024.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0025.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0026.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0027.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0028.png",
+        "sha256": "827bc8a0c53ffe56fcb9a0b463dc4e679c8cb1bbb525af378916f3c7e9a07515"
+      },
+      {
+        "path": "map-support-0029.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0030.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0031.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0032.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0033.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0034.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0035.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0036.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0037.png",
+        "sha256": "2132c4f30673ff45d060384924bf78e0cbd1cb83376d32f671b3e31b66455afe"
+      },
+      {
+        "path": "map-support-0038.png",
+        "sha256": "fe93bb0e6d2fe6c2dc409dda5a3ba80f4b2a42f4fd13f318dc3650489d161090"
+      },
+      {
+        "path": "map-support-0039.png",
+        "sha256": "33575968bb66cf32add309533d75f9fe20fdc75bf11b7bc0b0a57007a93ab397"
+      },
+      {
+        "path": "map-support-0040.png",
+        "sha256": "33575968bb66cf32add309533d75f9fe20fdc75bf11b7bc0b0a57007a93ab397"
+      },
+      {
+        "path": "map-support-0041.png",
+        "sha256": "33575968bb66cf32add309533d75f9fe20fdc75bf11b7bc0b0a57007a93ab397"
+      },
+      {
+        "path": "map-support-0042.png",
+        "sha256": "33575968bb66cf32add309533d75f9fe20fdc75bf11b7bc0b0a57007a93ab397"
+      },
+      {
+        "path": "map-support-0043.png",
+        "sha256": "d9e2f54b067309dc88bf90f34eaacb8975979c430f68bb1e00b257fb0ea8cb54"
+      },
+      {
+        "path": "map-support-0044.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "map-support-0045.png",
+        "sha256": "ee8a7d952a32083778640ba0e1f0365e55701e666c1c78e61ba5f2d72e5d2635"
+      },
+      {
+        "path": "preview.png",
+        "sha256": "3222a1f4ec2de93fe1457d742d358d91cac9a5cb71b7e00bffcf6d3c04b7dcc6"
+      },
+      {
+        "path": "provenance.tif",
+        "sha256": "ba8cec46cac90eb47d8fded60cee65ed73f84823c06a7696c10e03122b9adf95"
+      },
+      {
+        "path": "series-support.tif",
+        "sha256": "30c0fe93fc673b547cde8c8b774f446b179d6314222ae11d04067b706517499b"
+      },
+      {
+        "path": "series.npz",
+        "sha256": "c49cdbff837d2d0e8d3080aa9ad4f72f0b58640c176ad30bcbbbcfa44c37826b"
+      },
+      {
+        "path": "stack.npz",
+        "sha256": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54"
+      },
+      {
+        "path": "support-0000.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0001.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0002.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0003.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0004.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0005.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0006.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0007.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0008.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0009.png",
+        "sha256": "795b8976949b2c13c1fa1693bfc77b02ce4f285c406445a88df447d6a8707bed"
+      },
+      {
+        "path": "support-0010.png",
+        "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+      },
+      {
+        "path": "support-0011.png",
+        "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+      },
+      {
+        "path": "support-0012.png",
+        "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+      },
+      {
+        "path": "support-0013.png",
+        "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+      },
+      {
+        "path": "support-0014.png",
+        "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+      },
+      {
+        "path": "support-0015.png",
+        "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+      },
+      {
+        "path": "support-0016.png",
+        "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+      },
+      {
+        "path": "support-0017.png",
+        "sha256": "795b8976949b2c13c1fa1693bfc77b02ce4f285c406445a88df447d6a8707bed"
+      },
+      {
+        "path": "support-0018.png",
+        "sha256": "959ad180fa6cbdfa1013db62f77714d593eb1e294d94d9ba668f1d1ea26116dc"
+      },
+      {
+        "path": "support-0019.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0020.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0021.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0022.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0023.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0024.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0025.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0026.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0027.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0028.png",
+        "sha256": "aaba310845cf4edb82b7ba4f7373ccca610946f3814fd671edf1c598100a3b14"
+      },
+      {
+        "path": "support-0029.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0030.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0031.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0032.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0033.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0034.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0035.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0036.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0037.png",
+        "sha256": "842ad8e5a51e939fcf787f2db22b624f061f378f0f7d4a165ae4f00ec40c2aee"
+      },
+      {
+        "path": "support-0038.png",
+        "sha256": "04600508834a2e5eb24830d3ec8ce573c6137ef521d5428940e9d3d3f7b9bfe7"
+      },
+      {
+        "path": "support-0039.png",
+        "sha256": "812290703ed75c3ec39e6fd308905b657f0a4f3ce38bcafded59edad085c6fb9"
+      },
+      {
+        "path": "support-0040.png",
+        "sha256": "812290703ed75c3ec39e6fd308905b657f0a4f3ce38bcafded59edad085c6fb9"
+      },
+      {
+        "path": "support-0041.png",
+        "sha256": "812290703ed75c3ec39e6fd308905b657f0a4f3ce38bcafded59edad085c6fb9"
+      },
+      {
+        "path": "support-0042.png",
+        "sha256": "812290703ed75c3ec39e6fd308905b657f0a4f3ce38bcafded59edad085c6fb9"
+      },
+      {
+        "path": "support-0043.png",
+        "sha256": "089affa3583fb4e49bc2f006a61a951df0b46d7bea48bb65dee185e3adf72571"
+      },
+      {
+        "path": "support-0044.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      },
+      {
+        "path": "support-0045.png",
+        "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+      }
+    ],
+    "timings": {
+      "catalog_seconds": 1.59,
+      "processing_export_seconds": 20.638,
+      "total_seconds": 22.228
+    }
+  },
+  "errors": []
+}

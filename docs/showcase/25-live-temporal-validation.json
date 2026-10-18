@@ -1,0 +1,192 @@
+{
+  "schema_version": "rslib-temporal-validation/1",
+  "index": "ndvi",
+  "units": "1",
+  "max_gap_days": 20.0,
+  "acquisition_days": 6,
+  "method": "Leave one complete UTC acquisition day out, across all sensors; reconstruct using remaining clear days",
+  "baseline": "Nearest admissible bracket observation, tie to earlier; paired cells and identical bracket limit",
+  "summary": {
+    "held_out_clear_cells": 29600,
+    "scored_cells": 19349,
+    "scored_fraction": 0.6536824324324324,
+    "scored_dates": 4,
+    "linear": {
+      "samples": 19349,
+      "mae": 0.01705973290141482,
+      "rmse": 0.02251935533642605,
+      "bias": 0.0022673424429792205
+    },
+    "nearest": {
+      "samples": 19349,
+      "mae": 0.019745825070042012,
+      "rmse": 0.025612216278470015,
+      "bias": 0.007533162645889725
+    }
+  },
+  "folds": [
+    {
+      "day": "2026-06-10",
+      "held_out_clear_cells": 5106,
+      "scored_cells": 0,
+      "scored_fraction": 0.0,
+      "linear": {
+        "samples": 0,
+        "mae": null,
+        "rmse": null,
+        "bias": null
+      },
+      "nearest": {
+        "samples": 0,
+        "mae": null,
+        "rmse": null,
+        "bias": null
+      },
+      "median_bracket_days": null,
+      "platforms": [
+        "landsat-8"
+      ],
+      "sources": [
+        "LC08_L2SP_218076_20260610_02_T1"
+      ]
+    },
+    {
+      "day": "2026-06-18",
+      "held_out_clear_cells": 5106,
+      "scored_cells": 4905,
+      "scored_fraction": 0.9606345475910694,
+      "linear": {
+        "samples": 4905,
+        "mae": 0.0185538563463423,
+        "rmse": 0.02443864199411046,
+        "bias": 0.010533805985941678
+      },
+      "nearest": {
+        "samples": 4905,
+        "mae": 0.023873232379479754,
+        "rmse": 0.030530418541172638,
+        "bias": 0.015936943387401942
+      },
+      "median_bracket_days": 9.0,
+      "platforms": [
+        "landsat-9"
+      ],
+      "sources": [
+        "LC09_L2SP_218076_20260618_02_T1"
+      ]
+    },
+    {
+      "day": "2026-06-19",
+      "held_out_clear_cells": 4897,
+      "scored_cells": 4890,
+      "scored_fraction": 0.9985705534000409,
+      "linear": {
+        "samples": 4890,
+        "mae": 0.022225334789367786,
+        "rmse": 0.028393674499064426,
+        "bias": -0.015534532405359857
+      },
+      "nearest": {
+        "samples": 4890,
+        "mae": 0.023838757432555372,
+        "rmse": 0.03046448066567173,
+        "bias": -0.016032559947245936
+      },
+      "median_bracket_days": 11.0,
+      "platforms": [
+        "sentinel-2b"
+      ],
+      "sources": [
+        "S2B_T23KNR_20260619T131449_L2A"
+      ]
+    },
+    {
+      "day": "2026-06-29",
+      "held_out_clear_cells": 4898,
+      "scored_cells": 4887,
+      "scored_fraction": 0.9977541853817885,
+      "linear": {
+        "samples": 4887,
+        "mae": 0.006595786214972509,
+        "rmse": 0.008046103479025653,
+        "bias": -0.006104026844293178
+      },
+      "nearest": {
+        "samples": 4887,
+        "mae": 0.010771205454778153,
+        "rmse": 0.013038353815813171,
+        "bias": 0.010552135736195373
+      },
+      "median_bracket_days": 20.0,
+      "platforms": [
+        "sentinel-2b"
+      ],
+      "sources": [
+        "S2B_T23KNR_20260629T131615_L2A"
+      ]
+    },
+    {
+      "day": "2026-07-09",
+      "held_out_clear_cells": 4898,
+      "scored_cells": 4667,
+      "scored_fraction": 0.9528378930175582,
+      "linear": {
+        "samples": 4667,
+        "mae": 0.02103420016672107,
+        "rmse": 0.02371211829928308,
+        "bias": 0.020997800132511565
+      },
+      "nearest": {
+        "samples": 4667,
+        "mae": 0.020517111539789613,
+        "rmse": 0.024281253838189954,
+        "bias": 0.020231280805519516
+      },
+      "median_bracket_days": 15.0,
+      "platforms": [
+        "sentinel-2b"
+      ],
+      "sources": [
+        "S2B_T23KNR_20260709T131519_L2A"
+      ]
+    },
+    {
+      "day": "2026-07-14",
+      "held_out_clear_cells": 4695,
+      "scored_cells": 0,
+      "scored_fraction": 0.0,
+      "linear": {
+        "samples": 0,
+        "mae": null,
+        "rmse": null,
+        "bias": null
+      },
+      "nearest": {
+        "samples": 0,
+        "mae": null,
+        "rmse": null,
+        "bias": null
+      },
+      "median_bracket_days": null,
+      "platforms": [
+        "sentinel-2c"
+      ],
+      "sources": [
+        "S2C_T23KNR_20260714T131242_L2A"
+      ]
+    }
+  ],
+  "limitations": [
+    "Clear satellite observations are the withheld reference, not independent ground truth. Residuals also include sensor, atmospheric and registration differences.",
+    "Scoring excludes cells without admissible training brackets. Coverage includes every held-out clear cell, including edge dates; a low error on a small scored subset does not establish reliable gap filling.",
+    "Whole-date exclusion prevents same-day sensor leakage. Cloud-free holdouts do not reproduce the distribution of genuinely cloud-obscured conditions.",
+    "Neighboring pixels are correlated. Sample counts are cell-date comparisons, not independent replicates; no confidence interval or statistical superiority is claimed.",
+    "This retrospective test uses observations before and after the held-out date. It does not validate causal forecasting, calibration, harmonization, or per-pixel uncertainty."
+  ],
+  "run_id": "1315d34695e8484093cf6a0ec3cdacad",
+  "synthetic": false,
+  "input_sha256": {
+    "stack.npz": "4fdf24b8648799b2159621f71246e8bf5db473bb6c85525491c6ce629e96ac54",
+    "manifest.json": "18df256d07d8f01930d13616f87e35c4078f96e5d0f905a22f6eb1a68a3fc7e3"
+  }
+}

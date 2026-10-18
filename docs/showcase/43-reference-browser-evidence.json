@@ -1,0 +1,64 @@
+{
+  "type": "Actual static-documentation and reference-viewer browser checks",
+  "cases": [
+    {
+      "case": "itatiaia-optical-development",
+      "sources_inspected": [
+        0,
+        5
+      ],
+      "partition": "development",
+      "images_loaded": true
+    },
+    {
+      "case": "seasonal-crops",
+      "sources_inspected": [
+        0,
+        3
+      ],
+      "partition": "development",
+      "images_loaded": true
+    },
+    {
+      "case": "urban-bright-surfaces",
+      "sources_inspected": [
+        0,
+        3
+      ],
+      "partition": "development",
+      "images_loaded": true
+    },
+    {
+      "case": "water-coast",
+      "sources_inspected": [
+        0,
+        3
+      ],
+      "partition": "holdout",
+      "images_loaded": true
+    },
+    {
+      "case": "snow-high-latitude",
+      "sources_inspected": [
+        0,
+        3
+      ],
+      "partition": "holdout",
+      "images_loaded": true
+    },
+    {
+      "case": "humid-cloud-shadow-holdout",
+      "sources_inspected": [
+        0,
+        3
+      ],
+      "partition": "holdout",
+      "images_loaded": true
+    }
+  ],
+  "documentation_navigation": true,
+  "search_results": 10,
+  "mobile_horizontal_overflow": false,
+  "page_errors": [],
+  "accuracy_validated": false
+}

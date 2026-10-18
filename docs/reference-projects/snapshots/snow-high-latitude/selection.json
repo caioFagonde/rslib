@@ -1,0 +1,177 @@
+{
+  "schema_version": "rslib-reference-plan/1",
+  "created_utc": "2026-10-18",
+  "purpose": "Small engineering cases selected before inspecting their prepared imagery. No independent labels; no acceptance thresholds or tuning on holdout cases.",
+  "cases": [
+    {
+      "id": "seasonal-crops",
+      "name": "Iowa cropland",
+      "site_group": "iowa-ames",
+      "partition": "development",
+      "regimes": [
+        "seasonal agriculture"
+      ],
+      "request": {
+        "demo": false,
+        "bbox": {
+          "west": -93.65,
+          "south": 42.0,
+          "east": -93.62,
+          "north": 42.03
+        },
+        "datetime": "2025-06-01/2025-07-15",
+        "sensors": [
+          "sentinel-2",
+          "landsat"
+        ],
+        "max_scenes_per_sensor": 2,
+        "max_cloud": 100,
+        "resolution": 30,
+        "cloud_buffer_m": 60,
+        "min_clear_fraction": 0.9,
+        "index": "ndvi",
+        "step_days": 5,
+        "max_gap_days": 20,
+        "refresh": false,
+        "fields": [],
+        "coverage_target": null
+      }
+    },
+    {
+      "id": "urban-bright-surfaces",
+      "name": "Las Vegas urban surfaces",
+      "site_group": "las-vegas",
+      "partition": "development",
+      "regimes": [
+        "urban/bare surfaces"
+      ],
+      "request": {
+        "demo": false,
+        "bbox": {
+          "west": -115.17,
+          "south": 36.15,
+          "east": -115.14,
+          "north": 36.18
+        },
+        "datetime": "2025-06-01/2025-06-30",
+        "sensors": [
+          "sentinel-2",
+          "landsat"
+        ],
+        "max_scenes_per_sensor": 2,
+        "max_cloud": 100,
+        "resolution": 30,
+        "cloud_buffer_m": 60,
+        "min_clear_fraction": 0.9,
+        "index": "ndvi",
+        "step_days": 5,
+        "max_gap_days": 20,
+        "refresh": false,
+        "fields": [],
+        "coverage_target": null
+      }
+    },
+    {
+      "id": "water-coast",
+      "name": "Santos estuary",
+      "site_group": "santos-estuary",
+      "partition": "holdout",
+      "regimes": [
+        "water/coast"
+      ],
+      "request": {
+        "demo": false,
+        "bbox": {
+          "west": -46.33,
+          "south": -24.01,
+          "east": -46.3,
+          "north": -23.98
+        },
+        "datetime": "2025-06-01/2025-07-15",
+        "sensors": [
+          "sentinel-2",
+          "landsat"
+        ],
+        "max_scenes_per_sensor": 2,
+        "max_cloud": 100,
+        "resolution": 30,
+        "cloud_buffer_m": 60,
+        "min_clear_fraction": 0.9,
+        "index": "ndvi",
+        "step_days": 5,
+        "max_gap_days": 20,
+        "refresh": false,
+        "fields": [],
+        "coverage_target": null
+      }
+    },
+    {
+      "id": "snow-high-latitude",
+      "name": "Tromso late winter",
+      "site_group": "tromso",
+      "partition": "holdout",
+      "regimes": [
+        "snow/ice"
+      ],
+      "request": {
+        "demo": false,
+        "bbox": {
+          "west": 18.94,
+          "south": 69.63,
+          "east": 18.97,
+          "north": 69.65
+        },
+        "datetime": "2025-03-01/2025-03-31",
+        "sensors": [
+          "sentinel-2",
+          "landsat"
+        ],
+        "max_scenes_per_sensor": 2,
+        "max_cloud": 100,
+        "resolution": 30,
+        "cloud_buffer_m": 60,
+        "min_clear_fraction": 0.9,
+        "index": "ndvi",
+        "step_days": 5,
+        "max_gap_days": 20,
+        "refresh": false,
+        "fields": [],
+        "coverage_target": null
+      }
+    },
+    {
+      "id": "humid-cloud-shadow-holdout",
+      "name": "Manaus wet season",
+      "site_group": "manaus",
+      "partition": "holdout",
+      "regimes": [
+        "humid/cloudy vegetation"
+      ],
+      "request": {
+        "demo": false,
+        "bbox": {
+          "west": -60.04,
+          "south": -3.12,
+          "east": -60.01,
+          "north": -3.09
+        },
+        "datetime": "2025-01-01/2025-02-15",
+        "sensors": [
+          "sentinel-2",
+          "landsat"
+        ],
+        "max_scenes_per_sensor": 2,
+        "max_cloud": 100,
+        "resolution": 30,
+        "cloud_buffer_m": 60,
+        "min_clear_fraction": 0.9,
+        "index": "ndvi",
+        "step_days": 5,
+        "max_gap_days": 20,
+        "refresh": false,
+        "fields": [],
+        "coverage_target": null
+      }
+    }
+  ]
+}

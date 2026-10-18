@@ -1,0 +1,279 @@
+{
+  "kind": "Browser interaction checks over synthetic inputs; no accuracy benchmark",
+  "summary": {
+    "observations": 8,
+    "daily_mosaics": 8,
+    "regular_dates": 10,
+    "platforms": [
+      "landsat-8",
+      "landsat-9",
+      "sentinel-2a",
+      "sentinel-2b",
+      "sentinel-2c"
+    ],
+    "cache_hits": 8,
+    "observed_fraction": 0.6851351351351351,
+    "filled_fraction": 0.18495887191539365,
+    "unsupported_fraction": 0.12990599294947122
+  },
+  "grid": {
+    "crs": "EPSG:32723",
+    "transform": [
+      30.0,
+      0.0,
+      534990.0,
+      0.0,
+      -30.0,
+      7523970.0
+    ],
+    "width": 69,
+    "height": 75
+  },
+  "pixel": {
+    "run_id": "8d63c17dfd424aa8a7f0839ab6db33f9",
+    "row": 18,
+    "col": 17,
+    "longitude": -44.65496981843054,
+    "latitude": -22.39495737358704,
+    "x": 535515.0,
+    "y": 7523415.0,
+    "crs": "EPSG:32723",
+    "index": "ndvi",
+    "units": "1",
+    "synthetic": true,
+    "series": [
+      {
+        "day": "2026-06-01",
+        "value": 0.464211642742157,
+        "support": 1,
+        "left_source": {
+          "index": 0,
+          "id": "synthetic-sentinel-2a-00",
+          "platform": "sentinel-2a",
+          "datetime": "2026-06-01T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "right_source": {
+          "index": 0,
+          "id": "synthetic-sentinel-2a-00",
+          "platform": "sentinel-2a",
+          "datetime": "2026-06-01T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-06-06",
+        "value": 0.49141019582748413,
+        "support": 1,
+        "left_source": {
+          "index": 1,
+          "id": "synthetic-landsat-8-05",
+          "platform": "landsat-8",
+          "datetime": "2026-06-06T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "right_source": {
+          "index": 1,
+          "id": "synthetic-landsat-8-05",
+          "platform": "landsat-8",
+          "datetime": "2026-06-06T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-06-11",
+        "value": 0.5133727192878723,
+        "support": 1,
+        "left_source": {
+          "index": 2,
+          "id": "synthetic-sentinel-2b-10",
+          "platform": "sentinel-2b",
+          "datetime": "2026-06-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "right_source": {
+          "index": 2,
+          "id": "synthetic-sentinel-2b-10",
+          "platform": "sentinel-2b",
+          "datetime": "2026-06-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-06-16",
+        "value": 0.5246846079826355,
+        "support": 2,
+        "left_source": {
+          "index": 2,
+          "id": "synthetic-sentinel-2b-10",
+          "platform": "sentinel-2b",
+          "datetime": "2026-06-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "right_source": {
+          "index": 3,
+          "id": "synthetic-sentinel-2c-20",
+          "platform": "sentinel-2c",
+          "datetime": "2026-06-21T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "bracket_days": 10.0
+      },
+      {
+        "day": "2026-06-21",
+        "value": 0.5359964966773987,
+        "support": 1,
+        "left_source": {
+          "index": 3,
+          "id": "synthetic-sentinel-2c-20",
+          "platform": "sentinel-2c",
+          "datetime": "2026-06-21T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "right_source": {
+          "index": 3,
+          "id": "synthetic-sentinel-2c-20",
+          "platform": "sentinel-2c",
+          "datetime": "2026-06-21T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-06-26",
+        "value": 0.5358491539955139,
+        "support": 1,
+        "left_source": {
+          "index": 4,
+          "id": "synthetic-landsat-9-25",
+          "platform": "landsat-9",
+          "datetime": "2026-06-26T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "right_source": {
+          "index": 4,
+          "id": "synthetic-landsat-9-25",
+          "platform": "landsat-9",
+          "datetime": "2026-06-26T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-07-01",
+        "value": 0.5283335447311401,
+        "support": 1,
+        "left_source": {
+          "index": 5,
+          "id": "synthetic-sentinel-2a-30",
+          "platform": "sentinel-2a",
+          "datetime": "2026-07-01T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "right_source": {
+          "index": 5,
+          "id": "synthetic-sentinel-2a-30",
+          "platform": "sentinel-2a",
+          "datetime": "2026-07-01T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-07-06",
+        "value": 0.5098718404769897,
+        "support": 2,
+        "left_source": {
+          "index": 5,
+          "id": "synthetic-sentinel-2a-30",
+          "platform": "sentinel-2a",
+          "datetime": "2026-07-01T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "sentinel-2-c1-l2a"
+        },
+        "right_source": {
+          "index": 6,
+          "id": "synthetic-landsat-8-40",
+          "platform": "landsat-8",
+          "datetime": "2026-07-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "bracket_days": 10.0
+      },
+      {
+        "day": "2026-07-11",
+        "value": 0.49141019582748413,
+        "support": 1,
+        "left_source": {
+          "index": 6,
+          "id": "synthetic-landsat-8-40",
+          "platform": "landsat-8",
+          "datetime": "2026-07-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "right_source": {
+          "index": 6,
+          "id": "synthetic-landsat-8-40",
+          "platform": "landsat-8",
+          "datetime": "2026-07-11T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "bracket_days": 0.0
+      },
+      {
+        "day": "2026-07-16",
+        "value": 0.4641174376010895,
+        "support": 1,
+        "left_source": {
+          "index": 7,
+          "id": "synthetic-landsat-9-45",
+          "platform": "landsat-9",
+          "datetime": "2026-07-16T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "right_source": {
+          "index": 7,
+          "id": "synthetic-landsat-9-45",
+          "platform": "landsat-9",
+          "datetime": "2026-07-16T10:00:00.000000Z",
+          "provider": "local",
+          "collection": "landsat-c2-l2"
+        },
+        "bracket_days": 0.0
+      }
+    ]
+  },
+  "checks": [
+    "explicit execution",
+    "prepared cache reuse",
+    "coordinate and mouse inspection",
+    "CSV values and provenance",
+    "recipe save/load",
+    "reopen without acquisition",
+    "support legend",
+    "390px layout"
+  ],
+  "csv_sha256": "83f5da9f73bc16d062ba90206813f1b9372798d5822ff3ae79308e6bf22959b8",
+  "errors": []
+}

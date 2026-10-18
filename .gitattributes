@@ -1,0 +1,6 @@
+# Preserve captured evidence and checksum-pinned public source documents byte for byte.
+docs/showcase/** -text
+docs/reference-projects/**/*.json -text
+# SVG renderers emit insignificant spaces in path/terminal output; CSV uses CRLF.
+docs/showcase/*.svg -whitespace
+docs/showcase/*.csv whitespace=cr-at-eol

@@ -1,0 +1,1755 @@
+{
+  "schema_version": "rslib-stack-workflow/1",
+  "id": "dd1523181fb342009c15706a369da990",
+  "synthetic": false,
+  "request": {
+    "demo": false,
+    "bbox": {
+      "west": -44.66,
+      "south": -22.41,
+      "east": -44.64,
+      "north": -22.39
+    },
+    "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+    "sensors": [
+      "sentinel-2",
+      "landsat"
+    ],
+    "max_scenes_per_sensor": 2,
+    "max_cloud": 40.0,
+    "resolution": 30.0,
+    "cloud_buffer_m": 60.0,
+    "min_clear_fraction": 0.9,
+    "index": "ndvi",
+    "step_days": 1,
+    "max_gap_days": 20.0,
+    "refresh": false
+  },
+  "grid": {
+    "crs": "EPSG:32723",
+    "transform": [
+      30.0,
+      0.0,
+      534990.0,
+      0.0,
+      -30.0,
+      7523970.0
+    ],
+    "width": 69,
+    "height": 75
+  },
+  "bands": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir16",
+    "swir22"
+  ],
+  "observations": [
+    {
+      "cache_key": "46a466f259cc335e0d423df4f3d6408b0bc9d885080547cd14ab3dfcc3a58600",
+      "id": "LC08_L2SP_218076_20260610_02_T1",
+      "collection": "landsat-c2-l2",
+      "provider": "planetary-computer",
+      "datetime": "2026-06-10T12:57:15.769621Z",
+      "platform": "landsat-8",
+      "family": "landsat-oli",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B2.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B3.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B4.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir08",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B5.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B6.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC08_L2SP_218076_20260610_20260613_02_T1/LC08_L2SP_218076_20260610_20260613_02_T1_SR_B7.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        }
+      ],
+      "adjustment": {
+        "method": "OLI reference; identity bandpass",
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+      },
+      "clear_fraction": 1.0,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "fcaa322ee185c87c6fcb9331d937d0588108d79560f6ac273e438b0b9468a56f",
+      "id": "LC09_L2SP_218076_20260618_02_T1",
+      "collection": "landsat-c2-l2",
+      "provider": "planetary-computer",
+      "datetime": "2026-06-18T12:57:33.519817Z",
+      "platform": "landsat-9",
+      "family": "landsat-oli",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B2.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B3.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B4.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir08",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B5.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B6.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/218/076/LC09_L2SP_218076_20260618_20260622_02_T1/LC09_L2SP_218076_20260618_20260622_02_T1_SR_B7.TIF",
+          "calibration": {
+            "scale": 2.75e-05,
+            "offset": -0.2,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 30.0
+        }
+      ],
+      "adjustment": {
+        "method": "OLI reference; identity bandpass",
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/"
+      },
+      "clear_fraction": 1.0,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "9e92a5ef6c8257057d37bf1d294ac30aaa7b9b06d26ff6b9645fa107e1776e8f",
+      "id": "S2B_T23KNR_20260619T131449_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "provider": "earth-search",
+      "datetime": "2026-06-19T13:18:19.012000Z",
+      "platform": "sentinel-2b",
+      "family": "sentinel-2",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B02.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B03.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B04.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir08",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B8A.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B11.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/6/S2B_T23KNR_20260619T131449_L2A/B12.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        }
+      ],
+      "adjustment": {
+        "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+        "coefficients": {
+          "blue": {
+            "slope": 0.9778,
+            "offset": -0.004
+          },
+          "green": {
+            "slope": 1.0075,
+            "offset": -0.0008
+          },
+          "red": {
+            "slope": 0.9761,
+            "offset": 0.001
+          },
+          "nir": {
+            "slope": 0.9966,
+            "offset": 0.0
+          },
+          "swir16": {
+            "slope": 1.0,
+            "offset": -0.0003
+          },
+          "swir22": {
+            "slope": 0.9867,
+            "offset": 0.0004
+          }
+        },
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+        "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+      },
+      "clear_fraction": 0.9590677634155895,
+      "cache_hit": true
+    },
+    {
+      "cache_key": "544ee8bd413ba7729eb7386c5ecdf390bea5811494633ae519fdcab0d19399c5",
+      "id": "S2C_T23KNR_20260714T131242_L2A",
+      "collection": "sentinel-2-c1-l2a",
+      "provider": "earth-search",
+      "datetime": "2026-07-14T13:18:21.516000Z",
+      "platform": "sentinel-2c",
+      "family": "sentinel-2",
+      "already_harmonized": false,
+      "inputs": [
+        {
+          "band": "blue",
+          "asset": "blue",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B02.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "green",
+          "asset": "green",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B03.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "red",
+          "asset": "red",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B04.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 10.0
+        },
+        {
+          "band": "nir",
+          "asset": "nir08",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B8A.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir16",
+          "asset": "swir16",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B11.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        },
+        {
+          "band": "swir22",
+          "asset": "swir22",
+          "href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/23/K/NR/2026/7/S2C_T23KNR_20260714T131242_L2A/B12.tif",
+          "calibration": {
+            "scale": 0.0001,
+            "offset": -0.1,
+            "policy": "STAC raster metadata"
+          },
+          "native_resolution_m": 20.0
+        }
+      ],
+      "adjustment": {
+        "method": "HLS V2 linear MSI-to-OLI bandpass coefficients applied to surface reflectance",
+        "coefficients": {
+          "blue": {
+            "slope": 0.9851,
+            "offset": -0.0027
+          },
+          "green": {
+            "slope": 1.0038,
+            "offset": -0.0009
+          },
+          "red": {
+            "slope": 0.9718,
+            "offset": 0.0011
+          },
+          "nir": {
+            "slope": 0.9995,
+            "offset": -0.0003
+          },
+          "swir16": {
+            "slope": 0.9994,
+            "offset": -0.0007
+          },
+          "swir22": {
+            "slope": 0.991,
+            "offset": 0.0004
+          }
+        },
+        "reference": "https://hls.gsfc.nasa.gov/algorithms/",
+        "limitations": "Spectral adjustment only. No BRDF normalization, common atmospheric reprocessing or image-based co-registration; not an HLS-equivalent product."
+      },
+      "clear_fraction": 0.9195064629847238,
+      "cache_hit": true
+    }
+  ],
+  "processing": {
+    "harmonization": "bandpass",
+    "bbox": {
+      "west": -44.66,
+      "south": -22.41,
+      "east": -44.64,
+      "north": -22.39
+    },
+    "aoi_pixels": 5106,
+    "cloud_buffer_m": 60.0,
+    "min_clear_fraction": 0.9,
+    "resampling": "native QA first, GDAL area-weighted clear reflectance, support threshold, common complete spectrum",
+    "nir": "Sentinel-2 B8A / Landsat OLI B05; broad B08 never substituted",
+    "all_upstream_hls": false,
+    "cache_max_bytes": 2147483648,
+    "cache_evicted_files": 0,
+    "cache": "Prepared AOI/scene cache; immutable source assumption. Use refresh=True after upstream asset revisions."
+  },
+  "discovery": [
+    {
+      "sensor": "sentinel-2",
+      "provider": "earth-search",
+      "query": {
+        "provider": "earth-search",
+        "collections": [
+          "sentinel-2-c1-l2a"
+        ],
+        "bbox": {
+          "west": -44.66,
+          "south": -22.41,
+          "east": -44.64,
+          "north": -22.39
+        },
+        "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+        "max_cloud": 40.0,
+        "max_items": 8,
+        "max_pages": 5
+      },
+      "pages": 2,
+      "examined": 11,
+      "cloud_rejected_or_unknown": 7,
+      "returned": 4,
+      "truncated": false,
+      "stop_reason": null,
+      "ranking": "scene cloud cover ascending within fetched results; not AOI clear coverage",
+      "acquisition_plan": {
+        "method": "date-stratified sampled-footprint set cover",
+        "candidate_items": 4,
+        "candidate_days": 4,
+        "selected_items": 2,
+        "selected_days": [
+          "2026-06-19",
+          "2026-07-14"
+        ],
+        "raster_scene_limit": 2,
+        "limitation": "Bounded fetched candidates and sampled geometry; no guarantee of AOI cloud-free or complete temporal coverage"
+      }
+    },
+    {
+      "sensor": "landsat",
+      "provider": "planetary-computer",
+      "query": {
+        "provider": "planetary-computer",
+        "collections": [
+          "landsat-c2-l2"
+        ],
+        "bbox": {
+          "west": -44.66,
+          "south": -22.41,
+          "east": -44.64,
+          "north": -22.39
+        },
+        "datetime": "2026-06-01T00:00:00Z/2026-07-16T23:59:59.999999Z",
+        "max_cloud": 40.0,
+        "max_items": 8,
+        "max_pages": 5
+      },
+      "pages": 1,
+      "examined": 11,
+      "cloud_rejected_or_unknown": 7,
+      "returned": 4,
+      "truncated": false,
+      "stop_reason": null,
+      "ranking": "scene cloud cover ascending within fetched results; not AOI clear coverage",
+      "acquisition_plan": {
+        "method": "date-stratified sampled-footprint set cover",
+        "candidate_items": 4,
+        "candidate_days": 2,
+        "selected_items": 2,
+        "selected_days": [
+          "2026-06-10",
+          "2026-06-18"
+        ],
+        "raster_scene_limit": 2,
+        "limitation": "Bounded fetched candidates and sampled geometry; no guarantee of AOI cloud-free or complete temporal coverage"
+      }
+    }
+  ],
+  "summary": {
+    "observations": 4,
+    "daily_mosaics": 4,
+    "regular_dates": 46,
+    "platforms": [
+      "landsat-8",
+      "landsat-9",
+      "sentinel-2b",
+      "sentinel-2c"
+    ],
+    "cache_hits": 4,
+    "observed_fraction": 0.08431683100870246,
+    "filled_fraction": 0.15217391304347827,
+    "unsupported_fraction": 0.7635092559478193
+  },
+  "timeline": [
+    {
+      "day": "2026-06-01",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0000.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0000.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-02",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0001.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0001.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-03",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0002.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0002.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-04",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0003.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0003.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-05",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0004.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0004.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-06",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0005.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0005.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-07",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0006.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0006.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-08",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0007.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0007.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-09",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0008.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0008.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-10",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0009.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0009.png",
+      "observed_fraction": 1.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.689657986164093,
+        "std": 0.08657048642635345,
+        "p05": 0.563560962677002,
+        "median": 0.6818605661392212,
+        "p95": 0.8397018909454346
+      }
+    },
+    {
+      "day": "2026-06-11",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0010.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0010.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 1.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.6937681436538696,
+        "std": 0.08774996548891068,
+        "p05": 0.563667356967926,
+        "median": 0.6855717301368713,
+        "p95": 0.8419160842895508
+      }
+    },
+    {
+      "day": "2026-06-12",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0011.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0011.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 1.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.6978783011436462,
+        "std": 0.08921192586421967,
+        "p05": 0.565284013748169,
+        "median": 0.6901853084564209,
+        "p95": 0.8449017405509949
+      }
+    },
+    {
+      "day": "2026-06-13",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0012.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0012.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 1.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.7019884586334229,
+        "std": 0.09094273298978806,
+        "p05": 0.5663092136383057,
+        "median": 0.6939082145690918,
+        "p95": 0.8481208086013794
+      }
+    },
+    {
+      "day": "2026-06-14",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0013.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0013.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 1.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.7060986757278442,
+        "std": 0.09292736649513245,
+        "p05": 0.5670421123504639,
+        "median": 0.6980628371238708,
+        "p95": 0.851883053779602
+      }
+    },
+    {
+      "day": "2026-06-15",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0014.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0014.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 1.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.7102088332176208,
+        "std": 0.09514995664358139,
+        "p05": 0.5671916007995605,
+        "median": 0.7019671201705933,
+        "p95": 0.8563051819801331
+      }
+    },
+    {
+      "day": "2026-06-16",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0015.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0015.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 1.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.7143190503120422,
+        "std": 0.0975942388176918,
+        "p05": 0.5679143667221069,
+        "median": 0.7057609558105469,
+        "p95": 0.8606902360916138
+      }
+    },
+    {
+      "day": "2026-06-17",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0016.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0016.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 1.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.7184291481971741,
+        "std": 0.10024399310350418,
+        "p05": 0.5682714581489563,
+        "median": 0.7095360159873962,
+        "p95": 0.8664001226425171
+      }
+    },
+    {
+      "day": "2026-06-18",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0017.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0017.png",
+      "observed_fraction": 1.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 5106,
+        "total_pixels": 5106,
+        "valid_fraction": 1.0,
+        "mean": 0.7225393652915955,
+        "std": 0.10308337211608887,
+        "p05": 0.5681134462356567,
+        "median": 0.7142635583877563,
+        "p95": 0.8732036352157593
+      }
+    },
+    {
+      "day": "2026-06-19",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0018.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0018.png",
+      "observed_fraction": 0.9590677634155895,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 4897,
+        "total_pixels": 5106,
+        "valid_fraction": 0.9590677634155895,
+        "mean": 0.7407995462417603,
+        "std": 0.11522774398326874,
+        "p05": 0.5622031688690186,
+        "median": 0.7342039942741394,
+        "p95": 0.9021063446998596
+      }
+    },
+    {
+      "day": "2026-06-20",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0019.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0019.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-21",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0020.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0020.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-22",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0021.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0021.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-23",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0022.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0022.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-24",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0023.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0023.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-25",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0024.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0024.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-26",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0025.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0025.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-27",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0026.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0026.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-28",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0027.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0027.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-29",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0028.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0028.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-06-30",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0029.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0029.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-01",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0030.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0030.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-02",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0031.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0031.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-03",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0032.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0032.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-04",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0033.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0033.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-05",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0034.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0034.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-06",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0035.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0035.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-07",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0036.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0036.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-08",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0037.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0037.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-09",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0038.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0038.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-10",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0039.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0039.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-11",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0040.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0040.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-12",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0041.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0041.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-13",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0042.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0042.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-14",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0043.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0043.png",
+      "observed_fraction": 0.9195064629847238,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 4695,
+        "total_pixels": 5106,
+        "valid_fraction": 0.9195064629847238,
+        "mean": 0.7218011617660522,
+        "std": 0.11834129691123962,
+        "p05": 0.5450664162635803,
+        "median": 0.7085911631584167,
+        "p95": 0.895289421081543
+      }
+    },
+    {
+      "day": "2026-07-15",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0044.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0044.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    },
+    {
+      "day": "2026-07-16",
+      "image_url": "/api/runs/dd1523181fb342009c15706a369da990/frame-0045.png",
+      "support_url": "/api/runs/dd1523181fb342009c15706a369da990/support-0045.png",
+      "observed_fraction": 0.0,
+      "filled_fraction": 0.0,
+      "statistics": {
+        "valid_pixels": 0,
+        "total_pixels": 5106,
+        "valid_fraction": 0.0,
+        "mean": null,
+        "std": null,
+        "p05": null,
+        "median": null,
+        "p95": null
+      }
+    }
+  ],
+  "elapsed_seconds": 0.249,
+  "sampling": "Projected common grid; QA applied on native grids before area averaging. Bands matched by sensor. Output pixels are masked below the clear-support threshold.",
+  "limitations": [
+    "Bandpass adjustment on ordinary SR is partial harmonization; no BRDF normalization or common atmospheric reprocessing.",
+    "Daily mosaics represent a UTC day, not a simultaneous multi-sensor exposure.",
+    "Interpolation is allowed only between clear observations within max_gap_days, can smear change, and never extrapolates.",
+    "Search limits/truncation are retained; these scenes do not guarantee complete temporal or AOI coverage."
+  ],
+  "coverage_notes": [
+    "More than half of the requested timeline is unsupported. Additional acquisition dates may improve coverage; long gaps were left missing."
+  ],
+  "before_url": "/api/runs/dd1523181fb342009c15706a369da990/before.png",
+  "preview_url": "/api/runs/dd1523181fb342009c15706a369da990/preview.png",
+  "stack_url": "/api/runs/dd1523181fb342009c15706a369da990/stack.npz",
+  "series_url": "/api/runs/dd1523181fb342009c15706a369da990/series.npz",
+  "cog_url": "/api/runs/dd1523181fb342009c15706a369da990/analysis.tif",
+  "composite_url": "/api/runs/dd1523181fb342009c15706a369da990/composite.tif",
+  "provenance_url": "/api/runs/dd1523181fb342009c15706a369da990/provenance.tif",
+  "manifest_url": "/api/runs/dd1523181fb342009c15706a369da990/manifest.json",
+  "outputs": [
+    {
+      "path": "analysis.tif",
+      "sha256": "06e3402c7a575837ccf8caaeac2284c122d4cdfc03ee390dad1b7f721173c7aa"
+    },
+    {
+      "path": "before.png",
+      "sha256": "47a089825c82b31372505509ae3d8c3ab88ee6841df5d9dd1a4c242dc1f9f3e3"
+    },
+    {
+      "path": "composite.tif",
+      "sha256": "900ae7ac49bb22954f8daa24d51bc5bc0cf7ae7203e6e42154c1fc5f5dce345a"
+    },
+    {
+      "path": "frame-0000.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0001.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0002.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0003.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0004.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0005.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0006.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0007.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0008.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0009.png",
+      "sha256": "47a089825c82b31372505509ae3d8c3ab88ee6841df5d9dd1a4c242dc1f9f3e3"
+    },
+    {
+      "path": "frame-0010.png",
+      "sha256": "85dd12bbef6adeacabae5b956dfaa172d2eae112f444eba8782aab216087d4bb"
+    },
+    {
+      "path": "frame-0011.png",
+      "sha256": "954c5b4034fb810367e6b57bafe9411cb92afaf51bfa03baf40361c3f90acda2"
+    },
+    {
+      "path": "frame-0012.png",
+      "sha256": "1adcb37ab1b812666e4e6305140439ada16a298705628e38fec9aeda1eeadc89"
+    },
+    {
+      "path": "frame-0013.png",
+      "sha256": "d293aad42610bd9ed63eb5479a05110f728bf754537ce3f3ce0234539daad280"
+    },
+    {
+      "path": "frame-0014.png",
+      "sha256": "7a6da0e125aed0ec265c4c39b13971a03717b05028f6e4d320ceda90a1778e97"
+    },
+    {
+      "path": "frame-0015.png",
+      "sha256": "54e9e8c6e446ba064624b3dc5ec64d25d31b10b0bb6f6cfcc58bd8a397da175b"
+    },
+    {
+      "path": "frame-0016.png",
+      "sha256": "b5b33b7b9da871126f5492666249f08ba627f6369cb3b59639c1df4cd1fcdd7c"
+    },
+    {
+      "path": "frame-0017.png",
+      "sha256": "3a00874dd2a04e8de4617b582b3866608bbaaa1c48fa04fd703423a577d82fb9"
+    },
+    {
+      "path": "frame-0018.png",
+      "sha256": "25d387839db649d54a775b690ab74be85c7ae9cb182721133800532d55bb5e5a"
+    },
+    {
+      "path": "frame-0019.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0020.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0021.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0022.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0023.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0024.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0025.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0026.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0027.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0028.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0029.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0030.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0031.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0032.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0033.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0034.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0035.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0036.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0037.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0038.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0039.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0040.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0041.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0042.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0043.png",
+      "sha256": "52f6cdbab7afd159063c60c9a8a8bfebf78e88948972c2100b84d8236b4c9c09"
+    },
+    {
+      "path": "frame-0044.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "frame-0045.png",
+      "sha256": "0bdba483b576dd215de9510bb79336c5008cc6cde66fbdbf52a1e09db52bde6b"
+    },
+    {
+      "path": "preview.png",
+      "sha256": "6f8bb819cc921d35c5ece3bd8d0d995f8995f989c449c3847032fc55ab879c06"
+    },
+    {
+      "path": "provenance.tif",
+      "sha256": "70af0fbb27a933449a25dc6d0652dff32b5ffa0284b23b0f045fc5ad954fdead"
+    },
+    {
+      "path": "series.npz",
+      "sha256": "3289e389ae94eadc7ae483fcb41179a8624fae44a2647cd2dbb014a1c411ade1"
+    },
+    {
+      "path": "stack.npz",
+      "sha256": "fac69f5f7d4850a603d8fdd1690de396bd339c9adf02dadf68cfeeb1c7506569"
+    },
+    {
+      "path": "support-0000.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0001.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0002.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0003.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0004.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0005.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0006.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0007.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0008.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0009.png",
+      "sha256": "795b8976949b2c13c1fa1693bfc77b02ce4f285c406445a88df447d6a8707bed"
+    },
+    {
+      "path": "support-0010.png",
+      "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+    },
+    {
+      "path": "support-0011.png",
+      "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+    },
+    {
+      "path": "support-0012.png",
+      "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+    },
+    {
+      "path": "support-0013.png",
+      "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+    },
+    {
+      "path": "support-0014.png",
+      "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+    },
+    {
+      "path": "support-0015.png",
+      "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+    },
+    {
+      "path": "support-0016.png",
+      "sha256": "0380eb9189f7837dc1a75daf3d5674d461c3b519fff27e0efebc3f37bdd98db0"
+    },
+    {
+      "path": "support-0017.png",
+      "sha256": "795b8976949b2c13c1fa1693bfc77b02ce4f285c406445a88df447d6a8707bed"
+    },
+    {
+      "path": "support-0018.png",
+      "sha256": "b82268d93e46068a4c9a17296c005972d9034a9ef5c142503019eb675cbfab27"
+    },
+    {
+      "path": "support-0019.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0020.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0021.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0022.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0023.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0024.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0025.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0026.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0027.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0028.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0029.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0030.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0031.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0032.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0033.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0034.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0035.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0036.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0037.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0038.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0039.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0040.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0041.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0042.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0043.png",
+      "sha256": "089affa3583fb4e49bc2f006a61a951df0b46d7bea48bb65dee185e3adf72571"
+    },
+    {
+      "path": "support-0044.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    },
+    {
+      "path": "support-0045.png",
+      "sha256": "e97c31cb0e2b70d418fed3aca446b1f1f5668f38ec09f37bdb6dd645741c728e"
+    }
+  ]
+}

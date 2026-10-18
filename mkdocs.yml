@@ -1,0 +1,83 @@
+site_name: RSLIB
+site_description: Remote sensing preparation, analysis and workbench documentation
+site_url: https://caioFagonde.github.io/rslib/
+repo_url: https://github.com/caioFagonde/rslib
+repo_name: caioFagonde/rslib
+edit_uri: edit/main/docs/
+site_dir: site
+use_directory_urls: true
+strict: true
+theme:
+  name: material
+  font: false
+  icon:
+    logo: material/satellite-variant
+  palette:
+    - scheme: default
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Dark appearance
+    - scheme: slate
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Light appearance
+  features:
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+extra_css:
+  - stylesheets/docs.css
+nav:
+  - Overview: index.md
+  - Getting started: GETTING_STARTED.md
+  - Workflows:
+      - Optical preparation: OPERATIONS.md
+      - Monitoring areas: PROJECTS.md
+      - Jobs and recovery: JOBS.md
+      - Spectral analysis: CLASSICAL_ALGORITHMS.md
+      - Reference cases: reference-projects/README.md
+      - Python and HTTP API: API.md
+  - Scientific contracts:
+      - Units and assumptions: SCIENCE.md
+      - Native hydrology: HYDRO.md
+      - Sources and licensing: SOURCES.md
+  - Evidence:
+      - Validation: VALIDATION.md
+      - Capability audit: PRODUCT_AUDIT.md
+      - Development captures: showcase/CAPTURES.md
+  - Development:
+      - Architecture: ARCHITECTURE.md
+      - Roadmap: ROADMAP.md
+      - Documentation publishing: DOCUMENTATION.md
+  - Research:
+      - Quantitative methods: REMOTE_SENSING_RESEARCH.md
+      - Reconstruction methods: RECONSTRUCTION_RESEARCH.md
+      - Reviewed inventory: research/INDEX.md
+validation:
+  nav:
+    omitted_files: info
+  links:
+    not_found: warn
+    unrecognized_links: warn
+    anchors: warn
+hooks:
+  - scripts/docs_hooks.py

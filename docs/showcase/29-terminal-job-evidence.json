@@ -1,0 +1,22 @@
+{
+  "job_id": "266c730ce5444033b8d545d14c540ce3",
+  "run_id": "490bd0057f904f0cb15ba9a82d91fd8e",
+  "synthetic": false,
+  "reused_browser_job": true,
+  "opened_result_without_submission": true,
+  "summary": {
+    "observations": 6,
+    "daily_mosaics": 6,
+    "regular_dates": 46,
+    "platforms": [
+      "landsat-8",
+      "landsat-9",
+      "sentinel-2b",
+      "sentinel-2c"
+    ],
+    "cache_hits": 6,
+    "observed_fraction": 0.1260239445494644,
+    "filled_fraction": 0.6073715492430048,
+    "unsupported_fraction": 0.2666045062075308
+  }
+}
